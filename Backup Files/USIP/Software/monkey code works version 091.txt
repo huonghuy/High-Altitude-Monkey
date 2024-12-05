@@ -1,0 +1,1132 @@
+
+/////////// SOFTWARE VERSION NUMBER ///////////////////////////
+#define VERSION "0.91MM"
+// Ver 0.1M, 8/11/19
+// Ver 0.2M, 8/14/19 adjusting communication from Serial2
+// Ver 0.3MM  8/15/19 added Process_MONKEYMOVE
+// Ver 0.4MM  8/16/19 got command parser to work from IDE
+// Ver 0.5MM  8/19/19 ADDING HOME ROUTINE FOR SERVOS             
+// Ver 0.6MM, 8/21/19 Intergrated serial communication between USIP and Monkey Board
+// Ver 0.7MM, 8/22/19 Implemented monkey reply back top USIP board
+// Ver 0.8MM, 8/23/19 Completed Monkey Touchdown move & monkey default position commands.
+// Ver 0.9MM, 9/10/19 Works with Radio APRS
+// Ver 0.91MM 9/26/19 Added monkey video commands
+//    
+// USIP Copyright 2019 University of Bridgeport, Discovery Museum Bridgeport, CT, NASA, CT Space Grant Consortium.
+// All rights reserved.
+///////////////////////////////////////////////////////////////
+
+
+#include <Adafruit_PWMServoDriver.h>    //Download from Github
+#include <Wire.h>                      //Included into Arduino library
+//Libraries Needed
+
+
+//Declarations
+Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver();
+
+#define SERVOMIN 150 // min pulse lenghth count
+#define SERVOMAX 600 // max pulse lenghth count
+
+uint8_t servo1neck = 0;
+
+int pos=0;
+int pos2=300;
+
+int right=0;
+int right2=300;
+int right3=-60;
+
+int left=0;
+int left2=0;
+int left3=0;
+
+int ledpin = 13; // Led to blink
+int x;
+int MKRCV_pin = 16;
+int MKXMT_pin = 17;
+
+
+
+///////////////////// New section///////////////////////////
+String MonkeyCmd_str ="";   //will hold the command recieved from the USIP or IDE
+String MONKEYMOVE_flg = ""; // what used for?
+boolean MonkeyFlag= false; // when true used to call Monkey move routine in loop
+boolean validcmd_flg = false;
+String inStr0 ="";
+String inStr2 ="";
+
+
+String Xavier="";
+String Xavier2="";
+String line="";
+
+boolean string0Complete = false;  // whether the inStr0 is complete from the IDE Serial input routine
+boolean string2Complete = false;  // whether the inStr0 is complete from the IDE Serial input routine
+#define MK1 "MONKEY"
+#define MK01 "MONKEY 01"
+int monkey_cmd_nbr = 0;  // used to parse monkey commands for video commands
+int video_level = 0; // used to hold calculated video command number
+
+int Vbat = 0;    // battery voltage read
+int InsideT = 0; // Inside temp integer read
+int XmtrT = 0;   // transmitter temp Integer read
+
+////////////////////////////////////////////////////////////
+
+void setup() {
+  // setup code here, runs once:
+
+  pinMode (ledpin, OUTPUT);
+  pinMode(MKRCV_pin, INPUT);
+  pinMode(MKXMT_pin, OUTPUT);
+  
+  // initialize serial: 
+  // Blink LED that we are up and running
+  for (x=0; x<5; x++)  {
+    digitalWrite(ledpin,HIGH);
+    delay(100);
+    digitalWrite(ledpin,LOW);
+    delay(100);
+  }
+  
+Serial.begin(9600);
+Serial2.begin(9600);//Monkey cpu
+//Serial.print("2 Channel servo test");
+//Serial.println("");
+Serial.print("USIP Monkey ");
+Serial.println (VERSION); 
+
+pwm.begin();
+pwm.setPWMFreq(60);  //Analog servos run at ~60 Hz updates
+
+monkey_rest(); // bring monkey to default positions AT THE START
+}
+
+
+
+//////////////////////////////////////// LOOP /////////////////////////////////////////////////////
+void loop() {      // Main code here, runs repeatedly
+
+if (MonkeyFlag == true) {
+  Process_MONKEYMOVE(MonkeyCmd_str);
+  MonkeyCmd_str = ""; 
+  MonkeyFlag = false;
+}
+  
+//servohead_no_nod();
+//servohead_yes_nod();
+//servohead2(); //head half scan
+//scanhead(); //Full scan
+//right_arm2(); // Thumbs up
+//left_arm (); // Wave
+//monkey_chest();// Chest pound
+
+/////not needed:////////
+//head_scratch();
+//monkey_reset();
+//autopilot cycle();
+} 
+
+/////////////////////////////////////////////////////// Selecting a Monkey Command ////////////////////////////////////////////////////
+
+void Process_MONKEYMOVE(String MonkCMDStr){
+  validcmd_flg = false;
+    Serial.print("ENTERED MONKEY MOVE AND MonkCMDStr is: ");
+    Serial.println(MonkCMDStr);
+
+// Is it top head servo go home?
+if (MonkCMDStr.equals("MONKEY 00")){
+    Serial.println("Command equals MONKEY 00 - Setting Monkey to default positions");
+    // set any flags
+    // call Monkey Motions
+       monkey_rest(); // bring monkey to default positions
+  
+    // send MONKEY 11 (done) to USIP
+    Serial.print("MONKEY 11 (done) Signal");
+    Serial2.println("MONKEY 11");
+    validcmd_flg = true;
+}
+   
+// Is it Head Nod Yes?
+if (MonkCMDStr.equals("MONKEY 01")){
+   Serial.println("Command equals MONKEY 01");
+    // set any flags
+    // call Head Nod Yes
+   servohead_yes_nod();
+    Serial.println("RETURNED FROM yes_nod()MONKEY01");    
+    // send MONKEY 11 (done) to USIP 
+
+    monkey_rest(); // bring monkey to default positions
+    
+    Serial.print("MONKEY 11 (done) Signal");
+    Serial2.println("MONKEY 11");
+    validcmd_flg = true;
+}
+
+ 
+// Is it Head Nod No?
+if (MonkCMDStr.equals("MONKEY 02")){
+   Serial.println("Command equals MONKEY 02");
+    // set any flags
+    // call Head Nod No
+  //    servohead_no_nod();
+ servohead_no_nod();
+ Serial.println("RETURNED FROM no_nod()MONKEY02");   
+    
+    // send MONKEY 11 (done) to USIP 
+    
+     monkey_rest(); // bring monkey to default positions
+     
+    Serial.print("MONKEY 11 (done) Signal");
+    Serial2.println("MONKEY 11");
+      validcmd_flg = true;
+}
+
+// Is it Right Arm Thumbs Up?
+if (MonkCMDStr.equals("MONKEY 03")){
+    Serial.println("Command equals MONKEY 03");
+    // set any flags
+    // call Right Arm Thumbs Up
+    right_arm2();
+ Serial.println("RETURNED FROM right_arm2()MONKEY03"); 
+    
+    // send MONKEY 11 (done) to USIP 
+      monkey_rest(); // bring monkey to default positions
+    Serial.print("MONKEY 11 (done) Signal");
+    Serial2.println("MONKEY 11");
+    validcmd_flg = true;
+}
+
+// Is it Scan Head?
+if (MonkCMDStr.equals("MONKEY 04")){
+    Serial.println("Command equals MONKEY 04");
+    // set any flags
+    // call Scan Head
+    scanhead();
+     Serial.println("RETURNED FROM scan_head()MONKEY04"); 
+    // send MONKEY 11 (done) to USIP
+      monkey_rest(); // bring monkey to default positions
+    Serial.print("MONKEY 11 (done) Signal");
+  Serial2.println("MONKEY 11");
+    validcmd_flg = true;
+}
+// Is it Left Hand Wave?
+if (MonkCMDStr.equals("MONKEY 05")){
+    Serial.println("RETURNED FROM left_hand_wave()MONKEY05"); 
+    // set any flags
+    // call Left Hand Wave
+    left_arm ();
+    // send MONKEY 11 (done) to USIP
+      monkey_rest(); // bring monkey to default positions
+    Serial.print("MONKEY 11 (done) Signal");
+    Serial2.println("MONKEY 11");
+    validcmd_flg = true;
+}
+// Is it a chest pound?
+if (MonkCMDStr.equals("MONKEY 06")){
+    Serial.println("RETURNED FROM chest_pound()MONKEY06"); 
+    // set any flags
+    // call Chest Pound
+    monkey_chest();
+    // send MONKEY 11 (done) to USIP
+      //monkey_rest(); // bring monkey to default positions
+      monkey_rest(); // bring monkey to default positions
+    Serial.print("MONKEY 11 (done) Signal");
+   Serial2.println("MONKEY 11");
+   validcmd_flg = true;
+}
+// Is it a touchdown signal?
+if (MonkCMDStr.equals("MONKEY 07")){
+    Serial.println("Command equals MONKEY 07");
+    // set any flags
+     monkey_touchdown(); // monkey to raise both arms up at once
+     Serial.println("MONKEY 07 (touchdown) Signal");
+     Serial2.println("MONKEY 11");
+      //monkey_rest(); // bring monkey to default positions
+      monkey_rest(); // bring monkey to default positions
+    Serial.print("MONKEY 11 (done) Signal");
+    Serial2.println("MONKEY 11");
+    validcmd_flg = true;
+}
+// Is it all motions executed once?
+if (MonkCMDStr.equals("MONKEY 08")){
+    Serial.println("Command equals MONKEY 08");
+    // set any flags
+    // call Monkey Motions
+      servohead_no_nod();
+       servohead_yes_nod();
+       scanhead(); //Full scan
+       right_arm2(); // Thumbs up right arm
+       left_arm (); // Wave left arm
+       monkey_chest();  // Chest pound
+
+       //monkey_rest(); // bring monkey to default positions
+    // send MONKEY 11 (done) to USIP
+    monkey_rest(); // bring monkey to default positions
+    Serial.print("MONKEY 11 (done) Signal");
+    Serial2.println("MONKEY 11");
+    validcmd_flg = true;
+}
+
+// Is it a REQUEST FOR DATA?
+if (MonkCMDStr.equals("MONKEY 12")){
+    Serial.println("Command equals MONKEY 12");
+    // Read appropriate Data
+    // write data into appropriate variables
+    // Vbat = battery voltage Integer
+    // InsideT = Inside temp integer
+    // XmtrT = transmitter temp Integer
+    
+      Vbat = get_bat_voltage(); // this routine reads the battery voltage
+          Serial.println("battery voltage read");
+      InsideT = get_inside_temp(); // this routine reads the inside temperature
+          Serial.println("Inside temperature read");
+      XmtrT = get_xmtr_temp();   // this routine reads the transmitter temperature
+          Serial.println("transmitter temperature read");
+      
+
+
+    // send back MONKEY 13
+            Serial2.println("MONKEY 13");
+    // send back Vbat InsideT and XmtrT
+    String thisString = String(Vbat);
+            Serial2.println(thisString);
+                String thisString = String(InsideT);
+            Serial2.println(thisString); 
+                String thisString = String(XmtrT);
+            Serial2.println(thisString);  
+    // send data to USIP board via Serial 2
+    
+    // send monkey done
+    // send MONKEY 11 (done) to USIP
+    Serial.print("MONKEY 11 (done) Signal");
+    Serial2.println("MONKEY 11");
+    validcmd_flg = true;
+}
+
+// Is it a turn video OFF command?
+if (MonkCMDStr.equals("MONKEY 20")){
+    Serial.println("Command equals MONKEY 20");
+    // set any flags
+     Serial.println("MONKEY 20 turn video OFF");
+    video_off(); // turn off video
+    Serial.print("MONKEY 11 (done) Signal");
+    Serial2.println("MONKEY 11");
+    validcmd_flg = true;
+}
+
+
+// Is it a turn video ON command?
+if (MonkCMDStr.equals("MONKEY 19")){
+    Serial.println("Command equals MONKEY 19");
+    // set any flags
+     Serial.println("MONKEY 19 turn video ON");
+      video_on(); // turn on video
+      set_video_level(21);  // set video to lowest level of 21
+    Serial.print("MONKEY 11 (done) Signal");
+    Serial2.println("MONKEY 11");
+    validcmd_flg = true;
+}
+
+
+
+//check for a valid monkey video command 
+// MonkCMDStr
+monkey_cmd_nbr = MonkCMDStr.substring(7,9).toInt(); // monkey command now an interger number from 21 to 84
+
+if ((monkey_cmd_nbr >= 21) && (monkey_cmd_nbr <= 84)){
+// calculate the video level from monkey_cmd_nbr 
+    Serial.println("calculating monkey video level number");
+    video_level = (2*(monkey_cmd_nbr - 21));
+    Serial.println("setting monkey video level number to:");
+    Serial.println(video_level);
+         
+//set_video_level(video_level);
+ 
+    Serial.print("set monkey video (done)");
+    Serial.print("MONKEY 11 (done) Signal");
+    Serial2.println("MONKEY 11");
+    
+    validcmd_flg = true; 
+}  // end of if
+ 
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////// 
+// etc do all the valid monkey xx commands
+// then do invalid command
+// is it invalid command?
+//if (validcmd_flg==false && MonkCMDStr.equals("MONKEY 01") ){
+ //  Serial.println("Invalid MONKEY ");
+
+if( validcmd_flg == false){
+  Serial.println("Invalid MONKEY Sent Dumped Command");
+ Serial2.println("MONKEY 14"); //Dumped Command
+ // dump the command it's no good
+// send MONKEY 14 to USIP  I dumped it.
+// transmit dump command
+}
+// No matter what, clear the MONKEYMOVE flag and all the rest of the flags etc.
+MONKEYMOVE_flg = "";
+MonkeyFlag= false;
+MonkeyCmd_str = ""; 
+monkey_cmd_nbr = 0; 
+}
+
+
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+/////////////Monkey Commands//////////////////
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+void servohead_yes_nod() {
+//Servo1 left and right motion
+Serial.println("Entered servohead_yes_nod()MONKEY 01");
+for (pos =180; pos <= 400; pos += 2) { // goes from 0 degrees to 180 degrees
+    // in steps of 1 degree
+
+    pwm.setPWM(0,0,330); //start bottom servo head at middle position
+    delay(2);
+   
+
+    pwm.setPWM(1,0,pos); //move top servo head down in increments
+    delay(5);
+
+ }
+
+//for (pos = 400; pos >= 300; pos -= 1) { 
+  for (pos = 400; pos >= 180; pos -= 1) {
+
+      pwm.setPWM(1,0,pos); //move top servo head up in increments
+      delay(5);
+  
+  }// 1st round
+
+//2nd round:
+
+
+//for (pos = 300; pos <= 400; pos += 1) { // goes from 0 degrees to 180 degrees
+//    // in steps of 1 degree
+//
+//    pwm.setPWM(0,0,300); //start bottom servo head at middle position
+//    //pos2=SERVOMIN;
+//    delay(2);
+//   
+//    pwm.setPWM(1,0,pos-150); //move top servo head down in increments
+//      delay(2);
+//
+//  }
+//
+//for (pos = 400; pos >= 300; pos -= 1) { 
+//
+//
+//      pwm.setPWM(1,0,pos-150); //move top servo head up in increments
+//      delay(2);
+//  
+//}
+
+
+} //end servohead_yes_nod
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+void servohead_no_nod() {
+//Servo1 left and right motion
+
+
+for (pos = 270; pos <= 360; pos += 1) { // goes from 0 degrees to 180 degrees
+   
+ pwm.setPWM(0,0,pos); //bottom servo head
+    
+    delay(2);
+
+    
+ pwm.setPWM(1,0,150); //top servo head
+      delay(5);
+  }
+
+for (pos = 360; pos >= 270; pos -= 1) { 
+
+  pwm.setPWM(0,0,pos);
+  delay(2);
+ 
+}  //1st round
+
+//2nd round:
+
+
+
+for (pos = 270; pos <= 360; pos += 1) { // goes from 0 degrees to 180 degrees
+   
+   
+ pwm.setPWM(0,0,pos); //bottom servo head
+    //pos2=SERVOMIN;
+    delay(2);
+
+    
+    pwm.setPWM(1,0,150); //top servo head
+      delay(5);
+
+
+  }
+
+for (pos = 360; pos >= 270; pos -= 1) { 
+
+  pwm.setPWM(0,0,pos);
+  delay(2);
+ 
+} 
+
+  
+}//end of no nod
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+void left_arm (){
+
+  for (left = 500; left >= 100; left -= 1) { // 1ft move up shoulder
+   //if(left>100){
+   pwm.setPWM(4,0,left);
+   //pos2=300;
+   delay(7);
+   }
+
+//hand wave 1st cycle:
+
+for (left = 325; left <= 400; left += 1) { // 2nd move right side arm 2 of 2
+   //if(left>100){
+   pwm.setPWM(5,0,left);
+   //pos2=300;
+   delay(5);
+   }
+for (left = 400; left >= 325; left -= 1) { // 2nd move left side arm  1 of 2
+   //if(left>100){
+   pwm.setPWM(5,0,left);
+   //pos2=300;
+   delay(5);
+   }
+  
+
+//hand wave 2nd cycle
+
+/////////////////////// hand wave 1st cycle//////////////////////////////////////////////
+
+for (left = 325; left <= 400; left += 1) { // 2nd move right side arm 2 of 2
+   //if(left>100){
+   pwm.setPWM(5,0,left);
+   //pos2=300;
+   delay(5);
+   }
+for (left = 400; left >= 325; left -= 1) { // 2nd move left side arm  1 of 2
+   //if(left>100){
+   pwm.setPWM(5,0,left);
+   //pos2=300;
+   delay(5);
+   }
+
+////////////////////////////////////
+
+//////////Returning shoulder back to original position///////////////////////
+
+  for (left = 100; left <= 500; left += 1) { // 3rd move down slowly shoulder
+   //if(left>100){
+   pwm.setPWM(4,0,left);
+   //pos2=300;
+   delay(7);
+   }
+
+
+}//end of left arm
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+void servohead2(){      //Tilt,look down and reset
+//Servo1 left and right motion
+for (pos = 300; pos <= 400; pos += 1) { // goes from 0 degrees to 180 degrees
+    // in steps of 1 degree
+
+    pwm.setPWM(0,0,pos); //bottom servo head
+    //pos2=SERVOMIN;
+    delay(5);
+   
+
+    pwm.setPWM(1,0,pos-150); //top servo head
+      delay(5);
+
+
+  }
+
+for (pos = 400; pos >= 300; pos -= 1) { 
+
+  pwm.setPWM(0,0,pos);
+  delay(15);
+
+      pwm.setPWM(1,0,pos-150); //top servo head
+      delay(5);
+  
+}
+
+  
+}//end of servohead2 
+
+////////////////////////////////////////////////////////
+void scanhead(){       //ACtually scanning the console
+//Servo1 left and right motion
+for (pos = 300; pos <= 400; pos += 1) { // goes from 0 degrees to 180 degrees
+    // in steps of 1 degree
+    // Head tilts down as it turns left
+
+    pwm.setPWM(0,0,pos); //bottom servo head
+    //pos2=SERVOMIN;
+    delay(5);
+   
+
+    pwm.setPWM(1,0,pos-150); //top servo head
+      delay(5);
+
+
+  }
+
+for (pos = 400; pos >= 200; pos -= 1) { 
+  // Head locks angle of neck and looks right
+  pwm.setPWM(0,0,pos);
+  delay(15);
+
+      //pwm.setPWM(1,0,pos-150); //top servo head
+      //delay(5);
+  
+}
+for (pos = 200; pos <= 400; pos += 1) { 
+  // Head looks back left
+  pwm.setPWM(0,0,pos);
+  delay(15);
+
+      //pwm.setPWM(1,0,pos-150); //top servo head
+      //delay(5);
+  
+}
+for (pos = 400; pos >= 300; pos -= 1) { 
+  // Head returns to normal
+  pwm.setPWM(0,0,pos);
+  delay(15);
+
+      pwm.setPWM(1,0,pos-150); //top servo head
+      delay(5);
+  
+}
+
+  
+}///////////////////end of scan head
+
+
+void right_arm2 (){   //Thumbs up action
+  for (right = 290; right <= 500; right += 1) { // goes from 0 degrees to 180 degrees
+    pwm.setPWM(2,0,right); //right shoulder servo head
+    delay(5);
+    
+  }
+
+  for (right = 220; right >= 50; right -= 1) {
+      pwm.setPWM(3,0,right); //right arm servo head
+      delay(10); 
+  }
+  
+  for (right = 50; right <= 290; right += 1) {
+      pwm.setPWM(3,0,right); //right arm servo head
+      delay(7); 
+  }
+
+
+  
+
+  for (right = 500; right >= 300; right -= 1) { // goes from 180 degrees to 0 degrees
+  
+   pwm.setPWM(2,0,right);
+   //pos2=300;
+   delay(5);
+   }
+   
+
+
+} //end right_arm
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+
+void monkey_chest (){   //Monkey beating chest action
+  for (right = 290; right <= 460; right += 1) { // move up right shoulder
+    pwm.setPWM(2,0,right); //right shoulder servo head
+    delay(5);
+    
+  }
+
+  ///>>>>>>>>>Right arm Movement>>>>>////////
+
+for (left = 500; left >= 300; left -= 1) { // 1ft move up left shoulder
+   //if(left>100){
+   pwm.setPWM(4,0,left);
+   //pos2=300;
+   delay(7);
+   }
+///////////////////////////////// 
+
+//Right forearm motion: 1st cycle
+
+  for (right = 280; right >= 50; right -= 1) {
+      pwm.setPWM(3,0,right); //right arm servo head
+      delay(1); 
+  }
+ 
+  for (right = 50; right <= 280; right += 1) {
+      pwm.setPWM(3,0,right); //right arm servo head
+      delay(1); 
+ }
+ 
+
+
+// left forearm motion: 1st cycle
+
+
+for (left = 325; left <= 530; left += 1) { // 2nd move right side arm 2 of 2
+   //if(left>100){
+   pwm.setPWM(5,0,left);
+   //pos2=300;
+   delay(1);
+   }
+for (left = 530; left >= 325; left -= 1) { // 2nd move left side arm  1 of 2
+   //if(left>100){
+   pwm.setPWM(5,0,left);
+   //pos2=300;
+   delay(1);
+   }
+  
+   
+/////////////////////////////////////////////
+//////// 2nd cycle of forearm chest movement
+
+
+
+//Right forearm motion: 2nd motion
+
+  for (right = 280; right >= 50; right -= 1) {
+      pwm.setPWM(3,0,right); //right arm servo head
+      delay(1); 
+  }
+ 
+  for (right = 50; right <= 280; right += 1) {
+      pwm.setPWM(3,0,right); //right arm servo head
+      delay(1); 
+ }
+ 
+
+
+// left forearm motion: 2nd motion
+
+
+for (left = 325; left <= 530; left += 1) { // 2nd move right side arm 2 of 2
+   //if(left>100){
+   pwm.setPWM(5,0,left);
+   //pos2=300;
+   delay(1);
+   }
+for (left = 530; left >= 325; left -= 1) { // 2nd move left side arm  1 of 2
+   //if(left>100){
+   pwm.setPWM(5,0,left);
+   //pos2=300;
+   delay(1);
+   }
+
+
+////////
+
+  for (right = 460; right >= 290; right -= 1) { // bring left shoulder back to original position
+  
+   pwm.setPWM(2,0,right);
+   //pos2=300;
+   delay(5);
+   }
+
+
+
+
+for (left = 300; left <= 500; left += 1) { // bring left shoulder back to original position
+   pwm.setPWM(4,0,left);
+   delay(3);
+   }
+   
+
+
+} //end chest movement
+
+///////////////////////////////////////////////////////////////////////
+
+//Communication section - taking in initial commands
+
+// --> one from keyboard (IDE - Serial.print() )
+/* SerialEvent occurs whenever a new data comes in the
+   hardware serial RX.  This routine is run between each
+   time loop() runs, so using delay inside loop can delay
+   response.  Multiple bytes of data may be available.
+*/
+void serialEvent() {
+   while (Serial.available()) {
+                 // get the new byte:
+                 
+// Serial.print("GETTING NEW BYTE\n");  
+
+                 char inChar0 = (char)Serial.read();
+                 // add it to the inputString:
+                 
+                   Serial.print("Just read character: ");
+                    Serial.print(inChar0,HEX);
+                      Serial.print(" ");
+                    Serial.print(inChar0);
+                   Serial.println();
+                   
+                 inStr0 += inChar0;
+                 //Serial.print("Test String : ");
+                  Serial.println(inStr0);
+                  
+                  if (inStr0.length() > 11) {
+                    inStr0 = "";
+                  }
+                  
+                 // if the incoming character is a newline, set a flag
+                 // so the main loop can do something about it:
+                 if (inChar0 == '\n') {
+                    string0Complete = true;
+
+                    ////
+                    Serial.println("Temp String is: " + inStr0);
+                    Serial.print("It is this many characters long: ");
+                    Serial.println(inStr0.length());
+
+                    Xavier = inStr0.substring(0,9);
+
+
+
+                    Serial.println("The substring is: " + Xavier);
+
+                 //   line = "\n";
+                //    Xavier.concat(line);
+
+                    MonkeyCmd_str = Xavier;
+
+                //    Serial.print( MonkeyCmd_str,HEX);
+
+                    
+                 //   MonkeyCmd_str = inStr0; // store completed string0 into monkey Command string
+                    
+                    ////troubleshooting//////////
+                    Serial.print(MonkeyCmd_str);
+                    
+                    ////////////////
+                    
+                    inStr0 = "";
+                    MonkeyFlag= true; // Signal loop that we are ready to process monkey command
+                    Serial.println("set MonkeyFlag = True");
+                 }
+               }
+/*//// TESTING////////////////////////////////////////////////////////////
+//// TESTING////////////////////////////////////////////////////////////
+//// TESTING////////////////////////////////////////////////////////////
+/////////////////////////////////////
+          if (MonkeyFlag == true) {
+            Serial.println("MonkeyFlag is True");
+            }  
+          else{
+            Serial.println("MonkeyFlag is not True");
+            } 
+
+          ///////////////////////*/
+           MonkeyFlag= true;
+          MonkeyCmd_str = "MONKEY 12";   
+//// TESTING////////////////////////////////////////////////////////////           
+
+          }// end of serialEvent() // must leave this line after testing
+//////////////////////////////////////////////////////////////////////////////////////////////
+void serialEvent2() {
+   while (Serial2.available()) {
+                 // get the new byte:
+                 
+// Serial.print("GETTING NEW BYTE\n");  
+
+                 char inChar2 = (char)Serial2.read();
+                 // add it to the inputString:
+                 
+                   Serial.print("Just read character: ");
+                    Serial.print(inChar2,HEX);
+                      Serial.print(" ");
+                    Serial.print(inChar2);
+                   Serial.println();
+                   
+                 inStr2 += inChar2;
+                 
+                  if (inStr2.length() > 11) {
+                    inStr2 = "";
+                  }
+                 // if the incoming character is a newline, set a flag
+                 // so the main loop can do something about it:
+                 if (inChar2 == '\n') {
+                    string2Complete = true;
+
+                    ////
+                    Serial.println("Temp String is: " + inStr2);
+                    Serial.print("It is this many characters long: ");
+                    Serial.println(inStr2.length());
+
+                    Xavier2 = inStr2.substring(0,9);
+
+
+
+                    Serial.println("The substring is: " + Xavier2);
+
+                 //   line = "\n";
+                //    Xavier.concat(line);
+
+                    MonkeyCmd_str = Xavier2;
+
+                //    Serial.print( MonkeyCmd_str,HEX);
+
+                    
+                 //   MonkeyCmd_str = inStr0; // store completed string0 into monkey Command string
+                    
+                    ////troubleshooting//////////
+                    Serial.print(MonkeyCmd_str);
+                    
+                    ////////////////
+                    
+                    inStr2 = "";
+                    MonkeyFlag= true; // Signal loop that we are ready to process monkey command
+                 }
+               }
+
+
+             }
+
+//////////////////////////////////////////////////////////////////////////
+// Head Servo Left & Right
+void bottom_head_servo_go_home(){  //pin 0 - on servo board                  
+Serial.println("Entered bottom_head_servo_go_home(): Moving top servo to home ");
+   pwm.setPWM(0,0,330); 
+}
+/////////////////////////////////////////////////////////////////////////////////
+// Head Servo Up & Down
+void top_head_servo_go_home(){  //pin 1 - on servo board
+Serial.println("Entered top_head_servo_go_home(): Moving bottom servo to home ");
+   pwm.setPWM(1,0,150);  
+}
+
+/////////////////////////////////////////////////////////////////////////////////
+// Brings Right shoulder down
+void right_shoulder_go_home(){  //pin 2 - on servo board 
+Serial.println("Entered right_shoulder_go_home() ");
+ pwm.setPWM(2,0,300);
+
+}
+
+/////////////////////////////////////////////////////////////////////////////////
+// brings right elbow outwards
+void right_elbow_go_home(){  //pin 3 - on servo board 
+  Serial.println("Entered right_elbow_go_home() ");
+   pwm.setPWM(3,0,290); 
+}
+
+/////////////////////////////////////////////////////////////////////////////////
+// Brings Left shoulder down
+void left_shoulder_go_home(){  //pin 4 - on servo board 
+  pwm.setPWM(4,0,500);
+Serial.println("Entered left_shoulder_go_home() ");
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////
+// brings left elbow outwards
+void left_elbow_go_home(){  //pin 5 - on servo board 
+  Serial.println("Entered left_elbow_go_home() ");
+ pwm.setPWM(5,0,325);
+}
+
+/////////////////////////////////////////////////////////////////////////////////
+// Monkey Touchdown
+void monkey_touchdown(){  //pin 5 - on servo board 
+  Serial.println("Entered monkey touch down() ");
+
+  touchdown_head_bottom_servo_();
+  touchdown_head_top_servo_();
+  touchdown_right_elbow_go_home();
+  left_elbow_go_home(); 
+  touchdown_left_arm_go_up();  
+  right_arm_go_up();
+
+  }
+  /////////////////////////////////////////////////////////////////////////////////
+// MONKEY LEFT ARM GO UP
+// assumes left elbow in home position
+void left_arm_go_up(){  
+    for (left = 500; left >= 100; left -= 1) { // 1ft move up shoulder
+   //if(left>100){
+   pwm.setPWM(4,0,left);
+   //pos2=300;
+   delay(7);
+   }
+  Serial.println("Entered monkey left arm go up() ");
+
+
+  }
+
+  ///////////////////////////////////////////////////////////////////////////////////
+  void touchdown_left_arm_go_up(){  
+    for (left = 500; left >= 200; left -= 1) { // 1ft move up shoulder  
+   //if(left>100){
+   pwm.setPWM(4,0,left);
+   //pos2=300;
+   delay(7);
+   }
+  Serial.println("Entered monkey touchdown left arm go up() ");
+
+
+  }
+  /////////////////////////////////////////////////////////////////////////////////
+// MONKEY RIGHT ARM GO UP
+// assumes right elbow in home position
+void right_arm_go_up(){  
+  Serial.println("Entered monkey right arm go up() ");
+  
+  for (right = 290; right <= 1000; right += 1) { // move up right shoulder  //690
+    pwm.setPWM(2,0,right); //right shoulder servo head
+    
+    delay(5);
+    
+  }
+  }
+/////////////////////////////////////////////////////////////////////////////////
+// brings right elbow outwards for touchdown
+void touchdown_right_elbow_go_home(){  //pin 3 - on servo board 
+   Serial.println("Entered touchdown_right_elbow_go_home() ");
+   pwm.setPWM(3,0,390); // 390-400 LOOKS GOOD
+}
+
+//////////////////////////////////////////////////////////////////////////////////////
+void touchdown_head_bottom_servo_(){ //MOVES HEAD TO THE MIDDLE POSITION (HORIZONTALLY)
+  Serial.println("Entered touchdown_head_bottom_servo_() ");
+  pwm.setPWM(0,0,330); // 390-400 LOOKS GOOD
+  
+}
+////////////////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////////////////
+void touchdown_head_top_servo_(){   ////MOVES HEAD DOWN A LITTLE (VERTICALLY)
+  Serial.println("Entered touchdown_head_top_servo_() ");
+   pwm.setPWM(1,0,200); // 390-400 LOOKS GOOD
+  
+}
+////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+void monkey_rest(){     // Runs when "Monkey 00" comand is called
+    // call Monkey Motions
+  bottom_head_servo_go_home();
+  top_head_servo_go_home();  
+  right_shoulder_go_home();
+  left_shoulder_go_home(); 
+   left_elbow_go_home();
+  right_elbow_go_home(); 
+  
+}
+
+///////////////////////////////////////////////////////////////////////////////////////
+//this issues the command to turn the video OFF
+
+void video_off(){
+  Serial.println("Entered video_off()");
+}
+
+///////////////////////////////////////////////////////////////////////////////////////
+//this issues the command to turn the video ON
+
+void video_on(){
+    Serial.println("Entered video_on()");
+
+}
+
+///////////////// Set Video Level ////////////////////////////////////////////////
+
+void set_video_level(int video_level){
+      Serial.println("Entered set_video_level()");
+       Serial.println(video_level);     
+}
+
+/////////////////////////////// this routine reads the battery voltage ///////////////////////////////////////////////////
+   // Read appropriate Data
+ int get_bat_voltage(){
+      int bat_v = 0;
+      Serial.println("Inside get_bat_voltage()");
+      // read battery voltage
+      // convert battery voltage to appropriate integer
+      // set variable to appropriate voltage number
+ return (bat_v);
+     }
+
+
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////// this routine reads the inside temperature //////////////////////////////////////////////////////
+   // Read appropriate Data
+ int get_inside_temp(){
+      int T_inside = 0;
+      Serial.println("Inside get_inside_temp()");
+      // read Inside temperature
+      // convert Inside temperature to appropriate integer
+      // set variable to appropriate temperature number
+ return (T_inside);
+      }
+ 
+
+//////////////////////////////////////////////////////////////////////////////
+/////////////////////////////// this routine reads the Transmitter Temp ///////////////////////////////////////////////////
+  
+ int get_xmtr_temp(){   // this routine reads the transmitter temperature
+          Serial.println("Inside get_xmtr_temp()");
+       int xmtr_temp = 0;
+      // read transmitter temperature
+      // convert transmitter temperature to appropriate integer
+      // set variable to appropriate transmitter temperature number
+ return (xmtr_temp);
+      }
+//////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+  
