@@ -1,5 +1,15 @@
+/////////// SOFTWARE VERSION NUMBER ///////////////////////////
+// Ver 1.0MM  11/1/19 Flight Release.
+//
+// ///////////// 2024 UPDATES 
+// Ver 1.1  12/10/24 Added Version Number 
+// don't forget to adjust the #define VERSION below! 
+#define VERSION "1.1" 
+// Copyright © 2023 University of Bridgeport, NASA, CT Space Grant Consortium, USIP.
+// All rights reserved.
+///////////////////////////////////////////////////////////////
 
-const String callSign = "AB1JC-11";
+const String callSign = "AB1JC-11"; //HAM Radio Callsign ---- Input who is the main flyer
 boolean DaylightSavingsTime = false;
 float AzimuthCorrection = 11.0;
 
