@@ -1,0 +1,7 @@
+Downloads:
+1.	Ch340 Driver (If Using Mega Mini)	
+    a.	https://learn.sparkfun.com/tutorials/how-to-install-ch340-drivers/all
+2.	Adafruit PWM Servo Driver
+    a.	https://github.com/adafruit/Adafruit-PWM-Servo-Driver-Library
+4.	Adafruit BusIO
+    a.	https://github.com/adafruit/Adafruit_BusIO
