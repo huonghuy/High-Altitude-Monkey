@@ -1,0 +1,77 @@
+Designator Footprint               Mid X         Mid Y         Ref X         Ref Y         Pad X         Pad Y TB      Rotation Comment        
+
+R20        CC1608-0603            911mil        645mil        911mil        645mil        911mil    678.465mil  B        270.00 Res1           
+C39        CC1608-0603            971mil        751mil        971mil        751mil   1004.465mil        751mil  B        180.00 Cap            
+C38        CC1608-0603            840mil        645mil        840mil        645mil        840mil    611.536mil  B         90.00 Cap            
+R19        CC1608-0603           1041mil        879mil       1041mil        879mil   1074.464mil        879mil  B        180.00 Res1           
+C11        CC1608-0603            706mil        767mil        706mil        767mil    739.464mil        767mil  B        180.00 Cap            
+C12        CC1608-0603            706mil        838mil        706mil        838mil    739.464mil        838mil  B        180.00 Cap            
+C13        CC1608-0603            564mil     908.99mil        564mil     908.99mil    530.536mil     908.99mil  B          0.00 Cap            
+C14        TC3216_(A)             751mil       1054mil        751mil       1054mil        751mil        999mil  B        360.00 Cap Pol1       
+C15        CC1608-0603            922mil       1019mil        922mil       1019mil        922mil   1052.464mil  B        270.00 Cap            
+R11        CC1608-0603            564mil       1055mil        564mil       1055mil    530.536mil       1055mil  B        360.00 Res1           
+R12        CC1608-0603            671mil       1019mil        671mil       1019mil        671mil    985.536mil  B         90.00 Res1           
+R13        CC1608-0603            529mil     801.99mil        529mil     801.99mil        529mil    768.526mil  B         90.00 Res1           
+R14        CC1608-0603            599mil     801.99mil        599mil     801.99mil        599mil    835.454mil  B        270.00 Res1           
+R15        CC1608-0603            564mil     983.99mil        564mil     983.99mil    597.464mil     983.99mil  B        180.00 Res1           
+R16        CC1608-0603            706mil        909mil        706mil        909mil    739.464mil        909mil  B        180.00 Res1           
+U6         MUA08A_L               625mil        975mil        625mil        975mil    663.386mil   1055.708mil  T        270.00 LM4864MM       
+L4         CC2012-0805            258mil       1009mil        258mil       1009mil        258mil   1046.402mil  B        270.00 Inductor       
+Y1         SG-3030JC              302mil    674.449mil        402mil        765mil        402mil        765mil  T        180.00 SG-3030JC 32.7680KB3
+U5         TQFP64_L               290mil       1114mil        290mil       1114mil    437.638mil    1331.52mil  T        270.00 S1V30120F01A100
+U4         SOT23-5                430mil        390mil        430mil        390mil    392.598mil     343.74mil  T        180.00 MIC5205YM5     
+U3         SOT23-5                820mil        390mil        820mil        390mil    782.598mil     343.74mil  T        180.00 MIC5205-3.3YM5 
+U2         TSSOP-8                625mil        389mil        625mil        389mil    554.626mil    427.386mil  T        360.00 PCA9306DCT     
+U1         TQFP64_L               960mil       1114mil        960mil       1114mil   1107.638mil    1331.52mil  T        270.00 MCF51QE128CLH  
+R18        CC1608-0603            267mil        519mil        267mil        519mil        267mil    552.464mil  B        270.00 Res1           
+R17        CC1608-0603            338mil        519mil        338mil        519mil        338mil    485.536mil  B         90.00 Res1           
+R10        CC1608-0603            513mil       1295mil        513mil       1295mil        513mil   1261.536mil  B         90.00 Res1           
+R9         CC1608-0603            867mil        307mil        867mil        307mil    900.464mil        307mil  B        180.00 Res1           
+R8         CC1608-0603            667mil       1303mil        667mil       1303mil        667mil   1336.464mil  B        270.00 Res1           
+R7         CC1608-0603            738mil       1303mil        738mil       1303mil        738mil   1336.464mil  B        270.00 Res1           
+R6         CC1608-0603            993mil       1160mil        993mil       1160mil        993mil   1126.536mil  B         90.00 Res1           
+R5         CC1608-0603            585mil        343mil        585mil        343mil    618.464mil        343mil  B        180.00 Res1           
+R4         CC1608-0603            585mil        413mil        585mil        413mil    618.464mil        413mil  B        180.00 Res1           
+R3         CC1608-0603            726mil        308mil        726mil        308mil    692.536mil        308mil  B        360.00 Res1           
+R2         CC1608-0603            726mil        378mil        726mil        378mil    692.536mil        378mil  B        360.00 Res1           
+R1         CC1608-0603            726mil        449mil        726mil        449mil    692.536mil        449mil  B        360.00 Res1           
+L3         INDC4516               841mil        835mil        841mil        835mil        841mil    760.196mil  B         90.00 Inductor       
+L2         INDC4516               168mil        520mil        168mil        520mil        168mil    445.196mil  B         90.00 Inductor       
+L1         INDC4516                71mil    520.001mil         71mil        520mil         71mil    445.198mil  B         90.00 Inductor       
+J3         HDR2X3_-_1-SIDED       1128mil       1230mil       1178mil       1330mil       1178mil       1330mil  B        270.00 NO FIT         
+J2         SJ-3523-SMT        872.268mil        628mil       1014mil        628mil    687.228mil     773.67mil  T        180.00 SJ-3523-SMT    
+J1         HDR1X6                 625mil         84mil        375mil         84mil        375mil         84mil  T        360.00 Header 6       
+D1         1201W                  625mil       1382mil        625mil       1382mil     571.85mil    1349.52mil  T        360.00 KPB-3025ESGC   
+C37        CC1608-0603             81mil       1060mil         81mil       1060mil         81mil   1093.464mil  B        270.00 Cap            
+C36        CC1608-0603            442mil       1295mil        442mil       1295mil        442mil   1261.536mil  B         90.00 Cap            
+C35        CC1608-0603            422mil        983mil        422mil        983mil    388.536mil        983mil  B        360.00 Cap            
+C34        CC1608-0603            432mil        850mil        432mil        850mil        432mil    816.536mil  B         90.00 Cap            
+C33        CC1608-0603            116mil       1308mil        116mil       1308mil    149.464mil       1308mil  B        180.00 Cap            
+C32        CC1608-0603            294mil       1295mil        294mil       1295mil        294mil   1261.536mil  B         90.00 Cap            
+C31        CC1608-0603            368mil        673mil        368mil        673mil    334.536mil        673mil  B        360.00 Cap            
+C30        CC1608-0603            368mil        744mil        368mil        744mil    334.536mil        744mil  B        360.00 Cap            
+C29        CC1608-0603            444mil        484mil        444mil        484mil    477.464mil        484mil  B        180.00 Cap            
+C28        TC3216_(A)             478mil        565mil        478mil        565mil        423mil        565mil  B        270.00 Cap Pol1       
+C27        CC1608-0603            444mil        343mil        444mil        343mil    477.464mil        343mil  B        180.00 Cap            
+C26        TC3216_(A)             841mil       1054mil        841mil       1054mil        841mil        999mil  B        360.00 Cap Pol1       
+C25        TC3216_(A)             168mil       1026mil        168mil       1026mil        168mil        971mil  B        360.00 Cap Pol1       
+C24        CC1608-0603            167mil        850mil        167mil        850mil        167mil    816.536mil  B         90.00 Cap            
+C23        CC1608-0603             85mil        850mil         85mil        850mil         85mil    816.536mil  B         90.00 Cap            
+C22        CC1608-0603            564mil       1126mil        564mil       1126mil    597.464mil       1126mil  B        180.00 Cap            
+C21        CC1608-0603            362mil        850mil        362mil        850mil        362mil    816.536mil  B         90.00 Cap            
+C20        CC1608-0603            291mil        850mil        291mil        850mil        291mil    816.536mil  B         90.00 Cap            
+C19        CC1608-0603            116mil       1166mil        116mil       1166mil    149.464mil       1166mil  B        180.00 Cap            
+C18        CC1608-0603            116mil       1237mil        116mil       1237mil    149.464mil       1237mil  B        180.00 Cap            
+C17        CC1608-0603            371mil       1295mil        371mil       1295mil        371mil   1261.536mil  B         90.00 Cap            
+C16        CC1608-0603            223mil       1295mil        223mil       1295mil        223mil   1261.536mil  B         90.00 Cap            
+C10        CC1608-0603            973mil        343mil        973mil        343mil        973mil    376.464mil  B        270.00 Cap            
+C9         CC1608-0603            867mil        449mil        867mil        449mil    900.464mil        449mil  B        180.00 Cap            
+C8         CC1608-0603            851mil       1302mil        851mil       1302mil        851mil   1268.536mil  B         90.00 Cap            
+C7         CC1608-0603            922mil       1302mil        922mil       1302mil        922mil   1268.536mil  B         90.00 Cap            
+C6         CC1608-0603           1028mil       1040mil       1028mil       1040mil   1061.464mil       1040mil  B        180.00 Cap            
+C5         TC3216_(A)            1062mil        960mil       1062mil        960mil       1007mil        960mil  B        270.00 Cap Pol1       
+C4         TC3216_(A)             833mil        529mil        833mil        529mil        778mil        529mil  B        270.00 Cap Pol1       
+C3         CC1608-0603            867mil        378mil        867mil        378mil    900.464mil        378mil  B        180.00 Cap            
+C2         CC1608-0603            993mil       1302mil        993mil       1302mil        993mil   1335.464mil  B        270.00 Cap            
+C1         CC1608-0603            585mil        484mil        585mil        484mil    551.536mil        484mil  B        360.00 Cap            
+

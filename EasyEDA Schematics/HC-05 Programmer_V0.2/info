@@ -1,0 +1,143 @@
+{
+  "uuid": "2257ebbc4c878072fbe82ee0282724d2",
+  "path": "Offline/HC-05%20Programmer_V0.2",
+  "name": "HC-05 Programmer_V0.2",
+  "content": "",
+  "created_at": "2025-03-21 18:49:59",
+  "updated_at": "2025-04-07 17:28:47",
+  "stick": "",
+  "documents": [
+    {
+      "uuid": "5207bdac95979987ea102f7786640f77",
+      "title": "Sheet_1",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "4c085c9fda554ac1aa22403036665477": 2,
+        "01c42026eb36475fbeabdb9e78e3e022": 1,
+        "ab1c47d316384c89aa3ace6c736bf8a9": 1
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "SPST Toggle",
+          1,
+          "TOGGLESWITCH SPDT / SPST WIRE",
+          "SW1",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "ArduinoUnoR3_Custom",
+          1,
+          "ARDUINO-UNO-R3-PINS",
+          "U1",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "HC-05",
+          2,
+          "WIRELESS-BLUETOOTH-HC-05",
+          "U2,U3",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ]
+      ],
+      "updateTime": 1742592587,
+      "createTime": 1742583870,
+      "histories": [],
+      "created_at": "2025-03-21 15:04:30",
+      "updated_at": "2025-03-21 17:29:47"
+    },
+    {
+      "uuid": "61e05083d6581dfabed32de9993db557",
+      "title": "PCB_HC-05 Programmer_V0.1",
+      "filename": "PCB_HC-05 Programmer_V0.1.json",
+      "description": "",
+      "docType": "3",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "fa7c468b9bb94e94971a42b5e2503376": 1,
+        "9b2188aae1cc412eab36130decbf666f": 2,
+        "4b2fd0ce5a96446fba8b1a868a17aee5": 1
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "SPST Toggle",
+          1,
+          "TOGGLESWITCH SPDT / SPST WIRE",
+          "SW1",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "ARDUINO UNO PINS",
+          1,
+          "UNO_R3;WO ARDUINO UNO",
+          "U1",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "HC-05",
+          2,
+          "WIRELESS-BLUETOOTH-HC-05",
+          "U2,U3",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ]
+      ],
+      "updateTime": 1744061327,
+      "createTime": 1742584652,
+      "histories": [],
+      "created_at": "2025-03-21 15:17:32",
+      "updated_at": "2025-04-07 17:28:47"
+    }
+  ],
+  "sort": [],
+  "title": "HC-05 Programmer_V0.2",
+  "foldername": "HC-05 Programmer_V0.2",
+  "schfilename": "HC-05 Programmer_V0.2.json",
+  "schfilemtime": 1742597399180.7312
+}

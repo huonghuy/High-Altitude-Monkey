@@ -1,0 +1,170 @@
+{
+  "uuid": "764dd3b4b5076a06a9c54e0f47c1f7b8",
+  "path": "Offline/HAM-VL_V1.3",
+  "name": "HAM-VL_V1.3",
+  "content": "",
+  "created_at": "2024-12-27 16:38:39",
+  "updated_at": "2025-03-19 22:21:57",
+  "stick": "",
+  "documents": [
+    {
+      "uuid": "73466425b6e14bd4a361ff766abfbe74",
+      "title": "Sheet_1",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "3264a39259e840a9a2f333f4121ec877": 1,
+        "f3c1d943bf1c43ffae55ac8c780d44ed": 2,
+        "aef0feb6c8424ca6974cf833867678fe": 1,
+        "c41aee20e09a4f0a80e00d50871bdcf4": 1
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "Colobus",
+          1,
+          "CONN-TH_5P-P2.54_C9900008095",
+          "CN1",
+          {
+            "Manufacturer Part": "XH2.54-5P",
+            "Manufacturer": "null",
+            "Supplier": "LCSC",
+            "Supplier Part": "C9900017328"
+          }
+        ],
+        [
+          "12kΩ",
+          1,
+          "RES-TH_BD2.2-L6.5-P10.50-D0.6",
+          "R1",
+          {
+            "Manufacturer Part": "MFR-25FTE52-12K",
+            "Manufacturer": "YAGEO(国巨)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C138213"
+          }
+        ],
+        [
+          "DS1809-010 10k Digital Pot",
+          1,
+          "PDIP-8_L9.3-W6.4-P2.54-LS7.6-BL",
+          "U1",
+          {
+            "Manufacturer Part": "DS1809-010+",
+            "Manufacturer": "ADI(亚德诺)/MAXIM(美信)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C1520933"
+          }
+        ],
+        [
+          "Camera(V)",
+          1,
+          "CONN-TH_2P-P2.50-XH2.54-2P",
+          "U2",
+          {
+            "Manufacturer Part": "XH-2P-2.54",
+            "Manufacturer": "null",
+            "Supplier": "LCSC",
+            "Supplier Part": "C9900003929"
+          }
+        ],
+        [
+          "Camera",
+          1,
+          "CONN-TH_2P-P2.50-XH2.54-2P",
+          "U3",
+          {
+            "Manufacturer Part": "XH-2P-2.54",
+            "Manufacturer": "null",
+            "Supplier": "LCSC",
+            "Supplier Part": "C9900003929"
+          }
+        ]
+      ],
+      "updateTime": 1742437317,
+      "createTime": 1735335519,
+      "histories": [],
+      "created_at": "2024-12-27 16:38:39",
+      "updated_at": "2025-03-19 22:21:57"
+    },
+    {
+      "uuid": "4b47a61b3e01958c57fe01e451544b96",
+      "puuid": "764dd3b4b5076a06a9c54e0f47c1f7b8",
+      "title": "PCB_HAM-VideoLynx",
+      "filename": "PCB_HAM-VideoLynx.json",
+      "description": "",
+      "docType": "3",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "666264fd42b84465ad050a9517cab8cf": 1,
+        "6c29cd7d733d45f9923fb69728562d0a": 1,
+        "b8fddb749d784eccb60a4acb65c94dfc": 2,
+        "61a55cacd5b14f109a68b11c09571ea3": 1
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "12k",
+          1,
+          "1.5K RESISTOR 1/2W",
+          "R1",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "DS1809-010 10k Digital Pot (Upside Down)",
+          1,
+          "PDIP-8_L9.3-W6.4-P2.54-LS7.6-BL",
+          "U1",
+          {
+            "Manufacturer Part": "DS1809-010+",
+            "Manufacturer": "ADI(亚德诺)/MAXIM(美信)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C1520933"
+          }
+        ],
+        [
+          "JST-XH",
+          1,
+          "JST-XH-04P",
+          "U2",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ]
+      ],
+      "updateTime": 1739837018,
+      "createTime": 1735345070,
+      "histories": [],
+      "created_at": "2024-12-27 19:17:50",
+      "updated_at": "2025-02-17 19:03:38"
+    }
+  ],
+  "sort": [],
+  "title": "HAM-VL_V1.3",
+  "foldername": "HAM-VL_V1.3",
+  "schfilename": "HAM-VL_V1.3.json",
+  "schfilemtime": 1742437317654
+}

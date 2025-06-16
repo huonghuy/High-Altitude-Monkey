@@ -1,0 +1,456 @@
+{
+  "uuid": "b3af50c9a65a4bec58e4845eeab964f5",
+  "path": "Offline/HAM-MC_V2.5",
+  "name": "HAM-MC_V2.5",
+  "content": "",
+  "created_at": "2025-03-21 18:51:31",
+  "updated_at": "2025-06-10 12:40:26",
+  "stick": "",
+  "documents": [
+    {
+      "uuid": "92945716657cffe3472d6e2d98294864",
+      "title": "PCB Mapping",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "0ac78fc4bf4943508c676584de4c94e2": 1,
+        "f3c1d943bf1c43ffae55ac8c780d44ed": 1,
+        "d278f40818f3477d88b42b11e44721dc": 4,
+        "4cc4de54c43b4e86a43c219c3e0a2d33": 4,
+        "f367c9043b9d696814add546ab641d32": 1,
+        "b72c555d705a47a480ac922f52001cba": 1,
+        "d8655e5f17b7485eac6b484ddf8a16f1": 1,
+        "f6a9cf8abbe645358b8b91b3f5bca354": 7
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "Alt Knob",
+          1,
+          "CONN-TH_C722693",
+          "CN1",
+          {
+            "Manufacturer Part": "XH插座1*3P间距2.5mm直针,",
+            "Manufacturer": "null",
+            "Supplier": "LCSC",
+            "Supplier Part": "C9900015994"
+          }
+        ],
+        [
+          "LCD Screen",
+          1,
+          "CONN-TH_C722693",
+          "CN2",
+          {
+            "Manufacturer Part": "XH插座1*3P间距2.5mm直针,",
+            "Manufacturer": "null",
+            "Supplier": "LCSC",
+            "Supplier Part": "C9900015994"
+          }
+        ],
+        [
+          "Audio Knob",
+          1,
+          "CONN-TH_C722693",
+          "CN3",
+          {
+            "Manufacturer Part": "XH插座1*3P间距2.5mm直针,",
+            "Manufacturer": "null",
+            "Supplier": "LCSC",
+            "Supplier Part": "C9900015994"
+          }
+        ],
+        [
+          "Video Knob",
+          1,
+          "CONN-TH_C722693",
+          "CN4",
+          {
+            "Manufacturer Part": "XH插座1*3P间距2.5mm直针,",
+            "Manufacturer": "null",
+            "Supplier": "LCSC",
+            "Supplier Part": "C9900015994"
+          }
+        ],
+        [
+          "TinyTrax RS232",
+          1,
+          "4PIN_2.54_MM_JST_XHP_JST_CONNECTOR_FOR_DC_SOCKET",
+          "CN5",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "Telemetry RS232",
+          1,
+          "4PIN_2.54_MM_JST_XHP_JST_CONNECTOR_FOR_DC_SOCKET",
+          "CN6",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "JST-XH-07-KH",
+          1,
+          "JST-XH-07-KH",
+          "CN7",
+          {
+            "Manufacturer Part": "JST-XH-04",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "JST-XH 2.54 4 PIN",
+          2,
+          "4PIN_2.54_MM_JST_XHP_JST_CONNECTOR_FOR_DC_SOCKET",
+          "CN8,CN9",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "6 Pin Header",
+          1,
+          "HDR-TH_6P-P2.54-V-F",
+          "P2",
+          {
+            "Manufacturer Part": "2.54-1*6P母",
+            "Manufacturer": "BOOMELE(博穆精密)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C40877"
+          }
+        ],
+        [
+          "820Ω",
+          7,
+          "R0402",
+          "R1,R2,R3,R4,R5,R6,R7",
+          {
+            "Manufacturer Part": "RC0402JR-07820RL",
+            "Manufacturer": "YAGEO(国巨)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C137837"
+          }
+        ],
+        [
+          "MEGA2560PRO-EMBED",
+          1,
+          "MEGA2560PRO-EMBED",
+          "U1",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "LM2596S 5V",
+          1,
+          "LM2596:YAAJ_DCDC_STEPDOWN_LM2596",
+          "U4",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "ABORT",
+          1,
+          "CONN-TH_2P-P2.50-XH2.54-2P",
+          "U6",
+          {
+            "Manufacturer Part": "XH-2P-2.54",
+            "Manufacturer": "null",
+            "Supplier": "LCSC",
+            "Supplier Part": "C9900003929"
+          }
+        ]
+      ],
+      "updateTime": 1749573626,
+      "createTime": 1735343001,
+      "histories": [],
+      "created_at": "2024-12-27 18:43:21",
+      "updated_at": "2025-06-10 12:40:26"
+    },
+    {
+      "uuid": "fac14bfac0664bc8d77fe51d1da9d693",
+      "title": "PCB_HAM- Mission Control",
+      "filename": "PCB_HAM- Mission Control.json",
+      "description": "",
+      "docType": "3",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "fafd024f554e426eb74cf4a204aa88b0": 7,
+        "d31758622ca94737bb0b24586208c7ee": 1,
+        "4c47aa7c333947f08ddb2004c8a40979": 1,
+        "84f1ed3c8ee94504833047c26b4d21a2": 1,
+        "1dd6cffe45da451c9c3d3d0f0bc142d1": 4,
+        "b8fddb749d784eccb60a4acb65c94dfc": 1,
+        "8583a8bf067a439a96f266ad11cbb04d": 4,
+        "2628b82781ba414286ff4e1cb4b49372": 1
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "Knob",
+          3,
+          "CONN-TH_C722693",
+          "CN1,CN3,CN4",
+          {
+            "Manufacturer Part": "XH插座1*3P间距2.5mm直针,",
+            "Manufacturer": "null",
+            "Supplier": "LCSC",
+            "Supplier Part": "C9900015994"
+          }
+        ],
+        [
+          "LCD Screen",
+          1,
+          "CONN-TH_C722693",
+          "CN2",
+          {
+            "Manufacturer Part": "XH插座1*3P间距2.5mm直针,",
+            "Manufacturer": "null",
+            "Supplier": "LCSC",
+            "Supplier Part": "C9900015994"
+          }
+        ],
+        [
+          "6PINPINS COPY",
+          1,
+          "6PIN-PINS",
+          "HDR_1",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "JST-XH 2.54 8 PIN",
+          1,
+          "8PIN_2.54_MM_JST_XHP_JST_CONNECTOR",
+          "J18",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "JST-XH 2.54 4 PIN",
+          2,
+          "4PIN_2.54_MM_JST_XHP_JST_CONNECTOR_FOR_DC_SOCKET",
+          "J19,J20",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "LM2596 6V",
+          1,
+          "DC-DC-STEP-DOWN-LM2596",
+          "P2",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "IRF9540N",
+          1,
+          "IRF9540N",
+          "Q1",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "2N3904-Transistor",
+          1,
+          "S8050 TO-92",
+          "Q2",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "TRANSISTOR",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "2.2k",
+          1,
+          "3.3K RESISTOR 1/2W",
+          "R8",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "1.5k",
+          1,
+          "3.3K RESISTOR 1/2W",
+          "R9",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "33",
+          1,
+          "3.3K RESISTOR 1/2W",
+          "R20",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "2.8k",
+          1,
+          "RES-TH_BD4.5-L11.5-P15.50-D0.7",
+          "R10",
+          {
+            "Manufacturer Part": "MF1W-2.7KΩ±1% T",
+            "Manufacturer": "CCO(千志电子)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C119489"
+          }
+        ],
+        [
+          "820Ω",
+          7,
+          "RES-TH_BD5.0-L15.5-P19.50-D0.7",
+          "R11,R13,R14,R15,R16,R17,R19",
+          {
+            "Manufacturer Part": "MF3WS-820Ω±1%T",
+            "Manufacturer": "华星机电",
+            "Supplier": "LCSC",
+            "Supplier Part": "C714179"
+          }
+        ],
+        [
+          "1.8k",
+          1,
+          "RES-TH_BD3.2-L9.0-P13.00-D0.5",
+          "R12",
+          {
+            "Manufacturer Part": "MF1/2W-1.8KΩ±1%T52",
+            "Manufacturer": "华星机电",
+            "Supplier": "LCSC",
+            "Supplier Part": "C714070"
+          }
+        ],
+        [
+          "22",
+          1,
+          "RES-TH_BD2.7-L6.2-P10.20-D0.4",
+          "R18",
+          {
+            "Manufacturer Part": "CR1/4W-20Ω±5%-ST52",
+            "Manufacturer": "VO(翔胜)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C2894671"
+          }
+        ],
+        [
+          "MEGA2560PRO-EMBED",
+          1,
+          "MEGA2560PRO-EMBED",
+          "U4",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "ABORT",
+          1,
+          "CONN-TH_2P-P2.50-XH2.54-2P",
+          "U6",
+          {
+            "Manufacturer Part": "XH-2P-2.54",
+            "Manufacturer": "null",
+            "Supplier": "LCSC",
+            "Supplier Part": "C9900003929"
+          }
+        ],
+        [
+          "TTL_to_RS232",
+          2,
+          "RS232_SP3232_TTL_TO_RS232_MODULE",
+          "U7,U8",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ]
+      ],
+      "updateTime": 1749067863,
+      "createTime": 1735572969,
+      "histories": [],
+      "created_at": "2024-12-30 10:36:09",
+      "updated_at": "2025-06-04 16:11:03"
+    }
+  ],
+  "sort": [
+    "539859d51f23accde775768d75113bd1",
+    "92945716657cffe3472d6e2d98294864"
+  ],
+  "title": "HAM-MC_V2.5",
+  "foldername": "HAM-MC_V2.5",
+  "schfilename": "HAM-MC_V2.5.json",
+  "schfilemtime": 1749573626411
+}

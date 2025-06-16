@@ -1,0 +1,141 @@
+{
+  "uuid": "76bd70388709602f3457097943a08329",
+  "path": "Offline/HAM-LM_V2.6E",
+  "name": "HAM-LM_V2.6E",
+  "content": "",
+  "created_at": "2025-03-19 12:07:29",
+  "updated_at": "2025-03-19 23:57:21",
+  "stick": "",
+  "documents": [
+    {
+      "uuid": "6e3ad90308beca6fb63cacfdf6cc05a2",
+      "title": "Sheet_1",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "6e44e5781922478092af80d6740330ab": 1,
+        "66f6197eba754dcf99950c5b57f6fb3b": 1
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "JST-XH2.5 (TTL_to_RS232)",
+          1,
+          "4PIN_2.54_MM_JST_XHP_JST_CONNECTOR_FOR_DC_SOCKET",
+          "CN1",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "ESP32-DevKitC-32E",
+          1,
+          "ESP32-DEVKITC-32E",
+          "U1",
+          {
+            "Manufacturer Part": "ESP32-DevKitC-32E",
+            "Manufacturer": "Espressif Systems",
+            "Supplier": "Mouser",
+            "Supplier Part": "ESP32-DevKitC-32E"
+          }
+        ]
+      ],
+      "updateTime": 1742443041,
+      "createTime": 1735343316,
+      "histories": [],
+      "created_at": "2024-12-27 18:48:36",
+      "updated_at": "2025-03-19 23:57:21"
+    },
+    {
+      "uuid": "c28bbdf4e1acd41f52972edb4da3ae76",
+      "title": "ESP_LM_ESP",
+      "filename": "ESP_LM_ESP.json",
+      "description": "",
+      "docType": "3",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "8583a8bf067a439a96f266ad11cbb04d": 1,
+        "d824d754bad341329a06ad732a7a6a49": 1
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "MEGA2560PRO-EMBED",
+          1,
+          "MEGA2560PRO-EMBED",
+          "MEGA2560PRO",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "HC-05_version_2",
+          1,
+          "HC-05",
+          "U5",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "Bi-Directional Logic Level Converter",
+          1,
+          "BOB-12009 CORRECTED",
+          "U6",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "Sparkfun",
+            "Supplier Part": "BOB-12009"
+          }
+        ],
+        [
+          "JST-XH2.5 (TTL_to_RS232)",
+          1,
+          "4PIN_2.54_MM_JST_XHP_JST_CONNECTOR_FOR_DC_SOCKET",
+          "J1",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ]
+      ],
+      "updateTime": 1742442828,
+      "createTime": 1735343485,
+      "histories": [],
+      "created_at": "2024-12-27 18:51:25",
+      "updated_at": "2025-03-19 23:53:48"
+    }
+  ],
+  "sort": [],
+  "title": "HAM-LM_V2.6E",
+  "foldername": "HAM-LM_V2.6E",
+  "schfilename": "HAM-LM_V2.6E.json",
+  "schfilemtime": 1742443041587
+}

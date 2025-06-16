@@ -1,0 +1,421 @@
+{
+  "uuid": "107606aaa4f49cb42ba5a0b652bf4b58",
+  "path": "Offline/HAM_V2.2",
+  "name": "HAM_V2.2",
+  "content": "",
+  "created_at": "2024-12-03 15:02:50",
+  "updated_at": "2025-03-19 11:25:20",
+  "stick": "",
+  "documents": [
+    {
+      "uuid": "1e2aa6d446fcd1be7e7750c93b29e018",
+      "title": "HAM 2015",
+      "description": "Original HAM Wiring Diagram",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "565f272fd99844638eafbf17bca6538a": 1,
+        "de03469112d5463cbe9ae676b767a815": 1,
+        "6d77b4b7d360427ca53c7a92915d26a2": 1,
+        "b39ea35376de459c85369b25913afe0a": 1,
+        "190efd64cab34ec3900a21d217c8530f": 6,
+        "85168ea9b69b40349c8e80ef606b7077": 3,
+        "251a467f2cb446fa93e355311d46ede8": 1,
+        "0ac78fc4bf4943508c676584de4c94e2": 1,
+        "d278f40818f3477d88b42b11e44721dc": 3,
+        "9aff8826721641b5a4d4098b16422733": 2,
+        "633281af68f646c3b0f45cf12c2b6232": 1,
+        "c918c0d3fde5491fa899b9f0d3623d9a": 1,
+        "aef0feb6c8424ca6974cf833867678fe": 1,
+        "82bc68d6e7c14757bce3f4c27471dd76": 1
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "Colobus",
+          1,
+          "CONN-TH_5P-P2.54_C9900008095",
+          "CN1",
+          {
+            "Manufacturer Part": "XH2.54-5P",
+            "Manufacturer": "null",
+            "Supplier": "LCSC",
+            "Supplier Part": "C9900017328"
+          }
+        ],
+        [
+          "VideoLynx Fan",
+          1,
+          "CONN-TH_C722693",
+          "CN2",
+          {
+            "Manufacturer Part": "XH插座1*3P间距2.5mm直针,",
+            "Manufacturer": "null",
+            "Supplier": "LCSC",
+            "Supplier Part": "C9900015994"
+          }
+        ],
+        [
+          "VideoLynx LM135H",
+          1,
+          "CONN-TH_C722693",
+          "CN3",
+          {
+            "Manufacturer Part": "XH插座1*3P间距2.5mm直针,",
+            "Manufacturer": "null",
+            "Supplier": "LCSC",
+            "Supplier Part": "C9900015994"
+          }
+        ],
+        [
+          "Int LM135H",
+          1,
+          "CONN-TH_C722693",
+          "CN4",
+          {
+            "Manufacturer Part": "XH插座1*3P间距2.5mm直针,",
+            "Manufacturer": "null",
+            "Supplier": "LCSC",
+            "Supplier Part": "C9900015994"
+          }
+        ],
+        [
+          "LM2596 5V",
+          1,
+          "DC-DC-STEP-DOWN-LM2596",
+          "P1",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "LM2596 6V",
+          1,
+          "DC-DC-STEP-DOWN-LM2596",
+          "P2",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "LM2596 12V",
+          1,
+          "DC-DC-STEP-DOWN-LM2596",
+          "P3",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "12V DC Barrel",
+          1,
+          "DC-BARREL-JACK-FEMALE-FOOTPRINT",
+          "P4",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "PowerPole",
+          1,
+          "POWERPOLELIB",
+          "P5",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "TME",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "IRF9540N",
+          1,
+          "IRF9540N",
+          "Q1",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "2N2904-Transistor",
+          1,
+          "S8050 TO-92",
+          "Q2",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "TRANSISTOR",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "1.3k",
+          2,
+          "1.5K RESISTOR 1/2W",
+          "R1,R2",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "3.3k",
+          1,
+          "1.5K RESISTOR 1/2W",
+          "R3",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "3.9k",
+          1,
+          "1.5K RESISTOR 1/2W",
+          "R4",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "8.2k",
+          1,
+          "1.5K RESISTOR 1/2W",
+          "R5",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "10k",
+          1,
+          "1.5K RESISTOR 1/2W",
+          "R6",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "10k pot",
+          2,
+          "10K POT",
+          "RP1,RP2",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "LCSC",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "SPST Toggle",
+          1,
+          "TOGGLE SWITCH SPDT RED 3 PIN ON-OFF-ON 3 SPDT SMALL AC 6A/125V 3A/250V",
+          "S1",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "MEGA2560PRO-EMBED",
+          1,
+          "MEGA2560PRO-EMBED",
+          "U1",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "Bi-Directional Logic Level Converter",
+          1,
+          "BOB-12009 CORRECTED",
+          "U2",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "Sparkfun",
+            "Supplier Part": "BOB-12009"
+          }
+        ],
+        [
+          "HC-05_version_2",
+          1,
+          "HC-05",
+          "U3",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "PCA9685",
+          1,
+          "PCA9685",
+          "U4",
+          {
+            "Manufacturer Part": "PCA9685_module",
+            "Manufacturer": "adafruit",
+            "Supplier": "adafruit",
+            "Supplier Part": ""
+          }
+        ]
+      ],
+      "updateTime": 1735577011,
+      "createTime": 1733256171,
+      "histories": [],
+      "created_at": "2024-12-03 15:02:51",
+      "updated_at": "2024-12-30 11:43:31"
+    },
+    {
+      "uuid": "5d9afedf3a31f93676bce3b6ecffe0a2",
+      "puuid": "c022b297b4e6696d4b91038323d30e1e",
+      "title": "PCB_HAM",
+      "filename": "PCB_HAM.json",
+      "description": "",
+      "docType": "3",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "ff82e04fb58842908fc7da90d3685879": 3,
+        "1dd6cffe45da451c9c3d3d0f0bc142d1": 3,
+        "9da5dd395a114ae1936d3dfde45d5e0e": 1,
+        "adc054ca2ef446a1be28b06cae3a2e6f": 1,
+        "7cbbeec7f96b4e9dbd587979c6cb306f": 1,
+        "892c282e0bb341fd908d86b22c5ac109": 6,
+        "2628b82781ba414286ff4e1cb4b49372": 1,
+        "48123b51c76e4d55b3fcd7c279e88b41": 1,
+        "eda7462277d54b459ffe1ea322a5a2b5": 1,
+        "0edf0a8c64c743b5adb8f859b6e3e830": 1,
+        "6c29cd7d733d45f9923fb69728562d0a": 1,
+        "15071b6f0b0240a5b36fd6d48300c042": 1,
+        "6a734156f3a14e718a40b4cd166e2cdf": 2,
+        "f010130bfe7148abb8cc6e8976b973cf": 1
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "ELEGOO MEGA 2560 R3",
+          1,
+          "ELEGOO MEGA 2560 R3 PAD",
+          "U1",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "PCA9685",
+          1,
+          "PCA9685",
+          "U2",
+          {
+            "Manufacturer Part": "PCA9685_module",
+            "Manufacturer": "adafruit",
+            "Supplier": "adafruit",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "Bi-Directional Logic Level Converter",
+          1,
+          "BOB-12009 CORRECTED",
+          "U3",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "Sparkfun",
+            "Supplier Part": "BOB-12009"
+          }
+        ],
+        [
+          "Arduino BlueTooth CH-06",
+          1,
+          "BLUETOOTH",
+          "U4",
+          {
+            "Manufacturer Part": "BlueTooth CH-06",
+            "Manufacturer": "",
+            "Supplier": "China",
+            "Supplier Part": "ZS-040"
+          }
+        ],
+        [
+          "LM2596_DC-DC_Buck_Converter",
+          3,
+          "LM2596 DC-DC BUCK CONVERTER ADJUSTABLE POWER SUPPLY STEP DOWN MODULE",
+          "U5,U6,U7",
+          {
+            "Manufacturer Part": "New SchematicLib",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": "LM2596_converteer"
+          }
+        ]
+      ],
+      "updateTime": 1735665856,
+      "createTime": 1733437141,
+      "histories": [],
+      "created_at": "2024-12-05 17:19:01",
+      "updated_at": "2024-12-31 12:24:16"
+    }
+  ],
+  "sort": [
+    "5bd9eaa0fea16e183e4c25c18ed3ec6e",
+    "bfed7df46ff12f417887445b2dc4cbc9"
+  ],
+  "title": "HAM_V2.2",
+  "foldername": "HAM_V2.2",
+  "schfilename": "HAM_V2.2.json",
+  "schfilemtime": 1735577011655
+}

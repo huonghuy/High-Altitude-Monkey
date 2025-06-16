@@ -1,9 +1,0 @@
-Downloads:
-1.	Ch340 Driver (If Using Mega Mini)	
-    a.	https://learn.sparkfun.com/tutorials/how-to-install-ch340-drivers/all
-2.	Adafruit Unified Sensor Library
-    a.	https://github.com/adafruit/Adafruit_Sensor
-3.	Adafruit BME280 Library
-    a.	https://github.com/adafruit/Adafruit_BME280_Library
-4.	Adafruit BusIO
-    a.	https://github.com/adafruit/Adafruit_BusIO

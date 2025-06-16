@@ -1,0 +1,173 @@
+{
+  "uuid": "905335e73526496d5025291094e9ddb7",
+  "path": "Offline/HAM-Mission%20Control%20Full",
+  "name": "HAM-Mission Control Full",
+  "content": "",
+  "created_at": "2024-12-29 19:49:01",
+  "updated_at": "2025-04-08 12:24:24",
+  "stick": "",
+  "documents": [
+    {
+      "uuid": "b015954aee62b937d77611664df032dd",
+      "title": "Master Mapping",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "f88f88c7be3e426b991f5e41893077ac": 1,
+        "4bca882b9b884909b65540a2a84b55e2": 2,
+        "f920d7d9c09b4f5ab94ef2fec6178fec": 1,
+        "a1f84b88fad84ff3aaff014319df3739": 1,
+        "6dcfe607cb744ee4bd0e2ad7ca2beb8a": 16,
+        "af66db16ae014a398b9dae364d3df2a5": 3,
+        "b0248eb51e084227889f2cb84eab79c4": 7,
+        "2f22325c838f493dbe1dc2c19c6ad0c1": 1,
+        "85168ea9b69b40349c8e80ef606b7077": 1
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "NO",
+          4,
+          "",
+          "EMIC1,LCD,SWITCH1,SWITCHEATONMEXICO",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "SWITCH_LED_16MM_4PIN",
+          16,
+          "SWITCH_LED_16MM_4PIN",
+          "J1,J2,J3,J4,J5,J6,J7,J8,J9,J10,J11,J12,J13,J14,J15,J16",
+          {
+            "Manufacturer Part": "16mm LED",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "DC Power Jack",
+          1,
+          "VERTICAL_DC_POWER_JACK_SLOT",
+          "J17",
+          {
+            "Manufacturer Part": "DC-005",
+            "Manufacturer": "",
+            "Supplier": "Lsgoodcare",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "LM2596 6V",
+          1,
+          "DC-DC-STEP-DOWN-LM2596",
+          "P2",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "3P PH2.54",
+          3,
+          "CONN-TH_3P-P2.50_3PIN",
+          "PANELMOUNT,PANELMOUNT1,PANELMOUNT2",
+          {
+            "Manufacturer Part": "3P PH2.54",
+            "Manufacturer": "",
+            "Supplier": "LCSC",
+            "Supplier Part": "C9900006188"
+          }
+        ],
+        [
+          "820",
+          7,
+          "R0603",
+          "R1,R2,R3,R4,R5,R6,R7",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "LED TOGGLE",
+          1,
+          "NONE",
+          "TOGGLERED",
+          {
+            "Manufacturer Part": "RED",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "Arduino Mega 2560 Rev3",
+          1,
+          "ARDUINO MEGA 2560 REV3",
+          "U1",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "Arduino",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "TTL_to_RS232",
+          2,
+          "RS232_SP3232_TTL_TO_RS232_MODULE",
+          "U2,U3",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "DC-DC",
+          1,
+          "DC-DC36",
+          "U5",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ]
+      ],
+      "updateTime": 1744129464,
+      "createTime": 1735519761,
+      "histories": [],
+      "created_at": "2024-12-29 19:49:21",
+      "updated_at": "2025-04-08 12:24:24"
+    }
+  ],
+  "sort": [
+    "539859d51f23accde775768d75113bd1",
+    "2bb199532cccb0855b67b7c92381eed1",
+    "b015954aee62b937d77611664df032dd"
+  ],
+  "title": "HAM-Mission Control Full",
+  "foldername": "HAM-Mission Control Full",
+  "schfilename": "HAM-Mission Control Full.json",
+  "schfilemtime": 1744129464727
+}
