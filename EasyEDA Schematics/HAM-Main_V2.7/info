@@ -4,7 +4,7 @@
   "name": "HAM-Main_V2.7",
   "content": "",
   "created_at": "2025-03-21 18:51:08",
-  "updated_at": "2025-06-16 03:47:38",
+  "updated_at": "2025-07-02 20:20:07",
   "stick": "",
   "documents": [
     {
@@ -16,24 +16,32 @@
       "thumb": "/images/thumb-default.png",
       "components": {
         "0ac78fc4bf4943508c676584de4c94e2": 1,
-        "d278f40818f3477d88b42b11e44721dc": 3,
+        "d278f40818f3477d88b42b11e44721dc": 2,
         "6a557877d1e74db48f5795200ca0fbff": 1,
-        "4646a3707be04608b3002bf7f813700b": 2,
-        "dbb834c68a0046a4b3ab8a3bac9fcf4f": 1,
-        "b3763100e0824b89a830d0540dcb637d": 1,
-        "377835ddd6f9452b8e9c5138cea71c72": 1,
-        "65f2c9a34b424b7d8f87e3b8a4832822": 1,
         "01c42026eb36475fbeabdb9e78e3e022": 1,
-        "d8655e5f17b7485eac6b484ddf8a16f1": 3,
+        "d8655e5f17b7485eac6b484ddf8a16f1": 2,
         "9f8575c37cb34a66be8bb40eaddd655c": 2,
-        "1545f4680e1c4b4292f004b73bf10ee0": 1,
         "5e39ae4cb7d14817a5467bc2a8b7d56c": 1,
         "37888c65e7d04ce2a91c40d750e646dc": 1,
         "0ef6bad3b9b74477980ff46956253608": 1,
         "6e44e5781922478092af80d6740330ab": 1,
-        "cd72761fbc6b4865b6721b4bfb8261ff": 1,
-        "0b0342b6d4994b058fbb5ff223a0e60d": 1,
-        "4c085c9fda554ac1aa22403036665477": 1
+        "4c085c9fda554ac1aa22403036665477": 1,
+        "e67ef56922b646d492a7c782cbdaf337": 1,
+        "4646a3707be04608b3002bf7f813700b": 2,
+        "377835ddd6f9452b8e9c5138cea71c72": 1,
+        "0d31667926574e309df9e094f5d13f9c": 1,
+        "37223c148876442a82c00144b2fa1dad": 1,
+        "3bd9cf8f98714ba78567259f221041d8": 1,
+        "8dba574607784d7cae2dc64b0e922d1b": 1,
+        "e01af80d11714edb9aa91091647ed866": 1,
+        "a7a0e276dadd4f8097422d2afc2e1b9c": 5,
+        "650248ab1d9446939276bcc4dbf4aecf": 1,
+        "0f41c40cf545b8f53a8a866989c9e71c": 1,
+        "ce56567d72754b92a9b703e72b370f12": 1,
+        "2ae76ddc48a94e23ace114020bd81304": 1,
+        "da8d6730070e47258acf4ab8a7d21870": 1,
+        "980e1971d9674b71a5433827aaf5565f": 1,
+        "efae4c118f46499eb094c621cf128b58": 1
       },
       "BOM": [
         [
@@ -42,6 +50,90 @@
           "Package",
           "Components",
           "CustomPara"
+        ],
+        [
+          "3x 15uF/50V",
+          1,
+          "CASE-A_3216",
+          "C1",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "15uF/50V",
+          2,
+          "CASE-A_3216",
+          "C2,C3",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "470nF",
+          1,
+          "C1206",
+          "C4",
+          {
+            "Manufacturer Part": "0.47uF/100V",
+            "Manufacturer": "SAMSUNG(三星)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C24140"
+          }
+        ],
+        [
+          "1nF",
+          1,
+          "C1206",
+          "C5",
+          {
+            "Manufacturer Part": "TCC1206X7R102M102FT",
+            "Manufacturer": "CCTC(三环)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C5448988"
+          }
+        ],
+        [
+          "C1206",
+          1,
+          "C1206",
+          "C6",
+          {
+            "Manufacturer Part": "C1206",
+            "Manufacturer": "null",
+            "Supplier": "LCSC",
+            "Supplier Part": "C9900018280"
+          }
+        ],
+        [
+          "1u",
+          1,
+          "CASE-A_3216",
+          "C7",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "2x 180 uF/16V",
+          1,
+          "CASE-A_3216",
+          "C8",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
         ],
         [
           "JST-XH2.5",
@@ -56,7 +148,7 @@
           }
         ],
         [
-          "VideoLynx Fan",
+          "VideoLynx LM135H",
           1,
           "CONN-TH_C722693",
           "CN2",
@@ -68,7 +160,7 @@
           }
         ],
         [
-          "VideoLynx LM135H",
+          "Int LM135H",
           1,
           "CONN-TH_C722693",
           "CN3",
@@ -80,22 +172,34 @@
           }
         ],
         [
-          "Int LM135H",
+          "VS-6TQ045SPBF",
           1,
-          "CONN-TH_C722693",
-          "CN4",
+          "TO-263-2_L10.0-W9.1-P5.08-LS15.2-BR",
+          "D1",
           {
-            "Manufacturer Part": "XH插座1*3P间距2.5mm直针,",
-            "Manufacturer": "null",
+            "Manufacturer Part": "VS-6TQ045SPBF",
+            "Manufacturer": "VISHAY(威世)",
             "Supplier": "LCSC",
-            "Supplier Part": "C9900015994"
+            "Supplier Part": "C145462"
+          }
+        ],
+        [
+          "22uH",
+          1,
+          "L1206",
+          "L1",
+          {
+            "Manufacturer Part": "CL321611T-220K-N",
+            "Manufacturer": "chilisin(奇力新)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C285979"
           }
         ],
         [
           "DC barrel jack 2.1mm",
           1,
           "DC BARREL JACK 2.1",
-          "J1",
+          "P1",
           {
             "Manufacturer Part": "",
             "Manufacturer": "",
@@ -107,7 +211,7 @@
           "PowerPole",
           1,
           "POWERPOLE 1327 PAIR HORIZONTAL",
-          "P5",
+          "P2",
           {
             "Manufacturer Part": "1327",
             "Manufacturer": "Anderson",
@@ -145,10 +249,10 @@
           "R1206",
           "R4",
           {
-            "Manufacturer Part": "RMC12063.921%N",
+            "Manufacturer Part": "RMC12063.9K5%N",
             "Manufacturer": "Tyohm(幸亚电阻)",
             "Supplier": "LCSC",
-            "Supplier Part": "C269620"
+            "Supplier Part": "C269606"
           }
         ],
         [
@@ -157,10 +261,10 @@
           "R1206",
           "R5",
           {
-            "Manufacturer Part": "WR12X8201FTL",
-            "Manufacturer": "Walsin(华新科)",
+            "Manufacturer Part": "AECR1206F8K20K9",
+            "Manufacturer": "RESI(开步睿思)",
             "Supplier": "LCSC",
-            "Supplier Part": "C171131"
+            "Supplier Part": "C352028"
           }
         ],
         [
@@ -169,34 +273,46 @@
           "R1206",
           "R6,R7,R8",
           {
-            "Manufacturer Part": "RMC120610K1%N",
-            "Manufacturer": "Tyohm(幸亚电阻)",
+            "Manufacturer Part": "RC1206JR-0710KL",
+            "Manufacturer": "YAGEO(国巨)",
             "Supplier": "LCSC",
-            "Supplier Part": "C269766"
+            "Supplier Part": "C136460"
           }
         ],
         [
           "2kΩ",
           1,
-          "R0402",
+          "R1206",
           "R9",
           {
-            "Manufacturer Part": "AC0402FR-7W2KL",
-            "Manufacturer": "YAGEO(国巨)",
+            "Manufacturer Part": "RMC12062K1%N",
+            "Manufacturer": "Tyohm(幸亚电阻)",
             "Supplier": "LCSC",
-            "Supplier Part": "C6491804"
+            "Supplier Part": "C325895"
           }
         ],
         [
           "1kΩ",
           1,
-          "R0402",
+          "R1206",
           "R10",
           {
-            "Manufacturer Part": "RC0402JR-071KL",
+            "Manufacturer Part": "RC1206FR-7W1KL",
             "Manufacturer": "YAGEO(国巨)",
             "Supplier": "LCSC",
-            "Supplier Part": "C105637"
+            "Supplier Part": "C859155"
+          }
+        ],
+        [
+          "5.6kΩ",
+          1,
+          "R1206",
+          "R11",
+          {
+            "Manufacturer Part": "1206W4F5601T5E",
+            "Manufacturer": "UNI-ROYAL(厚声)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C18028"
           }
         ],
         [
@@ -260,6 +376,18 @@
           }
         ],
         [
+          "2N3904",
+          1,
+          "TO-92-3_L4.8-W3.7-P1.27-L-1",
+          "U5",
+          {
+            "Manufacturer Part": "2N3904RLRAH",
+            "Manufacturer": "null",
+            "Supplier": "LCSC",
+            "Supplier Part": "C3196005"
+          }
+        ],
+        [
           "LM2596S 12V",
           1,
           "LM2596:YAAJ_DCDC_STEPDOWN_LM2596",
@@ -272,47 +400,35 @@
           }
         ],
         [
-          "LM2596S 5V",
+          "IRF9540N_FLAT",
           1,
-          "LM2596:YAAJ_DCDC_STEPDOWN_LM2596",
-          "U7",
-          {
-            "Manufacturer Part": "",
-            "Manufacturer": "",
-            "Supplier": "",
-            "Supplier Part": ""
-          }
-        ],
-        [
-          "2N3905",
-          1,
-          "TO-92-3_L4.6-W3.6-P1.30-L_2N3904",
+          "IRF9540N_FLAT",
           "U8",
           {
-            "Manufacturer Part": "2N3905",
-            "Manufacturer": "onsemi(安森美)",
-            "Supplier": "LCSC",
-            "Supplier Part": "C7175469"
-          }
-        ],
-        [
-          "IRF9540N_FLAT",
-          1,
-          "IRF9540N_FLAT",
-          "U9",
-          {
             "Manufacturer Part": "",
             "Manufacturer": "",
             "Supplier": "",
             "Supplier Part": ""
+          }
+        ],
+        [
+          "LM2679S-12/NOPB",
+          1,
+          "TO-263-7_L10.2-W8.6-P1.27-LS14.4-TL",
+          "U9",
+          {
+            "Manufacturer Part": "LM2679S-12/NOPB",
+            "Manufacturer": "TI(德州仪器)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C1355302"
           }
         ]
       ],
-      "updateTime": 1750060058,
+      "updateTime": 1751502001,
       "createTime": 1733256171,
       "histories": [],
       "created_at": "2024-12-03 15:02:51",
-      "updated_at": "2025-06-16 03:47:38"
+      "updated_at": "2025-07-02 20:20:01"
     },
     {
       "uuid": "c6321a449ab37fa8dd3c41a9525d8546",
@@ -323,19 +439,23 @@
       "master": "",
       "thumb": "/images/thumb-default.png",
       "components": {
-        "fafd024f554e426eb74cf4a204aa88b0": 2,
+        "ce25118ef0b041b8a773e71ca28ae65d": 5,
+        "33b45067c61f4902b29f98cdc745802b": 1,
+        "4046b93f65234a66a8a51dd298e5edd2": 1,
+        "8e9b1be4bcb6420dbd1d09bf04b02792": 9,
+        "fa27934c1ef4447eaad1e20c7979ff38": 1,
+        "7bdec8012728462a85919a4d0d033579": 3,
+        "1dd6cffe45da451c9c3d3d0f0bc142d1": 2,
+        "cc5376d7a7ae44a2878647910624926a": 1,
+        "12de180cdfc347869731d4858edd2616": 1,
+        "b451103061be4ac2a466ecf1087b6220": 1,
+        "492390c3167d405eadbeccd6f6144a55": 1,
+        "8594fe226bae45ad9c17f6604d11b915": 1,
         "9b2188aae1cc412eab36130decbf666f": 1,
         "8583a8bf067a439a96f266ad11cbb04d": 1,
-        "12de180cdfc347869731d4858edd2616": 1,
-        "cc5376d7a7ae44a2878647910624926a": 1,
-        "8e9b1be4bcb6420dbd1d09bf04b02792": 6,
         "4410579006934680bb8a24bf0bc7ee64": 2,
-        "edab39acf98d435da29acf35e601d478": 1,
-        "b451103061be4ac2a466ecf1087b6220": 1,
-        "d31758622ca94737bb0b24586208c7ee": 3,
+        "d31758622ca94737bb0b24586208c7ee": 2,
         "fa7c468b9bb94e94971a42b5e2503376": 1,
-        "8594fe226bae45ad9c17f6604d11b915": 1,
-        "1dd6cffe45da451c9c3d3d0f0bc142d1": 3,
         "2628b82781ba414286ff4e1cb4b49372": 1
       },
       "BOM": [
@@ -407,11 +527,11 @@
           }
         ]
       ],
-      "updateTime": 1749649745,
+      "updateTime": 1751502007,
       "createTime": 1733437141,
       "histories": [],
       "created_at": "2024-12-05 17:19:01",
-      "updated_at": "2025-06-11 09:49:05"
+      "updated_at": "2025-07-02 20:20:07"
     }
   ],
   "sort": [
@@ -421,5 +541,5 @@
   "title": "HAM-Main_V2.7",
   "foldername": "HAM-Main_V2.7",
   "schfilename": "HAM-Main_V2.7.json",
-  "schfilemtime": 1750060058501
+  "schfilemtime": 1751502001124
 }

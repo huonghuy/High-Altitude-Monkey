@@ -1,0 +1,69 @@
+\documentclass[12pt,oneside,letterpaper]{article}
+
+\usepackage{ASEE_Settings}
+
+\begin{document}
+
+    \pagenumbering{roman} 
+    \input{Chapters/0_frontpage.tex}
+
+    \addcontentsline{toc}{section}{Abstract}
+    \input{Chapters/0.5_Abstract} 
+    
+    %\newpage
+    %\addcontentsline{toc}{section}{Acknowledgments}
+    %\input{Chapters/0.75_Acknowledgments}
+\begin{comment}
+    \newpage
+    \doublespacing
+    \addcontentsline{toc}{section}{Table of Contents}
+    \renewcommand{\baselinestretch}{1}\normalsize
+    \tableofcontents
+    \renewcommand{\baselinestretch}{1}\normalsize
+    \singlespacing
+    \thispagestyle{fancy} % force page style
+\end{comment}    
+    %\newpage
+    %\pagenumbering{arabic} 
+    %\fancyfoot[C]{Page \thepage\ of \pageref{EndOfText}} 
+    % We can change \pageref{endOfDoc}} back to \...{EndOfText}
+    % once we have more things to append to the end
+    % TODO: Check below for other notes
+    %\newpage
+    \setlength{\parskip}{\baselineskip} % Blank line between paragraphs
+    \label{ch1}
+    \input{Chapters/1_Introduction} 
+    
+    %\newpage
+    \label{ch2}
+    \input{Chapters/2_Modifications}
+    
+    %\newpage
+    \label{ch3}
+    \input{Chapters/3_Results}
+    
+    %\newpage
+    \label{ch4}
+    \input{Chapters/4_Conclusion}
+    
+    \label{EndOfText}
+    
+    \newpage
+    %\pagenumbering{Roman} 
+    %\addcontentsline{toc}{section}{References}
+    %\fancyfoot[C]{Page \thepage\ of \pageref{EndOfDoc}}
+        \nocite{*}
+        \footnotesize{\bibliographystyle{unsrt}\bibliography{Bibliography}}
+        %\thispagestyle{fancy}
+    
+    %\newpage
+    %\addcontentsline{toc}{section}{List of Figures}
+    %\listoffigures
+    %\thispagestyle{fancy}
+    
+    %\newpage
+    %\addcontentsline{toc}{section}{List of Tables}
+    %\listoftables
+    %\thispagestyle{fancy}
+    \label{EndOfDoc}
+\end{document}

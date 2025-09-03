@@ -4,7 +4,7 @@
   "name": "HAM-VL_V1.5",
   "content": "",
   "created_at": "2025-03-21 18:50:59",
-  "updated_at": "2025-06-12 10:50:01",
+  "updated_at": "2025-06-17 11:33:11",
   "stick": "",
   "documents": [
     {
@@ -18,7 +18,8 @@
         "3264a39259e840a9a2f333f4121ec877": 1,
         "f3c1d943bf1c43ffae55ac8c780d44ed": 2,
         "c41aee20e09a4f0a80e00d50871bdcf4": 1,
-        "6e44e5781922478092af80d6740330ab": 1
+        "6e44e5781922478092af80d6740330ab": 1,
+        "d278f40818f3477d88b42b11e44721dc": 1
       },
       "BOM": [
         [
@@ -38,6 +39,42 @@
             "Manufacturer": "",
             "Supplier": "",
             "Supplier Part": ""
+          }
+        ],
+        [
+          "VideoLynx Fan",
+          1,
+          "CONN-TH_C722693",
+          "CN2",
+          {
+            "Manufacturer Part": "XH插座1*3P间距2.5mm直针,",
+            "Manufacturer": "null",
+            "Supplier": "LCSC",
+            "Supplier Part": "C9900015994"
+          }
+        ],
+        [
+          "Camera",
+          1,
+          "CONN-TH_2P-P2.50-XH2.54-2P",
+          "CN3",
+          {
+            "Manufacturer Part": "XH-2P-2.54",
+            "Manufacturer": "null",
+            "Supplier": "LCSC",
+            "Supplier Part": "C9900003929"
+          }
+        ],
+        [
+          "VL Power",
+          1,
+          "CONN-TH_2P-P2.50-XH2.54-2P",
+          "CN4",
+          {
+            "Manufacturer Part": "XH-2P-2.54",
+            "Manufacturer": "null",
+            "Supplier": "LCSC",
+            "Supplier Part": "C9900003929"
           }
         ],
         [
@@ -63,37 +100,13 @@
             "Supplier": "LCSC",
             "Supplier Part": "C1520933"
           }
-        ],
-        [
-          "Camera(V)",
-          1,
-          "CONN-TH_2P-P2.50-XH2.54-2P",
-          "U2",
-          {
-            "Manufacturer Part": "XH-2P-2.54",
-            "Manufacturer": "null",
-            "Supplier": "LCSC",
-            "Supplier Part": "C9900003929"
-          }
-        ],
-        [
-          "Camera",
-          1,
-          "CONN-TH_2P-P2.50-XH2.54-2P",
-          "U3",
-          {
-            "Manufacturer Part": "XH-2P-2.54",
-            "Manufacturer": "null",
-            "Supplier": "LCSC",
-            "Supplier Part": "C9900003929"
-          }
         ]
       ],
-      "updateTime": 1742595611,
+      "updateTime": 1750174391,
       "createTime": 1735335519,
       "histories": [],
       "created_at": "2024-12-27 16:38:39",
-      "updated_at": "2025-03-21 18:20:11"
+      "updated_at": "2025-06-17 11:33:11"
     },
     {
       "uuid": "9438aeacfc6c1ec79ba6d913657f8d84",
@@ -104,9 +117,10 @@
       "master": "",
       "thumb": "/images/thumb-default.png",
       "components": {
+        "1dd6cffe45da451c9c3d3d0f0bc142d1": 1,
+        "b8fddb749d784eccb60a4acb65c94dfc": 2,
         "8583a8bf067a439a96f266ad11cbb04d": 1,
         "666264fd42b84465ad050a9517cab8cf": 1,
-        "b8fddb749d784eccb60a4acb65c94dfc": 2,
         "61a55cacd5b14f109a68b11c09571ea3": 1
       },
       "BOM": [
@@ -154,16 +168,16 @@
           }
         ]
       ],
-      "updateTime": 1749739801,
+      "updateTime": 1750174386,
       "createTime": 1735345070,
       "histories": [],
       "created_at": "2024-12-27 19:17:50",
-      "updated_at": "2025-06-12 10:50:01"
+      "updated_at": "2025-06-17 11:33:06"
     }
   ],
   "sort": [],
   "title": "HAM-VL_V1.5",
   "foldername": "HAM-VL_V1.5",
   "schfilename": "HAM-VL_V1.5.json",
-  "schfilemtime": 1742597459075.3909
+  "schfilemtime": 1750174391202
 }

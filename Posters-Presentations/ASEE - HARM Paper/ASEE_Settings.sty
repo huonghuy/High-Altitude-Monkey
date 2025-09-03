@@ -1,0 +1,71 @@
+% --- Encoding and Language ---
+\usepackage[T1]{fontenc}             % Output font encoding
+\usepackage[utf8]{inputenc}          % Input encoding
+\usepackage[english]{babel}          % Language setup
+\usepackage{gensymb}                 % Common symbols (e.g., degree symbol)
+
+% --- Fonts and Page Geometry ---
+\usepackage{mathptmx}                % Times New Roman font
+\usepackage[margin=2.54cm,          % 1 inch margins
+             headheight=26pt,
+             includeheadfoot]{geometry}
+
+% --- Header and Footer ---
+\usepackage{fancyhdr}
+\pagestyle{empty}                    % No page numbers or headers/footers
+
+% --- Paragraph and Spacing Formatting ---
+\usepackage{setspace}
+\setstretch{1.5}                     % 1.5x line spacing
+\setlength{\parindent}{20pt}        % Paragraph indentation
+\usepackage{indentfirst}            % Indent first paragraph after section heading
+
+% --- Section Heading Formatting ---
+\usepackage{titlesec}
+\titleformat{\section}
+  {\normalfont\normalsize\bfseries} % Normal size, bold
+  {}                                % No section number
+  {0pt}                             % No spacing between number and title
+  {}                                % No additional code before title
+
+\titlespacing*{\section}
+  {0pt}    % Left margin
+  {2ex plus 1ex minus 0.2ex}   % Space *before* the section title
+  {1.5ex plus 0.5ex minus 0.2ex}   % Space *after* the section title (adds blank line)
+
+% --- Graphics and Tables ---
+\usepackage{graphicx}               % For including images
+\usepackage{caption}                % For custom captions
+\usepackage{subcaption}            % For subfigures
+\usepackage{booktabs}              % For better table rules
+\usepackage{multirow}              % For table cells spanning multiple rows
+\usepackage[flushleft]{threeparttable} % For notes below tables
+
+
+
+% --- Math and Code ---
+\usepackage[framed,numbered]{matlab-prettifier} % MATLAB code styling
+\lstset{
+    language=Matlab,
+    style=Matlab-editor,
+    basicstyle=\normalsize\ttfamily,
+    numbers=left,
+    numberstyle={\scriptsize\color{black}},
+    numbersep=0.5cm
+}
+
+% --- Hyperlinks ---
+\usepackage[hidelinks]{hyperref}    % Hide link formatting
+
+% --- Miscellaneous Utilities ---
+\usepackage{color,xcolor}           % Text color support
+\usepackage{comment}                % Block commenting
+\usepackage{float}                  % Improved float control
+\usepackage{datetime2}              % Date/time formatting
+\usepackage{changepage}             % For adjusting margins
+\usepackage{pdflscape}              % For landscape pages
+
+% --- Document Metadata ---
+\title{\textbf{\Large ASEE - AERO DIVISION - HARM}}
+\author{}                            % Author left blank per instruction
+\date{}                              % No date shown

@@ -1,0 +1,454 @@
+{
+  "uuid": "9393d5b507a2ed1269383541591e5838",
+  "path": "Offline/HAM-Main_V2.8",
+  "name": "HAM-Main_V2.8",
+  "content": "",
+  "created_at": "2025-06-26 11:27:43",
+  "updated_at": "2025-07-02 19:31:04",
+  "stick": "",
+  "documents": [
+    {
+      "uuid": "07b9f534175ecca0f64f24ff74831f44",
+      "title": "HAM 2025",
+      "description": "HAM Wiring Diagram",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "0ac78fc4bf4943508c676584de4c94e2": 1,
+        "d278f40818f3477d88b42b11e44721dc": 2,
+        "6a557877d1e74db48f5795200ca0fbff": 1,
+        "01c42026eb36475fbeabdb9e78e3e022": 1,
+        "d8655e5f17b7485eac6b484ddf8a16f1": 3,
+        "9f8575c37cb34a66be8bb40eaddd655c": 2,
+        "5e39ae4cb7d14817a5467bc2a8b7d56c": 1,
+        "37888c65e7d04ce2a91c40d750e646dc": 1,
+        "0ef6bad3b9b74477980ff46956253608": 1,
+        "6e44e5781922478092af80d6740330ab": 1,
+        "4c085c9fda554ac1aa22403036665477": 1,
+        "e67ef56922b646d492a7c782cbdaf337": 1,
+        "4646a3707be04608b3002bf7f813700b": 2,
+        "377835ddd6f9452b8e9c5138cea71c72": 1,
+        "0d31667926574e309df9e094f5d13f9c": 1,
+        "37223c148876442a82c00144b2fa1dad": 1,
+        "3bd9cf8f98714ba78567259f221041d8": 1,
+        "8dba574607784d7cae2dc64b0e922d1b": 1,
+        "e01af80d11714edb9aa91091647ed866": 1,
+        "22c9e933693cbd22dd1aaa1a8912b992": 1,
+        "6753588abd2d4c3d862a2ccb1b65d0cb": 4,
+        "87ba4684d40541769e3f35a3912897bf": 2
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "100nF",
+          4,
+          "SMD 1206 CAPACITOR",
+          "C1,C2,C3,C4",
+          {
+            "Manufacturer Part": "CL31B475KBHNNNE",
+            "Manufacturer": "SAMSUNG(三星)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C51205"
+          }
+        ],
+        [
+          "JST-XH2.5",
+          1,
+          "4PIN_2.54_MM_JST_XHP_JST_CONNECTOR_FOR_DC_SOCKET",
+          "CN1",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "VideoLynx LM135H",
+          1,
+          "CONN-TH_C722693",
+          "CN2",
+          {
+            "Manufacturer Part": "XH插座1*3P间距2.5mm直针,",
+            "Manufacturer": "null",
+            "Supplier": "LCSC",
+            "Supplier Part": "C9900015994"
+          }
+        ],
+        [
+          "Int LM135H",
+          1,
+          "CONN-TH_C722693",
+          "CN3",
+          {
+            "Manufacturer Part": "XH插座1*3P间距2.5mm直针,",
+            "Manufacturer": "null",
+            "Supplier": "LCSC",
+            "Supplier Part": "C9900015994"
+          }
+        ],
+        [
+          "DC barrel jack 2.1mm",
+          1,
+          "DC BARREL JACK 2.1",
+          "P1",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "PowerPole",
+          1,
+          "POWERPOLE 1327 PAIR HORIZONTAL",
+          "P2",
+          {
+            "Manufacturer Part": "1327",
+            "Manufacturer": "Anderson",
+            "Supplier": "Powerwerx",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "1.5kΩ",
+          2,
+          "R1206",
+          "R1,R2",
+          {
+            "Manufacturer Part": "RMC12061.5K1%N",
+            "Manufacturer": "Tyohm(幸亚电阻)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C325930"
+          }
+        ],
+        [
+          "3.3kΩ",
+          1,
+          "R1206",
+          "R3",
+          {
+            "Manufacturer Part": "RMC12063.3K1%N",
+            "Manufacturer": "Tyohm(幸亚电阻)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C325931"
+          }
+        ],
+        [
+          "3.9kΩ",
+          1,
+          "R1206",
+          "R4",
+          {
+            "Manufacturer Part": "RMC12063.9K5%N",
+            "Manufacturer": "Tyohm(幸亚电阻)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C269606"
+          }
+        ],
+        [
+          "8.2kΩ",
+          1,
+          "R1206",
+          "R5",
+          {
+            "Manufacturer Part": "AECR1206F8K20K9",
+            "Manufacturer": "RESI(开步睿思)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C352028"
+          }
+        ],
+        [
+          "10kΩ",
+          3,
+          "R1206",
+          "R6,R7,R8",
+          {
+            "Manufacturer Part": "RC1206JR-0710KL",
+            "Manufacturer": "YAGEO(国巨)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C136460"
+          }
+        ],
+        [
+          "2kΩ",
+          1,
+          "R1206",
+          "R9",
+          {
+            "Manufacturer Part": "RMC12062K1%N",
+            "Manufacturer": "Tyohm(幸亚电阻)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C325895"
+          }
+        ],
+        [
+          "1kΩ",
+          1,
+          "R1206",
+          "R10",
+          {
+            "Manufacturer Part": "RC1206FR-7W1KL",
+            "Manufacturer": "YAGEO(国巨)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C859155"
+          }
+        ],
+        [
+          "SPST Toggle",
+          1,
+          "TOGGLESWITCH SPDT / SPST WIRE",
+          "SW1",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "MEGA2560PRO-EMBED",
+          1,
+          "MEGA2560PRO-EMBED",
+          "U1",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "HC-05",
+          1,
+          "WIRELESS-BLUETOOTH-HC-05",
+          "U2",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "PCA9685",
+          1,
+          "PCB_PCA9685_V2",
+          "U3",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "LM2596S 6V",
+          1,
+          "LM2596:YAAJ_DCDC_STEPDOWN_LM2596",
+          "U4",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "2N3904",
+          1,
+          "TO-92-3_L4.8-W3.7-P1.27-L-1",
+          "U5",
+          {
+            "Manufacturer Part": "2N3904RLRAH",
+            "Manufacturer": "null",
+            "Supplier": "LCSC",
+            "Supplier Part": "C3196005"
+          }
+        ],
+        [
+          "LM2596S 12V",
+          1,
+          "LM2596:YAAJ_DCDC_STEPDOWN_LM2596",
+          "U6",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "LM2596S 5V",
+          1,
+          "LM2596:YAAJ_DCDC_STEPDOWN_LM2596",
+          "U7",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "IRF9540N_FLAT",
+          1,
+          "IRF9540N_FLAT",
+          "U8",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "ATMEGA2560-16AU",
+          1,
+          "TQFP-100_L14.0-W14.0-P0.50-LS16.0-BL",
+          "U9",
+          {
+            "Manufacturer Part": "ATMEGA2560-16AU",
+            "Manufacturer": "MICROCHIP(美国微芯)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C22460"
+          }
+        ],
+        [
+          "ADP7105ACPZ-5.0-R7",
+          2,
+          "LFCSP-8_L3.0-W3.0-P0.50-BL-EP",
+          "U10,U11",
+          {
+            "Manufacturer Part": "ADP7105ACPZ-5.0-R7",
+            "Manufacturer": "ADI(亚德诺)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C659335"
+          }
+        ]
+      ],
+      "updateTime": 1751499064,
+      "createTime": 1733256171,
+      "histories": [],
+      "created_at": "2024-12-03 15:02:51",
+      "updated_at": "2025-07-02 19:31:04"
+    },
+    {
+      "uuid": "de6d7e22276540743098eec5e7522769",
+      "title": "PCB_HAM",
+      "filename": "PCB_HAM.json",
+      "description": "",
+      "docType": "3",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "473be3fea90e4b2e86682543bab0f310": 4,
+        "8ff991ed881d4254a33f7c23a7c15785": 2,
+        "677182fcdc4e4117ae1b549280eef650": 1,
+        "8e9b1be4bcb6420dbd1d09bf04b02792": 8,
+        "1dd6cffe45da451c9c3d3d0f0bc142d1": 2,
+        "cc5376d7a7ae44a2878647910624926a": 1,
+        "12de180cdfc347869731d4858edd2616": 1,
+        "b451103061be4ac2a466ecf1087b6220": 1,
+        "492390c3167d405eadbeccd6f6144a55": 1,
+        "8594fe226bae45ad9c17f6604d11b915": 1,
+        "9b2188aae1cc412eab36130decbf666f": 1,
+        "8583a8bf067a439a96f266ad11cbb04d": 1,
+        "4410579006934680bb8a24bf0bc7ee64": 2,
+        "d31758622ca94737bb0b24586208c7ee": 3,
+        "fa7c468b9bb94e94971a42b5e2503376": 1,
+        "2628b82781ba414286ff4e1cb4b49372": 1
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "ELEGOO MEGA 2560 R3",
+          1,
+          "ELEGOO MEGA 2560 R3 PAD",
+          "U1",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "PCA9685",
+          1,
+          "PCA9685",
+          "U2",
+          {
+            "Manufacturer Part": "PCA9685_module",
+            "Manufacturer": "adafruit",
+            "Supplier": "adafruit",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "Bi-Directional Logic Level Converter",
+          1,
+          "BOB-12009 CORRECTED",
+          "U3",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "Sparkfun",
+            "Supplier Part": "BOB-12009"
+          }
+        ],
+        [
+          "Arduino BlueTooth CH-06",
+          1,
+          "BLUETOOTH",
+          "U4",
+          {
+            "Manufacturer Part": "BlueTooth CH-06",
+            "Manufacturer": "",
+            "Supplier": "China",
+            "Supplier Part": "ZS-040"
+          }
+        ],
+        [
+          "LM2596_DC-DC_Buck_Converter",
+          3,
+          "LM2596 DC-DC BUCK CONVERTER ADJUSTABLE POWER SUPPLY STEP DOWN MODULE",
+          "U5,U6,U7",
+          {
+            "Manufacturer Part": "New SchematicLib",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": "LM2596_converteer"
+          }
+        ]
+      ],
+      "updateTime": 1751479800,
+      "createTime": 1733437141,
+      "histories": [],
+      "created_at": "2024-12-05 17:19:01",
+      "updated_at": "2025-07-02 14:10:00"
+    }
+  ],
+  "sort": [
+    "5bd9eaa0fea16e183e4c25c18ed3ec6e",
+    "07b9f534175ecca0f64f24ff74831f44"
+  ],
+  "title": "HAM-Main_V2.8",
+  "foldername": "HAM-Main_V2.8",
+  "schfilename": "HAM-Main_V2.8.json",
+  "schfilemtime": 1751499064291
+}

@@ -1,0 +1,210 @@
+{
+  "uuid": "11118131aa7a372d704f5c3a4ff175b5",
+  "path": "Offline/HAM-LM_V2.8",
+  "name": "HAM-LM_V2.8",
+  "content": "",
+  "created_at": "2025-06-26 11:44:53",
+  "updated_at": "2025-06-26 12:35:55",
+  "stick": "",
+  "documents": [
+    {
+      "uuid": "5a126099a507790e3ab6f23c28192753",
+      "title": "Sheet_1",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "6e44e5781922478092af80d6740330ab": 1,
+        "4c085c9fda554ac1aa22403036665477": 1,
+        "22c9e933693cbd22dd1aaa1a8912b992": 1,
+        "6753588abd2d4c3d862a2ccb1b65d0cb": 4,
+        "13d757f8d0e64fdbab9851b3f511f361": 1,
+        "4c92ef4eab024731a61395a88c13ad40": 1,
+        "3d43a8663f764736b0344d7c0df82efa": 1
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "100nF",
+          4,
+          "SMD 1206 CAPACITOR",
+          "C1,C2,C3,C4",
+          {
+            "Manufacturer Part": "CL31B475KBHNNNE",
+            "Manufacturer": "SAMSUNG(三星)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C51205"
+          }
+        ],
+        [
+          "JST-XH2.5 (TTL_to_RS232)",
+          1,
+          "4PIN_2.54_MM_JST_XHP_JST_CONNECTOR_FOR_DC_SOCKET",
+          "CN1",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "1kΩ",
+          1,
+          "R0603",
+          "R1",
+          {
+            "Manufacturer Part": "WF06R1001BTL",
+            "Manufacturer": "Walsin(华新科)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C305260"
+          }
+        ],
+        [
+          "2kΩ",
+          1,
+          "R0603",
+          "R2",
+          {
+            "Manufacturer Part": "AR03DTCX2001",
+            "Manufacturer": "Viking(光颉)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C319700"
+          }
+        ],
+        [
+          "ATMEGA2560-16AU",
+          1,
+          "TQFP-100_L14.0-W14.0-P0.50-LS16.0-BL",
+          "U2",
+          {
+            "Manufacturer Part": "ATMEGA2560-16AU",
+            "Manufacturer": "MICROCHIP(美国微芯)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C22460"
+          }
+        ],
+        [
+          "HC-05",
+          1,
+          "WIRELESS-BLUETOOTH-HC-05",
+          "U3",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "USB-C-16P-S",
+          1,
+          "USB-C-16P-S",
+          "U4",
+          {
+            "Manufacturer Part": "USB-C-16P-S",
+            "Manufacturer": "null",
+            "Supplier": "LCSC",
+            "Supplier Part": "C9900000831"
+          }
+        ]
+      ],
+      "updateTime": 1750954406,
+      "createTime": 1735343316,
+      "histories": [],
+      "created_at": "2024-12-27 18:48:36",
+      "updated_at": "2025-06-26 12:13:26"
+    },
+    {
+      "uuid": "ce2bda9b12554036368787a30bec669a",
+      "title": "PCB_HAM_Land_Module",
+      "filename": "PCB_HAM_Land_Module.json",
+      "description": "",
+      "docType": "3",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "398691f1f785460098bbe5ee6590333c": 2,
+        "473be3fea90e4b2e86682543bab0f310": 4,
+        "677182fcdc4e4117ae1b549280eef650": 1,
+        "37f6508b0f504abf9d8e0eb67b01c156": 1,
+        "9b2188aae1cc412eab36130decbf666f": 1,
+        "8583a8bf067a439a96f266ad11cbb04d": 1
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "MEGA2560PRO-EMBED",
+          1,
+          "MEGA2560PRO-EMBED",
+          "MEGA2560PRO",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "HC-05_version_2",
+          1,
+          "HC-05",
+          "U5",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "Bi-Directional Logic Level Converter",
+          1,
+          "BOB-12009 CORRECTED",
+          "U6",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "Sparkfun",
+            "Supplier Part": "BOB-12009"
+          }
+        ],
+        [
+          "JST-XH2.5 (TTL_to_RS232)",
+          1,
+          "4PIN_2.54_MM_JST_XHP_JST_CONNECTOR_FOR_DC_SOCKET",
+          "J1",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ]
+      ],
+      "updateTime": 1750955755,
+      "createTime": 1735343485,
+      "histories": [],
+      "created_at": "2024-12-27 18:51:25",
+      "updated_at": "2025-06-26 12:35:55"
+    }
+  ],
+  "sort": [],
+  "title": "HAM-LM_V2.8",
+  "foldername": "HAM-LM_V2.8",
+  "schfilename": "HAM-LM_V2.8.json",
+  "schfilemtime": 1750954406753
+}

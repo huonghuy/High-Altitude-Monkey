@@ -1,0 +1,105 @@
+{
+  "uuid": "7daf8ab98db8e85ef153dda7fd0e8c83",
+  "path": "Offline/LawnBot",
+  "name": "LawnBot",
+  "content": "",
+  "created_at": "2025-03-28 12:28:05",
+  "updated_at": "2025-03-31 13:03:00",
+  "stick": "",
+  "documents": [
+    {
+      "uuid": "85f6841d2aaefeaf37ec312795143dd0",
+      "title": "Sheet_1",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "2bad32b76c79485c92500e7e581b8593": 1,
+        "d8b0e8bc61764939b6f5389b84d62fdf": 1,
+        "9fca3d07391f42cfa2bee80b135286f5": 1,
+        "837a9dde885246c5890d7e84bf612634": 2,
+        "d9bea679a1f84c51b87a39c12618293e": 3
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "ESP32-DEVKIT-V1-30PIN",
+          1,
+          "ESP32-DEVKITV1_ESP32-DEVKITV1",
+          "1",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "DC DC CONVERTER 24VDC TO 12VDC",
+          1,
+          "3A-BUCK-CONVERTER",
+          "U1",
+          {
+            "Manufacturer Part": "A",
+            "Manufacturer": "A",
+            "Supplier": "",
+            "Supplier Part": "AB"
+          }
+        ],
+        [
+          "L298N_DRIVER",
+          1,
+          "L298N",
+          "U2",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "LCSC",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "Adafruit DRV8871",
+          2,
+          "ADAFRUIT DRV8871",
+          "U3,U4",
+          {
+            "Manufacturer Part": "3190",
+            "Manufacturer": "Adafruit",
+            "Supplier": "Digi-Key",
+            "Supplier Part": "1528-1719-ND"
+          }
+        ],
+        [
+          "MOTOR",
+          3,
+          "VIBE-MOTOR-10MM",
+          "U5,U6,U7",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ]
+      ],
+      "updateTime": 1743440580,
+      "createTime": 1743179286,
+      "histories": [],
+      "created_at": "2025-03-28 12:28:06",
+      "updated_at": "2025-03-31 13:03:00"
+    }
+  ],
+  "sort": [],
+  "title": "LawnBot",
+  "foldername": "LawnBot",
+  "schfilename": "LawnBot.json",
+  "schfilemtime": 1743440580552
+}
