@@ -1,2 +1,34 @@
+# --- Private / not for the public repo ---
 Purchase_Orders/
-*.docx
+
+# --- macOS / editors ---
+.DS_Store
+._*
+~$*
+*.swp
+
+# --- KiCad ---
+*-backups/
+.history/
+*.lck
+*.kicad_prl
+fp-info-cache
+\#auto_saved_files\#
+_autosave-*
+*-bak
+*.kicad_sch-bak
+
+# --- LaTeX build output ---
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+
+# --- Arduino / PlatformIO build output ---
+build/
+.pio/
