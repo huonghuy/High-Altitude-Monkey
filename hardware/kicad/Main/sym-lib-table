@@ -1,0 +1,4 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "HAM")(type "KiCad")(uri "${KIPRJMOD}/../lib/HAM.kicad_sym")(options "")(descr "High-Altitude Monkey shared symbols"))
+)
