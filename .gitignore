@@ -32,3 +32,4 @@ _autosave-*
 # --- Arduino / PlatformIO build output ---
 build/
 .pio/
+hardware/kicad/tools/__pycache__/port_sch.cpython-313.pyc

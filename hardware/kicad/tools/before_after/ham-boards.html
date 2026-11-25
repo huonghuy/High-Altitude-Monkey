@@ -1,0 +1,283 @@
+<title>HAM Boards Before and After</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a fab "traveler" sheet — summary strip, then one inspection panel per board with before/after side by side */
+:root {
+  --bg: #f3f5f2; --panel: #ffffff; --ink: #1b2422; --muted: #5d6a66; --rule: #d6ddd9;
+  --copper: #b5622f; --good: #2f7d4f; --warn: #a86a12; --bad: #b3362b; --frame: #e9eeec;
+  --chip-bad: #f6e3e0; --chip-good: #e2f1e7; --chip-warn: #f7ecd9;
+  --display: "Barlow Condensed", "Arial Narrow", system-ui, sans-serif;
+  --body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #121816; --panel: #1a2220; --ink: #e6ece9; --muted: #9aa8a3; --rule: #2c3734;
+  --copper: #e0915c; --good: #6cc48d; --warn: #e0a64a; --bad: #ec7b6f; --frame: #26302d;
+  --chip-bad: #3a2321; --chip-good: #1f3528; --chip-warn: #3a2f1c; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #121816; --panel: #1a2220; --ink: #e6ece9; --muted: #9aa8a3; --rule: #2c3734;
+  --copper: #e0915c; --good: #6cc48d; --warn: #e0a64a; --bad: #ec7b6f; --frame: #26302d;
+  --chip-bad: #3a2321; --chip-good: #1f3528; --chip-warn: #3a2f1c; color-scheme: dark }
+
+body { background: var(--bg); color: var(--ink); font: 15px/1.55 var(--body); }
+.wrap { max-width: 1180px; margin: 0 auto; padding-block: 28px 64px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: grid; gap: 28px; }
+h1, h2, h3 { font-family: var(--display); font-weight: 600; letter-spacing: .01em; text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(2rem, 5vw, 3rem); line-height: 1.05; }
+h2 { font-size: 1.9rem; line-height: 1.1; }
+.eyebrow { font: 500 .75rem/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--copper); }
+.lede { color: var(--muted); max-width: 70ch; margin: 8px 0 0; }
+header { display: grid; gap: 10px; border-bottom: 2px solid var(--ink); padding-bottom: 18px; }
+
+.totals { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 1px; background: var(--rule); border: 1px solid var(--rule); }
+.tot { background: var(--panel); padding: 14px 16px; display: grid; gap: 4px; align-content: start; }
+.tot .k { font: 500 .72rem/1.2 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.tot .v { font: 600 1.7rem/1.1 var(--display); font-variant-numeric: tabular-nums; }
+.tot .v s { color: var(--bad); text-decoration-thickness: 2px; font-weight: 500; }
+.tot .v b { color: var(--good); font-weight: 700; }
+.tot .n { font-size: .8rem; color: var(--muted); }
+
+.viewbar { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); padding-block: 10px; border-bottom: 1px solid var(--rule); }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); }
+.viewbar span { font: 500 .8rem var(--mono); color: var(--muted); }
+.seg { display: inline-flex; border: 1px solid var(--ink); }
+.seg button { font: 500 .85rem var(--body); padding: 6px 14px; border: 0; background: transparent; color: var(--ink); cursor: pointer; }
+.seg button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+.seg button:focus-visible { outline: 2px solid var(--copper); outline-offset: 2px; }
+
+.board { background: var(--panel); border: 1px solid var(--rule); display: grid; }
+.board-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 8px 16px; padding: 18px 20px 14px; border-bottom: 1px solid var(--rule); }
+.board-head p { margin: 0; color: var(--muted); max-width: 70ch; min-width: 0; }
+.shots { display: grid; grid-template-columns: 1fr 1fr; }
+@media (max-width: 720px) { .shots { grid-template-columns: 1fr; } }
+figure { margin: 0; padding: 14px 16px; display: grid; gap: 8px; align-content: start; min-width: 0; }
+figure + figure { border-left: 1px solid var(--rule); }
+@media (max-width: 720px) { figure + figure { border-left: 0; border-top: 1px solid var(--rule); } }
+figcaption { display: flex; justify-content: space-between; gap: 8px; font: 500 .78rem var(--mono); letter-spacing: .06em; text-transform: uppercase; }
+figcaption .when { color: var(--muted); text-align: right; }
+.tag { padding: 1px 7px; white-space: nowrap; }
+.tag.before { background: var(--chip-bad); color: var(--bad); }
+.tag.after { background: var(--chip-good); color: var(--good); }
+.frame { background: var(--frame); aspect-ratio: 5 / 4; display: grid; place-items: center; overflow: hidden; max-width: 100%; }
+.frame img { width: 100%; height: 100%; object-fit: contain; display: block; }
+
+.detail { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); border-top: 1px solid var(--rule); }
+@media (max-width: 860px) { .detail { grid-template-columns: 1fr; } }
+.tablewrap { overflow-x: auto; padding: 14px 16px; min-width: 0; }
+.tablewrap + .tablewrap { border-left: 1px solid var(--rule); }
+@media (max-width: 860px) { .tablewrap + .tablewrap { border-left: 0; border-top: 1px solid var(--rule); } }
+.tablewrap h3 { font-size: 1.1rem; margin: 0 0 6px; }
+table { border-collapse: collapse; width: 100%; font-size: .88rem; }
+th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+th { font: 500 .7rem var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+td.num { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+td.b { color: var(--bad); }
+td.a { color: var(--good); font-weight: 500; }
+td.same { color: var(--muted); }
+.st { font: 500 .72rem var(--mono); padding: 1px 6px; white-space: nowrap; }
+.st.fixed { background: var(--chip-good); color: var(--good); }
+.st.open { background: var(--chip-bad); color: var(--bad); }
+.st.design { background: var(--chip-warn); color: var(--warn); }
+.id { font-family: var(--mono); color: var(--copper); white-space: nowrap; }
+code { font: .85em var(--mono); background: var(--bg); padding: 0 4px; }
+
+.method, .open { background: var(--panel); border: 1px solid var(--rule); padding: 18px 20px; display: grid; gap: 10px; }
+.method p, .open ul { margin: 0; max-width: 80ch; }
+.open ul { padding-left: 1.1em; display: grid; gap: 6px; }
+@media (prefers-reduced-motion: no-preference) { .frame img { transition: opacity .15s; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">High-Altitude Monkey · EasyEDA → KiCad · 25 Nov 2026</div>
+    <h1>HAM boards, before and after</h1>
+    <p class="lede">Before is the last version of each board saved in EasyEDA. After is the current KiCad board. Both sides were checked with KiCad 10's DRC against the same design rules, so the counts compare directly.</p>
+  </header>
+
+  <section class="totals" aria-label="Totals across all five boards">
+    <div class="tot"><span class="k">Unconnected nets</span><span class="v"><s>36</s> → <b>0</b></span></div>
+    <div class="tot"><span class="k">Copper / fab DRC</span><span class="v"><s>156</s> → <b>0</b></span><span class="n">incl. 3 real shorts on VL</span></div>
+    <div class="tot"><span class="k">Courtyard overlaps</span><span class="v"><s>38</s> → <b>0</b></span></div>
+    <div class="tot"><span class="k">Silkscreen warnings</span><span class="v"><s>796</s> → <b>0</b></span></div>
+    <div class="tot"><span class="k">Review errors open</span><span class="v"><s>15</s> → <b>2</b></span><span class="n">+1 left as is by design</span></div>
+  </section>
+
+  <div class="viewbar">
+    <span>View</span>
+    <div class="seg" role="group" aria-label="Image view">
+      <button type="button" id="v-3d" data-view="3d" aria-pressed="true">3D render</button>
+      <button type="button" id="v-cu" data-view="cu" aria-pressed="false">Copper layers</button>
+    </div>
+    <span>Copper view: red = top, blue = bottom</span>
+  </div>
+
+  <!-- Main -->
+  <article class="board">
+    <div class="board-head"><h2>Main</h2><p>Monkey payload box: Mega 2560 Pro, servos via PCA9685, HC-05, video power switch.</p></div>
+    <div class="shots">
+      <figure><figcaption><span class="tag before">Before</span><span class="when">EasyEDA HAM-Main V2.8</span></figcaption><div class="frame"><img data-base="img2/main_before" src="img2/main_before.png" alt="Main V2.8 in EasyEDA"></div></figure>
+      <figure><figcaption><span class="tag after">After</span><span class="when">KiCad, current</span></figcaption><div class="frame"><img data-base="img2/main_after" src="img2/main_after.png" alt="Main board now in KiCad"></div></figure>
+    </div>
+    <div class="detail">
+      <div class="tablewrap"><h3>Board checks</h3><table>
+        <thead><tr><th>Check</th><th>V2.8</th><th>Now</th></tr></thead>
+        <tbody>
+          <tr><td>Outline</td><td class="num same">170 × 183 mm</td><td class="num same">170 × 183 mm</td></tr>
+          <tr><td>Unconnected nets</td><td class="num b">22</td><td class="num a">0</td></tr>
+          <tr><td>Copper / fab DRC</td><td class="num b">54</td><td class="num a">0</td></tr>
+          <tr><td>Courtyard overlaps</td><td class="num b">11</td><td class="num a">0</td></tr>
+          <tr><td>Silkscreen</td><td class="num b">384</td><td class="num a">0</td></tr>
+          <tr><td>Power trace widths</td><td class="num b">0.25–0.4 mm</td><td class="num a">0.4–2.8 mm</td></tr>
+          <tr><td>Battery switch</td><td class="b">2.54 mm header</td><td class="a">10 A JST VH + Carling LT-1561 toggle</td></tr>
+        </tbody></table></div>
+      <div class="tablewrap"><h3>Design-review errors</h3><table>
+        <tbody>
+          <tr><td class="id">M1</td><td>5 V buck feeds the Mega's VIN, rail sags to ~4 V</td><td><span class="st fixed">Fixed</span></td></tr>
+          <tr><td class="id">M2</td><td>LM135 sensors wired backwards</td><td><span class="st fixed">Fixed</span></td></tr>
+          <tr><td class="id">M3</td><td>Battery divider on the 5 V rail</td><td><span class="st fixed">Fixed</span></td></tr>
+          <tr><td class="id">M4</td><td>"12 V" video rail from a buck on a 12 V battery</td><td><span class="st fixed">Fixed</span></td></tr>
+          <tr><td class="id">M7</td><td>Unfinished bare ATmega2560 and ADP7105 LDOs</td><td><span class="st fixed">Removed</span></td></tr>
+        </tbody></table></div>
+    </div>
+  </article>
+
+  <!-- LM -->
+  <article class="board">
+    <div class="board-head"><h2>Land Module</h2><p>Bluetooth ↔ RS-232 bridge at the command center. Redesigned around an ESP32-WROOM-32E.</p></div>
+    <div class="shots">
+      <figure><figcaption><span class="tag before">Before</span><span class="when">EasyEDA HAM-LM V2.8 · ATmega2560 + HC-05</span></figcaption><div class="frame"><img data-base="img2/lm_before" src="img2/lm_before.png" alt="Land Module V2.8 in EasyEDA"></div></figure>
+      <figure><figcaption><span class="tag after">After</span><span class="when">KiCad LM_v2 · ESP32</span></figcaption><div class="frame"><img data-base="img2/lm_after" src="img2/lm_after.png" alt="LM_v2 now in KiCad"></div></figure>
+    </div>
+    <div class="detail">
+      <div class="tablewrap"><h3>Board checks</h3><table>
+        <thead><tr><th>Check</th><th>V2.8</th><th>Now</th></tr></thead>
+        <tbody>
+          <tr><td>Outline</td><td class="num b">66 × 54 mm, invalid</td><td class="num a">36 × 44 mm (+ M3 ears)</td></tr>
+          <tr><td>Unconnected nets</td><td class="num b">14</td><td class="num a">0</td></tr>
+          <tr><td>Copper / fab DRC</td><td class="num b">33</td><td class="num a">0</td></tr>
+          <tr><td>Silkscreen</td><td class="num b">14</td><td class="num a">0</td></tr>
+          <tr><td>Power trace widths</td><td class="num b">0.28 mm</td><td class="num a">0.4–0.6 mm</td></tr>
+          <tr><td>Parts</td><td class="num same">10</td><td class="num same">39</td></tr>
+        </tbody></table></div>
+      <div class="tablewrap"><h3>Design-review errors</h3><table>
+        <tbody>
+          <tr><td class="id">L1</td><td>No way to program it: no USB-serial, no ISP, USB-C unwired</td><td><span class="st fixed">Fixed</span></td></tr>
+          <tr><td class="id">L2</td><td>No clock or reset circuit</td><td><span class="st fixed">Fixed</span></td></tr>
+          <tr><td class="id">L3</td><td>Board unrouted: power, ground and RX2 open</td><td><span class="st fixed">Fixed</span></td></tr>
+          <tr><td class="id">L4</td><td>Too little decoupling</td><td><span class="st fixed">Fixed</span></td></tr>
+        </tbody></table></div>
+    </div>
+  </article>
+
+  <!-- MC -->
+  <article class="board">
+    <div class="board-head"><h2>Mission Control</h2><p>Front-panel board in the command center: Mega, LCD, knobs, lamps, RS-232 links.</p></div>
+    <div class="shots">
+      <figure><figcaption><span class="tag before">Before</span><span class="when">EasyEDA HAM-MC V2.5</span></figcaption><div class="frame"><img data-base="img2/mc_before" src="img2/mc_before.png" alt="Mission Control V2.5 in EasyEDA"></div></figure>
+      <figure><figcaption><span class="tag after">After</span><span class="when">KiCad, current</span></figcaption><div class="frame"><img data-base="img2/mc_after" src="img2/mc_after.png" alt="Mission Control now in KiCad"></div></figure>
+    </div>
+    <div class="detail">
+      <div class="tablewrap"><h3>Board checks</h3><table>
+        <thead><tr><th>Check</th><th>V2.5</th><th>Now</th></tr></thead>
+        <tbody>
+          <tr><td>Outline</td><td class="num same">208 × 100 mm</td><td class="num same">208 × 100 mm</td></tr>
+          <tr><td>Unconnected nets</td><td class="num same">0</td><td class="num a">0</td></tr>
+          <tr><td>Copper / fab DRC</td><td class="num b">47</td><td class="num a">0</td></tr>
+          <tr><td>Courtyard overlaps</td><td class="num b">9</td><td class="num a">0</td></tr>
+          <tr><td>Silkscreen</td><td class="num b">358</td><td class="num a">0</td></tr>
+          <tr><td>Power trace widths</td><td class="num b">0.25 mm</td><td class="num a">0.4 mm + GND pours</td></tr>
+        </tbody></table></div>
+      <div class="tablewrap"><h3>Design-review errors</h3><table>
+        <tbody>
+          <tr><td class="id">C1</td><td>5 V buck feeds the Mega's VIN</td><td><span class="st fixed">Fixed</span></td></tr>
+          <tr><td class="id">C2</td><td>Buck input pins not on the PCB</td><td><span class="st design">By design</span></td></tr>
+          <tr><td class="id">C3</td><td>RS-232 connectors go straight to Mega UART pins</td><td><span class="st open">Open</span></td></tr>
+        </tbody></table></div>
+    </div>
+  </article>
+
+  <!-- VL -->
+  <article class="board">
+    <div class="board-head"><h2>VideoLynx</h2><p>Frame board on the VM-70X transmitter: DS1809 RF-power pot, fan and camera connectors.</p></div>
+    <div class="shots">
+      <figure><figcaption><span class="tag before">Before</span><span class="when">EasyEDA HAM-VL V1.5</span></figcaption><div class="frame"><img data-base="img2/vl_before" src="img2/vl_before.png" alt="VideoLynx V1.5 in EasyEDA"></div></figure>
+      <figure><figcaption><span class="tag after">After</span><span class="when">KiCad, current</span></figcaption><div class="frame"><img data-base="img2/vl_after" src="img2/vl_after.png" alt="VideoLynx now in KiCad"></div></figure>
+    </div>
+    <div class="detail">
+      <div class="tablewrap"><h3>Board checks</h3><table>
+        <thead><tr><th>Check</th><th>V1.5</th><th>Now</th></tr></thead>
+        <tbody>
+          <tr><td>Outline</td><td class="num same">100 × 72 mm</td><td class="num same">100 × 72 mm</td></tr>
+          <tr><td>Copper shorts</td><td class="num b">3</td><td class="num a">0</td></tr>
+          <tr><td>Copper / fab DRC (all)</td><td class="num b">8</td><td class="num a">0</td></tr>
+          <tr><td>Silkscreen</td><td class="num b">16</td><td class="num a">0</td></tr>
+          <tr><td>Power trace widths</td><td class="num same">0.4 mm</td><td class="num a">0.4 mm</td></tr>
+          <tr><td>Parts</td><td class="num same">6</td><td class="num same">9 (adds 78L05 + caps)</td></tr>
+        </tbody></table></div>
+      <div class="tablewrap"><h3>Design-review errors</h3><table>
+        <tbody>
+          <tr><td class="id">V1</td><td>DS1809 (5.5 V max) powered from 12 V</td><td><span class="st fixed">Fixed</span></td></tr>
+          <tr><td class="id">V2</td><td>Schematic and PCB disagree on connectors</td><td><span class="st fixed">Fixed</span></td></tr>
+        </tbody></table></div>
+    </div>
+  </article>
+
+  <!-- HC-05 -->
+  <article class="board">
+    <div class="board-head"><h2>HC-05 Programmer</h2><p>Uno shield for configuring HC-05 modules. Kept current; retired once boards move to the ESP32.</p></div>
+    <div class="shots">
+      <figure><figcaption><span class="tag before">Before</span><span class="when">EasyEDA V0.2</span></figcaption><div class="frame"><img data-base="img2/hc_before" src="img2/hc_before.png" alt="HC-05 Programmer V0.2 in EasyEDA"></div></figure>
+      <figure><figcaption><span class="tag after">After</span><span class="when">KiCad, current</span></figcaption><div class="frame"><img data-base="img2/hc_after" src="img2/hc_after.png" alt="HC-05 Programmer now in KiCad"></div></figure>
+    </div>
+    <div class="detail">
+      <div class="tablewrap"><h3>Board checks</h3><table>
+        <thead><tr><th>Check</th><th>V0.2</th><th>Now</th></tr></thead>
+        <tbody>
+          <tr><td>Outline</td><td class="num same">54 × 49 mm</td><td class="num same">54 × 49 mm</td></tr>
+          <tr><td>Copper / fab DRC</td><td class="num b">14</td><td class="num a">0</td></tr>
+          <tr><td>Courtyard overlaps</td><td class="num b">18</td><td class="num a">0</td></tr>
+          <tr><td>Silkscreen</td><td class="num b">24</td><td class="num a">0</td></tr>
+          <tr><td>Power trace widths</td><td class="num b">0.25 mm</td><td class="num a">0.4 mm + GND pours</td></tr>
+        </tbody></table></div>
+      <div class="tablewrap"><h3>Design-review errors</h3><table>
+        <tbody>
+          <tr><td class="id">P1</td><td>Uno drives the HC-05 RX pin at 5 V with no divider</td><td><span class="st open">Open</span></td></tr>
+        </tbody></table></div>
+    </div>
+  </article>
+
+  <section class="method">
+    <h2>How this was measured</h2>
+    <p>The EasyEDA files in <code>hardware/easyeda-archive/</code> were converted with <code>kicad-cli pcb import</code> and checked with the current boards' rules (0.2 mm clearance and track, 0.3 mm drill, IPC-2221 power widths), with zones refilled. KiCad cannot import EasyEDA schematics from the command line, so "before" has no ERC count; the design-review errors were found in those same EasyEDA files. The VL V1.5 import shows no centre cutout, and the LM V2.8 outline is invalid as saved in EasyEDA.</p>
+  </section>
+
+  <section class="open">
+    <h2>Still open</h2>
+    <ul>
+      <li><b>MC C3:</b> the RS-232 connectors are only safe with the external TTL-to-RS-232 modules fitted. True RS-232 levels would damage the Mega.</li>
+      <li><b>HC-05 Programmer:</b> 5 V into the HC-05 RX pin. Low priority, since this board will be retired.</li>
+      <li><b>Main SW1:</b> the Carling LT series is rated 0–85 °C; the 2025-06-05 flight saw −7 °C inside. The switch is set on the ground, not operated in flight.</li>
+      <li><b>MC C2</b> is left as is on purpose: the buck input arrives on wires from a barrel jack and switch.</li>
+    </ul>
+  </section>
+</div>
+
+<script>
+(function () {
+  var buttons = document.querySelectorAll('.seg button');
+  function setView(v) {
+    buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.view === v)); });
+    document.querySelectorAll('img[data-base]').forEach(function (img) {
+      img.src = img.dataset.base + (v === 'cu' ? '_cu.png' : '.png');
+    });
+    try { localStorage.setItem('ham-view', v); } catch (e) {}
+  }
+  buttons.forEach(function (b) { b.addEventListener('click', function () { setView(b.dataset.view); }); });
+  var saved = null;
+  try { saved = localStorage.getItem('ham-view'); } catch (e) {}
+  if (saved === 'cu') setView('cu');
+})();
+</script>
