@@ -33,3 +33,9 @@ _autosave-*
 build/
 .pio/
 hardware/kicad/tools/__pycache__/port_sch.cpython-313.pyc
+
+# --- Autorouter / tool scratch ---
+*.dsn
+*.ses
+__pycache__/
+*.fpmap.json
