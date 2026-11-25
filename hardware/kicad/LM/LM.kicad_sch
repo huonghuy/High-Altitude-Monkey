@@ -6101,7 +6101,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "006dd096-9640-45ce-922a-41ced5c63d1e")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR09"
 			(at 254 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -6163,7 +6163,7 @@
 		(instances
 			(project "LM"
 				(path "/44ac5032-effc-45ed-992b-f34e5147d774"
-					(reference "#PWR?")
+					(reference "#PWR09")
 					(unit 0)
 				)
 			)
@@ -6180,7 +6180,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0307ec61-6359-47de-8056-b8e867a1506c")
-		(property "Reference" "A"
+		(property "Reference" "A1"
 			(at 145.161 -4.9911 0)
 			(hide yes)
 			(show_name no)
@@ -6253,7 +6253,7 @@
 		(instances
 			(project "LM"
 				(path "/44ac5032-effc-45ed-992b-f34e5147d774"
-					(reference "A")
+					(reference "A1")
 					(unit 0)
 				)
 			)
@@ -6270,7 +6270,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "10b0ea63-7dee-4de9-a264-c203bc70138e")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR03"
 			(at 34.29 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -6332,7 +6332,7 @@
 		(instances
 			(project "LM"
 				(path "/44ac5032-effc-45ed-992b-f34e5147d774"
-					(reference "#PWR?")
+					(reference "#PWR03")
 					(unit 0)
 				)
 			)
@@ -6350,7 +6350,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1668f9d9-749c-4b2b-8d9e-5d44df7de5cb")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR04"
 			(at 46.99 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -6412,7 +6412,7 @@
 		(instances
 			(project "LM"
 				(path "/44ac5032-effc-45ed-992b-f34e5147d774"
-					(reference "#PWR?")
+					(reference "#PWR04")
 					(unit 0)
 				)
 			)
@@ -6430,7 +6430,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "23553f05-68e5-48d9-9060-b1e603687aa5")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR01"
 			(at 22.86 12.7 0)
 			(hide yes)
 			(show_name no)
@@ -6492,7 +6492,7 @@
 		(instances
 			(project "LM"
 				(path "/44ac5032-effc-45ed-992b-f34e5147d774"
-					(reference "#PWR?")
+					(reference "#PWR01")
 					(unit 0)
 				)
 			)
@@ -6636,7 +6636,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "37336c4b-ef19-4b0a-b1fd-4c0cd0bac3ad")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR07"
 			(at 227.33 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -6698,7 +6698,7 @@
 		(instances
 			(project "LM"
 				(path "/44ac5032-effc-45ed-992b-f34e5147d774"
-					(reference "#PWR?")
+					(reference "#PWR07")
 					(unit 0)
 				)
 			)
@@ -6884,7 +6884,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "461a5289-d7d2-4b1c-9551-34d81b77092f")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR08"
 			(at 247.65 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -6946,7 +6946,7 @@
 		(instances
 			(project "LM"
 				(path "/44ac5032-effc-45ed-992b-f34e5147d774"
-					(reference "#PWR?")
+					(reference "#PWR08")
 					(unit 0)
 				)
 			)
@@ -7765,7 +7765,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a08b25b0-64a7-4b37-837d-9eb97f5f4ed1")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR06"
 			(at 224.79 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -7827,7 +7827,7 @@
 		(instances
 			(project "LM"
 				(path "/44ac5032-effc-45ed-992b-f34e5147d774"
-					(reference "#PWR?")
+					(reference "#PWR06")
 					(unit 0)
 				)
 			)
@@ -7844,7 +7844,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a83b722e-96fb-45ca-a44d-df48d3f5944b")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR05"
 			(at 55.88 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -7906,7 +7906,7 @@
 		(instances
 			(project "LM"
 				(path "/44ac5032-effc-45ed-992b-f34e5147d774"
-					(reference "#PWR?")
+					(reference "#PWR05")
 					(unit 0)
 				)
 			)
@@ -8361,7 +8361,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f1c8c4c4-4206-4542-9e38-3c2aea1e36c0")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR02"
 			(at 22.86 20.32 0)
 			(hide yes)
 			(show_name no)
@@ -8423,10 +8423,16 @@
 		(instances
 			(project "LM"
 				(path "/44ac5032-effc-45ed-992b-f34e5147d774"
-					(reference "#PWR?")
+					(reference "#PWR02")
 					(unit 0)
 				)
 			)
 		)
 	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
 )

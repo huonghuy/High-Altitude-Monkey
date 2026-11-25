@@ -1,0 +1,239 @@
+** Drc report for VL.kicad_pcb **
+** Created on 2026-11-24T19:29:04 **
+** Report includes: Errors, Warnings **
+
+** Found 37 DRC violations **
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(168.9989 mm, 131.0000 mm): Segment on BoardOutLine
+    @(168.1965 mm, 118.2502 mm): Value field of R1 (12kΩ)
+[text_thickness]: Text thickness out of range (TrueType font characters with insufficient stroke weight)
+    Rule: board setup constraints silk text thickness; warning
+    @(184.6969 mm, 75.2445 mm): PCB text '5V' on TopSilkLayer
+[text_thickness]: Text thickness out of range (TrueType font characters with insufficient stroke weight)
+    Rule: board setup constraints silk text thickness; warning
+    @(184.6969 mm, 78.2445 mm): PCB text 'GND' on TopSilkLayer
+[text_thickness]: Text thickness out of range (TrueType font characters with insufficient stroke weight)
+    Rule: board setup constraints silk text thickness; warning
+    @(187.5082 mm, 115.0633 mm): PCB text 'DS1809-010' on TopSilkLayer
+[text_thickness]: Text thickness out of range (TrueType font characters with insufficient stroke weight)
+    Rule: board setup constraints silk text thickness; warning
+    @(187.1337 mm, 134.2229 mm): PCB text 'GND' on TopSilkLayer
+[text_thickness]: Text thickness out of range (TrueType font characters with insufficient stroke weight)
+    Rule: board setup constraints silk text thickness; warning
+    @(189.2879 mm, 134.2229 mm): PCB text 'D26' on TopSilkLayer
+[text_thickness]: Text thickness out of range (TrueType font characters with insufficient stroke weight)
+    Rule: board setup constraints silk text thickness; warning
+    @(191.4639 mm, 134.2229 mm): PCB text 'D24' on TopSilkLayer
+[text_thickness]: Text thickness out of range (TrueType font characters with insufficient stroke weight)
+    Rule: board setup constraints silk text thickness; warning
+    @(195.1337 mm, 134.2229 mm): PCB text 'VCC(12)' on TopSilkLayer
+[text_thickness]: Text thickness out of range (TrueType font characters with insufficient stroke weight)
+    Rule: board setup constraints silk text thickness; warning
+    @(191.0584 mm, 74.5528 mm): PCB text 'GND' on TopSilkLayer
+[text_thickness]: Text thickness out of range (TrueType font characters with insufficient stroke weight)
+    Rule: board setup constraints silk text thickness; warning
+    @(191.0584 mm, 77.2529 mm): PCB text '5V' on TopSilkLayer
+[text_thickness]: Text thickness out of range (TrueType font characters with insufficient stroke weight)
+    Rule: board setup constraints silk text thickness; warning
+    @(168.1965 mm, 118.2502 mm): Value field of R1 (12kΩ)
+[text_thickness]: Text thickness out of range (TrueType font characters with insufficient stroke weight)
+    Rule: board setup constraints silk text thickness; warning
+    @(175.8301 mm, 120.1966 mm): Value field of U2 (L78L05)
+[text_thickness]: Text thickness out of range (TrueType font characters with insufficient stroke weight)
+    Rule: board setup constraints silk text thickness; warning
+    @(176.6966 mm, 124.6699 mm): Value field of C1 (0.33uF)
+[text_thickness]: Text thickness out of range (TrueType font characters with insufficient stroke weight)
+    Rule: board setup constraints silk text thickness; warning
+    @(166.1966 mm, 124.6699 mm): Value field of C2 (0.1uF)
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; warning
+    @(182.9765 mm, 93.3745 mm): PCB text 'UB EEL' on TopSilkLayer
+    @(184.1902 mm, 101.4164 mm): Value field of U1 (DS1809-010 10k Digital Pot)
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; warning
+    @(182.5701 mm, 89.5520 mm): PCB text 'H.Huong' on TopSilkLayer
+    @(184.1902 mm, 101.4164 mm): Value field of U1 (DS1809-010 10k Digital Pot)
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; warning
+    @(182.9661 mm, 83.3745 mm): PCB text 'HAM:VL' on TopSilkLayer
+    @(184.1902 mm, 101.4164 mm): Value field of U1 (DS1809-010 10k Digital Pot)
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; warning
+    @(184.1902 mm, 101.4164 mm): Value field of U1 (DS1809-010 10k Digital Pot)
+    @(183.3638 mm, 97.3745 mm): PCB text 'CTSGC' on TopSilkLayer
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; warning
+    @(183.9465 mm, 138.0025 mm): Segment of CN1 on TopSilkLayer
+    @(182.9142 mm, 133.7760 mm): Reference field of CN1
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; warning
+    @(183.9465 mm, 132.0031 mm): Segment of CN1 on TopSilkLayer
+    @(182.9142 mm, 133.7760 mm): Reference field of CN1
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; warning
+    @(176.6966 mm, 124.6699 mm): Value field of C1 (0.33uF)
+    @(177.2700 mm, 126.0000 mm): Arc of U2 on TopSilkLayer
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; warning
+    @(177.0000 mm, 123.9144 mm): Reference field of U2
+    @(177.2700 mm, 126.0000 mm): Arc of U2 on TopSilkLayer
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; warning
+    @(176.6966 mm, 124.6699 mm): Value field of C1 (0.33uF)
+    @(177.2700 mm, 126.0000 mm): Arc of U2 on TopSilkLayer
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; warning
+    @(176.6966 mm, 124.6699 mm): Value field of C1 (0.33uF)
+    @(177.0000 mm, 123.9144 mm): Reference field of U2
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; warning
+    @(191.4639 mm, 134.2229 mm): PCB text 'D24' on TopSilkLayer
+    @(195.1337 mm, 134.2229 mm): PCB text 'VCC(12)' on TopSilkLayer
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; warning
+    @(184.6969 mm, 78.2445 mm): PCB text 'GND' on TopSilkLayer
+    @(185.4598 mm, 72.1903 mm): Rectangle of CN3 on TopSilkLayer
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; warning
+    @(184.6969 mm, 78.2445 mm): PCB text 'GND' on TopSilkLayer
+    @(185.4498 mm, 78.0003 mm): Rectangle of CN3 on TopSilkLayer
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; warning
+    @(185.4498 mm, 75.5003 mm): Rectangle of CN3 on TopSilkLayer
+    @(184.6969 mm, 78.2445 mm): PCB text 'GND' on TopSilkLayer
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; warning
+    @(184.6969 mm, 75.2445 mm): PCB text '5V' on TopSilkLayer
+    @(185.4598 mm, 72.1903 mm): Rectangle of CN3 on TopSilkLayer
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; warning
+    @(184.6969 mm, 75.2445 mm): PCB text '5V' on TopSilkLayer
+    @(185.4498 mm, 72.2003 mm): Rectangle of CN3 on TopSilkLayer
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; warning
+    @(190.5398 mm, 79.8099 mm): Rectangle of CN4 on TopSilkLayer
+    @(191.0584 mm, 74.5528 mm): PCB text 'GND' on TopSilkLayer
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; warning
+    @(189.4184 mm, 77.4041 mm): Reference field of CN4
+    @(191.0584 mm, 74.5528 mm): PCB text 'GND' on TopSilkLayer
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; warning
+    @(190.5498 mm, 76.4999 mm): Rectangle of CN4 on TopSilkLayer
+    @(191.0584 mm, 74.5528 mm): PCB text 'GND' on TopSilkLayer
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; warning
+    @(190.5398 mm, 79.8099 mm): Rectangle of CN4 on TopSilkLayer
+    @(191.0584 mm, 77.2529 mm): PCB text '5V' on TopSilkLayer
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; warning
+    @(191.0584 mm, 77.2529 mm): PCB text '5V' on TopSilkLayer
+    @(190.5498 mm, 79.7999 mm): Rectangle of CN4 on TopSilkLayer
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; warning
+    @(187.6404 mm, 77.4041 mm): Value field of CN4 (Camera)
+    @(188.3597 mm, 74.5951 mm): Value field of CN3 (VL Power)
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; warning
+    @(172.6299 mm, 116.2703 mm): Rectangle of R1 on TopSilkLayer
+    @(171.9143 mm, 117.0803 mm): Reference field of R1
+
+** Found 0 unconnected pads **
+
+** Found 29 Footprint errors **
+[missing_footprint]: Missing footprint A1 (A)
+    Local override; warning
+[net_conflict]: Pad net (VCC(12)) doesn't match net given by schematic (/VCC(12))
+    Local override; warning
+    @(182.5000 mm, 124.5000 mm): PTH pad 1 [VCC(12)] of C1
+[net_conflict]: Pad net (5V_DS) doesn't match net given by schematic (/5V_DS)
+    Local override; warning
+    @(172.0000 mm, 124.5000 mm): PTH pad 1 [5V_DS] of C2
+[footprint_symbol_mismatch]: 4PIN_2.54_MM_JST_XHP_JST_CONNECTOR_FOR_DC_SOCKET doesn't match footprint given by symbol ()
+    Local override; warning
+    @(183.9998 mm, 138.0000 mm): Footprint CN1
+[net_conflict]: Pad net (D26) doesn't match net given by schematic (/D26)
+    Local override; warning
+    @(188.8992 mm, 135.5014 mm): PTH pad 2 [D26] of CN1
+[net_conflict]: Pad net (D24) doesn't match net given by schematic (/D24)
+    Local override; warning
+    @(191.4392 mm, 135.5034 mm): PTH pad 3 [D24] of CN1
+[net_conflict]: Pad net (VCC(12)) doesn't match net given by schematic (/VCC(12))
+    Local override; warning
+    @(193.9792 mm, 135.5034 mm): PTH pad 4 [VCC(12)] of CN1
+[footprint_symbol_field_mismatch]: Missing symbol field 'Manufacturer Part' in footprint
+    Local override; warning
+    @(104.5002 mm, 136.0000 mm): Footprint CN2
+[net_conflict]: Pad net (5V) doesn't match net given by schematic (/5V)
+    Local override; warning
+    @(107.0002 mm, 136.0000 mm): PTH pad 2 [5V] of CN2
+[net_conflict]: Pad net (CN2_3) doesn't match net given by schematic (unconnected-(CN2-Pad3))
+    Local override; warning
+    @(109.5002 mm, 136.0000 mm): PTH pad 3 [CN2_3] of CN2
+[footprint_symbol_mismatch]: Value (CN3) doesn't match symbol value (VL Power)
+    Local override; warning
+    @(182.9998 mm, 74.7503 mm): Footprint CN3
+[footprint_symbol_field_mismatch]: Missing symbol field 'Manufacturer Part' in footprint
+    Local override; warning
+    @(182.9998 mm, 74.7503 mm): Footprint CN3
+[net_conflict]: Pad net (5V) doesn't match net given by schematic (/5V)
+    Local override; warning
+    @(182.9998 mm, 74.7503 mm): PTH pad 1 [5V] of CN3
+[footprint_symbol_mismatch]: Value (CN4) doesn't match symbol value (Camera)
+    Local override; warning
+    @(192.9998 mm, 77.2499 mm): Footprint CN4
+[footprint_symbol_field_mismatch]: Missing symbol field 'Manufacturer Part' in footprint
+    Local override; warning
+    @(192.9998 mm, 77.2499 mm): Footprint CN4
+[net_conflict]: Pad net (5V) doesn't match net given by schematic (/5V)
+    Local override; warning
+    @(192.9998 mm, 77.2499 mm): PTH pad 1 [5V] of CN4
+[footprint_symbol_field_mismatch]: Missing symbol field 'Manufacturer Part' in footprint
+    Local override; warning
+    @(173.9999 mm, 118.0803 mm): Footprint R1
+[net_conflict]: Pad net (U1_4) doesn't match net given by schematic (Net-(U1-RL))
+    Local override; warning
+    @(173.9999 mm, 118.0803 mm): PTH pad 1 [U1_4] of R1
+[net_conflict]: Pad net (U1_1) doesn't match net given by schematic (Net-(U1-RH))
+    Local override; warning
+    @(173.9999 mm, 107.9203 mm): PTH pad 2 [U1_1] of R1
+[footprint_symbol_field_mismatch]: Missing symbol field 'Manufacturer Part' in footprint
+    Local override; warning
+    @(184.1899 mm, 109.1904 mm): Footprint U1
+[net_conflict]: Pad net (U1_1) doesn't match net given by schematic (Net-(U1-RH))
+    Local override; warning
+    @(184.1899 mm, 109.1904 mm): PTH pad 1 [U1_1] of U1
+[net_conflict]: Pad net (D24) doesn't match net given by schematic (/D24)
+    Local override; warning
+    @(184.1899 mm, 111.7304 mm): PTH pad 2 [D24] of U1
+[net_conflict]: Pad net (U1_4) doesn't match net given by schematic (Net-(U1-RL))
+    Local override; warning
+    @(184.1899 mm, 116.8104 mm): PTH pad 4 [U1_4] of U1
+[net_conflict]: Pad net (U1_1) doesn't match net given by schematic (Net-(U1-RH))
+    Local override; warning
+    @(191.8099 mm, 114.2704 mm): PTH pad 6 [U1_1] of U1
+[net_conflict]: Pad net (D26) doesn't match net given by schematic (/D26)
+    Local override; warning
+    @(191.8099 mm, 111.7304 mm): PTH pad 7 [D26] of U1
+[net_conflict]: Pad net (5V_DS) doesn't match net given by schematic (/5V_DS)
+    Local override; warning
+    @(191.8099 mm, 109.1904 mm): PTH pad 8 [5V_DS] of U1
+[footprint_symbol_mismatch]: Value (U2) doesn't match symbol value (L78L05)
+    Local override; warning
+    @(176.0000 mm, 126.0000 mm): Footprint U2
+[net_conflict]: Pad net (5V_DS) doesn't match net given by schematic (/5V_DS)
+    Local override; warning
+    @(176.0000 mm, 126.0000 mm): PTH pad 1 [5V_DS] of U2
+[net_conflict]: Pad net (VCC(12)) doesn't match net given by schematic (/VCC(12))
+    Local override; warning
+    @(178.5400 mm, 126.0000 mm): PTH pad 3 [VCC(12)] of U2
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **

@@ -1,0 +1,672 @@
+** Drc report for LM.kicad_pcb **
+** Created on 2026-11-24T19:29:43 **
+** Report includes: Errors, Warnings **
+
+** Found 58 DRC violations **
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1967 mm)
+    Local override; error
+    @(149.7664 mm, 101.6288 mm): Track [D19(RXD)] on TopLayer, length 1.3271 mm
+    @(148.9041 mm, 101.0001 mm): Via [D18(TXD)] on TopLayer - BottomLayer
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1719 mm)
+    Local override; error
+    @(148.4393 mm, 101.6288 mm): Via [D19(RXD)] on TopLayer - BottomLayer
+    @(148.9041 mm, 101.0001 mm): Via [D18(TXD)] on TopLayer - BottomLayer
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1825 mm)
+    Local override; error
+    @(145.8993 mm, 103.2998 mm): Track [D18(TXD)] on BottomLayer, length 3.2523 mm
+    @(148.4393 mm, 101.6288 mm): Via [D19(RXD)] on TopLayer - BottomLayer
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1967 mm)
+    Local override; error
+    @(148.1990 mm, 101.0001 mm): Track [D18(TXD)] on BottomLayer, length 0.7051 mm
+    @(148.4393 mm, 101.6288 mm): Via [D19(RXD)] on TopLayer - BottomLayer
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1628 mm)
+    Local override; error
+    @(148.4393 mm, 124.5034 mm): PTH pad 3 [D19(RXD)] of CN1
+    @(149.6181 mm, 124.9460 mm): Track [U3_2] on TopLayer, length 2.9927 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1710 mm)
+    Local override; error
+    @(143.2328 mm, 116.2467 mm): Track [D16(TX2)] on TopLayer, length 3.9132 mm
+    @(145.5000 mm, 112.7001 mm): Pad 12 [D17(RX2)] of U2 on TopLayer
+[padstack]: Padstack is questionable (negative solder paste margin is larger than pad; no solder paste mask will be generated)
+    Local override; warning
+    @(142.1005 mm, 116.2467 mm): Pad 1 [D16(TX2)] of R1 on TopLayer
+[padstack]: Padstack is questionable (negative solder paste margin is larger than pad; no solder paste mask will be generated)
+    Local override; warning
+    @(142.1005 mm, 117.7535 mm): Pad 2 [U3_2] of R1 on TopLayer
+[padstack]: Padstack is questionable (negative solder paste margin is larger than pad; no solder paste mask will be generated)
+    Local override; warning
+    @(123.4006 mm, 117.0001 mm): Pad 1 [GND] of C3 on TopLayer
+[padstack]: Padstack is questionable (negative solder paste margin is larger than pad; no solder paste mask will be generated)
+    Local override; warning
+    @(126.8006 mm, 117.0001 mm): Pad 2 [+5V] of C3 on TopLayer
+[padstack]: Padstack is questionable (negative solder paste margin is larger than pad; no solder paste mask will be generated)
+    Local override; warning
+    @(134.2999 mm, 93.0001 mm): Pad 1 [GND] of C1 on TopLayer
+[padstack]: Padstack is questionable (negative solder paste margin is larger than pad; no solder paste mask will be generated)
+    Local override; warning
+    @(137.6999 mm, 93.0001 mm): Pad 2 [+5V] of C1 on TopLayer
+[padstack]: Padstack is questionable (negative solder paste margin is larger than pad; no solder paste mask will be generated)
+    Local override; warning
+    @(146.1005 mm, 116.2467 mm): Pad 1 [GND] of R2 on TopLayer
+[padstack]: Padstack is questionable (negative solder paste margin is larger than pad; no solder paste mask will be generated)
+    Local override; warning
+    @(146.1005 mm, 117.7535 mm): Pad 2 [U3_2] of R2 on TopLayer
+[padstack]: Padstack is questionable (negative solder paste margin is larger than pad; no solder paste mask will be generated)
+    Local override; warning
+    @(123.4006 mm, 111.0001 mm): Pad 1 [GND] of C2 on TopLayer
+[padstack]: Padstack is questionable (negative solder paste margin is larger than pad; no solder paste mask will be generated)
+    Local override; warning
+    @(126.8006 mm, 111.0001 mm): Pad 2 [+5V] of C2 on TopLayer
+[padstack]: Padstack is questionable (negative solder paste margin is larger than pad; no solder paste mask will be generated)
+    Local override; warning
+    @(127.4006 mm, 123.0001 mm): Pad 1 [GND] of C4 on TopLayer
+[padstack]: Padstack is questionable (negative solder paste margin is larger than pad; no solder paste mask will be generated)
+    Local override; warning
+    @(130.8006 mm, 123.0001 mm): Pad 2 [U2_98] of C4 on TopLayer
+[padstack]: Padstack is questionable (negative solder paste margin is larger than pad; no solder paste mask will be generated)
+    Local override; warning
+    @(119.4732 mm, 95.8000 mm): Pad A1-B12 [U4_A1-B12] of U4 on TopLayer
+[padstack]: Padstack is questionable (negative solder paste margin is larger than pad; no solder paste mask will be generated)
+    Local override; warning
+    @(119.4732 mm, 96.6001 mm): Pad A4-B9 [U4_A4-B9] of U4 on TopLayer
+[padstack]: Padstack is questionable (negative solder paste margin is larger than pad; no solder paste mask will be generated)
+    Local override; warning
+    @(119.4732 mm, 97.7502 mm): Pad A5 [U4_A5] of U4 on TopLayer
+[padstack]: Padstack is questionable (negative solder paste margin is larger than pad; no solder paste mask will be generated)
+    Local override; warning
+    @(119.4732 mm, 98.7502 mm): Pad A6 [U4_A6] of U4 on TopLayer
+[padstack]: Padstack is questionable (negative solder paste margin is larger than pad; no solder paste mask will be generated)
+    Local override; warning
+    @(119.4732 mm, 99.2500 mm): Pad A7 [U4_A7] of U4 on TopLayer
+[padstack]: Padstack is questionable (negative solder paste margin is larger than pad; no solder paste mask will be generated)
+    Local override; warning
+    @(119.4732 mm, 100.2500 mm): Pad A8 [U4_A8] of U4 on TopLayer
+[padstack]: Padstack is questionable (negative solder paste margin is larger than pad; no solder paste mask will be generated)
+    Local override; warning
+    @(119.4732 mm, 102.2000 mm): Pad B1-A12 [U4_B1-A12] of U4 on TopLayer
+[padstack]: Padstack is questionable (negative solder paste margin is larger than pad; no solder paste mask will be generated)
+    Local override; warning
+    @(119.4732 mm, 101.4001 mm): Pad B4-A9 [U4_B4-A9] of U4 on TopLayer
+[padstack]: Padstack is questionable (negative solder paste margin is larger than pad; no solder paste mask will be generated)
+    Local override; warning
+    @(119.4732 mm, 100.7502 mm): Pad B5 [U4_B5] of U4 on TopLayer
+[padstack]: Padstack is questionable (negative solder paste margin is larger than pad; no solder paste mask will be generated)
+    Local override; warning
+    @(119.4732 mm, 99.7502 mm): Pad B6 [U4_B6] of U4 on TopLayer
+[padstack]: Padstack is questionable (negative solder paste margin is larger than pad; no solder paste mask will be generated)
+    Local override; warning
+    @(119.4732 mm, 98.2500 mm): Pad B7 [U4_B7] of U4 on TopLayer
+[padstack]: Padstack is questionable (negative solder paste margin is larger than pad; no solder paste mask will be generated)
+    Local override; warning
+    @(119.4732 mm, 97.2500 mm): Pad B8 [U4_B8] of U4 on TopLayer
+[text_thickness]: Text thickness out of range (TrueType font characters with insufficient stroke weight)
+    Rule: board setup constraints silk text thickness; warning
+    @(143.9999 mm, 120.2001 mm): PCB text 'VCC' on TopSilkLayer
+[text_thickness]: Text thickness out of range (TrueType font characters with insufficient stroke weight)
+    Rule: board setup constraints silk text thickness; warning
+    @(146.6118 mm, 120.1815 mm): PCB text 'TX' on TopSilkLayer
+[text_thickness]: Text thickness out of range (TrueType font characters with insufficient stroke weight)
+    Rule: board setup constraints silk text thickness; warning
+    @(149.2780 mm, 120.3481 mm): PCB text 'RX' on TopSilkLayer
+[text_thickness]: Text thickness out of range (TrueType font characters with insufficient stroke weight)
+    Rule: board setup constraints silk text thickness; warning
+    @(152.9999 mm, 120.2001 mm): PCB text 'GND' on TopSilkLayer
+[text_thickness]: Text thickness out of range (TrueType font characters with insufficient stroke weight)
+    Rule: board setup constraints silk text thickness; warning
+    @(140.8422 mm, 127.7260 mm): PCB text 'TTL to RS232' on TopSilkLayer
+[text_thickness]: Text thickness out of range (TrueType font characters with insufficient stroke weight)
+    Rule: board setup constraints silk text thickness; warning
+    @(164.0197 mm, 110.1720 mm): PCB text 'HC-05' on TopSilkLayer
+[text_thickness]: Text thickness out of range (TrueType font characters with insufficient stroke weight)
+    Rule: board setup constraints silk text thickness; warning
+    @(155.9999 mm, 91.4001 mm): PCB text 'V2.7' on BottomSilkLayer
+[text_thickness]: Text thickness out of range (TrueType font characters with insufficient stroke weight)
+    Rule: board setup constraints silk text thickness; warning
+    @(156.0377 mm, 96.8035 mm): PCB text 'H.Huong' on BottomSilkLayer
+[text_thickness]: Text thickness out of range (TrueType font characters with insufficient stroke weight)
+    Rule: board setup constraints silk text thickness; warning
+    @(156.0446 mm, 93.1354 mm): PCB text 'CTSGC' on BottomSilkLayer
+[text_thickness]: Text thickness out of range (TrueType font characters with insufficient stroke weight)
+    Rule: board setup constraints silk text thickness; warning
+    @(156.0507 mm, 89.5830 mm): PCB text 'HAM: Colobus' on BottomSilkLayer
+[text_thickness]: Text thickness out of range (TrueType font characters with insufficient stroke weight)
+    Rule: board setup constraints silk text thickness; warning
+    @(156.0598 mm, 94.9675 mm): PCB text 'UB EEL' on BottomSilkLayer
+[text_thickness]: Text thickness out of range (TrueType font characters with insufficient stroke weight)
+    Rule: board setup constraints silk text thickness; warning
+    @(156.0837 mm, 99.2134 mm): PCB text 'S. Gudi' on BottomSilkLayer
+[text_thickness]: Text thickness out of range (TrueType font characters with insufficient stroke weight)
+    Rule: board setup constraints silk text thickness; warning
+    @(147.4129 mm, 116.9104 mm): Value field of R1 (1kΩ)
+[text_thickness]: Text thickness out of range (TrueType font characters with insufficient stroke weight)
+    Rule: board setup constraints silk text thickness; warning
+    @(151.4129 mm, 117.0064 mm): Value field of R2 (2kΩ)
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; warning
+    @(147.4129 mm, 116.9104 mm): Value field of R1 (1kΩ)
+    @(148.0309 mm, 117.0001 mm): Reference field of R2
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; warning
+    @(158.7449 mm, 92.5851 mm): Segment of U3 on TopSilkLayer
+    @(145.9999 mm, 93.4177 mm): Value field of U2 (ATMEGA2560-16AU)
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; warning
+    @(137.8003 mm, 124.2065 mm): Value field of CN1 (JST-XH2.5 (TTL_to_RS232))
+    @(138.9237 mm, 111.3306 mm): Segment of U2 on TopSilkLayer
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(137.8003 mm, 124.2065 mm): Value field of CN1 (JST-XH2.5 (TTL_to_RS232))
+    @(138.2999 mm, 110.5002 mm): Pad 99 [GND] of U2 on TopLayer
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(137.8003 mm, 124.2065 mm): Value field of CN1 (JST-XH2.5 (TTL_to_RS232))
+    @(138.2999 mm, 111.0001 mm): Pad 100 [+5V] of U2 on TopLayer
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(137.8003 mm, 124.2065 mm): Value field of CN1 (JST-XH2.5 (TTL_to_RS232))
+    @(138.2999 mm, 107.0001 mm): Pad 92 [U2_92] of U2 on TopLayer
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(137.8003 mm, 124.2065 mm): Value field of CN1 (JST-XH2.5 (TTL_to_RS232))
+    @(138.2999 mm, 106.5002 mm): Pad 91 [U2_91] of U2 on TopLayer
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(137.8003 mm, 124.2065 mm): Value field of CN1 (JST-XH2.5 (TTL_to_RS232))
+    @(138.2999 mm, 106.0001 mm): Pad 90 [U2_90] of U2 on TopLayer
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(137.8003 mm, 124.2065 mm): Value field of CN1 (JST-XH2.5 (TTL_to_RS232))
+    @(138.2999 mm, 110.0001 mm): Pad 98 [U2_98] of U2 on TopLayer
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(137.8003 mm, 124.2065 mm): Value field of CN1 (JST-XH2.5 (TTL_to_RS232))
+    @(138.2999 mm, 109.5002 mm): Pad 97 [U2_97] of U2 on TopLayer
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(137.8003 mm, 124.2065 mm): Value field of CN1 (JST-XH2.5 (TTL_to_RS232))
+    @(138.2999 mm, 109.0001 mm): Pad 96 [U2_96] of U2 on TopLayer
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(137.8003 mm, 124.2065 mm): Value field of CN1 (JST-XH2.5 (TTL_to_RS232))
+    @(138.2999 mm, 108.5002 mm): Pad 95 [U2_95] of U2 on TopLayer
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(137.8003 mm, 124.2065 mm): Value field of CN1 (JST-XH2.5 (TTL_to_RS232))
+    @(138.2999 mm, 108.0001 mm): Pad 94 [U2_94] of U2 on TopLayer
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(137.8003 mm, 124.2065 mm): Value field of CN1 (JST-XH2.5 (TTL_to_RS232))
+    @(138.2999 mm, 107.5002 mm): Pad 93 [U2_93] of U2 on TopLayer
+
+** Found 14 unconnected pads **
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(123.4006 mm, 111.0001 mm): Pad 1 [GND] of C2 on TopLayer
+    @(138.2999 mm, 110.5002 mm): Pad 99 [GND] of U2 on TopLayer
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(138.2999 mm, 101.5002 mm): Pad 81 [GND] of U2 on TopLayer
+    @(138.2999 mm, 110.5002 mm): Pad 99 [GND] of U2 on TopLayer
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(138.2999 mm, 101.5002 mm): Pad 81 [GND] of U2 on TopLayer
+    @(146.5000 mm, 97.3001 mm): Pad 62 [GND] of U2 on TopLayer
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(138.2999 mm, 101.5002 mm): Pad 81 [GND] of U2 on TopLayer
+    @(134.2999 mm, 93.0001 mm): Pad 1 [GND] of C1 on TopLayer
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(138.2999 mm, 110.5002 mm): Pad 99 [GND] of U2 on TopLayer
+    @(144.9999 mm, 112.7001 mm): Pad 11 [GND] of U2 on TopLayer
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(144.9999 mm, 112.7001 mm): Pad 11 [GND] of U2 on TopLayer
+    @(153.6999 mm, 108.0001 mm): Pad 32 [GND] of U2 on TopLayer
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(150.9793 mm, 121.1256 mm): Track [GND] on TopLayer, length 6.8997 mm
+    @(144.9999 mm, 112.7001 mm): Pad 11 [GND] of U2 on TopLayer
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(136.4584 mm, 102.5838 mm): Track [+5V] on TopLayer, length 11.9024 mm
+    @(138.2999 mm, 101.0001 mm): Pad 80 [+5V] of U2 on TopLayer
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(138.2999 mm, 111.0001 mm): Pad 100 [+5V] of U2 on TopLayer
+    @(143.3593 mm, 124.5015 mm): Track [+5V] on TopLayer, length 10.6086 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(144.5000 mm, 112.7001 mm): Pad 10 [+5V] of U2 on TopLayer
+    @(138.2999 mm, 111.0001 mm): Pad 100 [+5V] of U2 on TopLayer
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(144.5000 mm, 112.7001 mm): Pad 10 [+5V] of U2 on TopLayer
+    @(153.6999 mm, 108.5002 mm): Pad 31 [+5V] of U2 on TopLayer
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(146.9999 mm, 97.3001 mm): Pad 61 [+5V] of U2 on TopLayer
+    @(138.2999 mm, 101.0001 mm): Pad 80 [+5V] of U2 on TopLayer
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(145.5000 mm, 112.7001 mm): Pad 12 [D17(RX2)] of U2 on TopLayer
+    @(165.7299 mm, 128.1451 mm): PTH pad 3 [D17(RX2)] of U3
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(130.8006 mm, 123.0001 mm): Pad 2 [U2_98] of C4 on TopLayer
+    @(138.2999 mm, 110.0001 mm): Pad 98 [U2_98] of U2 on TopLayer
+
+** Found 135 Footprint errors **
+[missing_footprint]: Missing footprint A1 (A)
+    Local override; warning
+[footprint_symbol_mismatch]: SMD 1206 CAPACITOR doesn't match footprint given by symbol ()
+    Local override; warning
+    @(135.9999 mm, 93.0001 mm): Footprint C1
+[footprint_symbol_field_mismatch]: Missing symbol field 'Manufacturer Part' in footprint
+    Local override; warning
+    @(135.9999 mm, 93.0001 mm): Footprint C1
+[footprint_symbol_mismatch]: SMD 1206 CAPACITOR doesn't match footprint given by symbol ()
+    Local override; warning
+    @(125.1006 mm, 111.0001 mm): Footprint C2
+[footprint_symbol_field_mismatch]: Missing symbol field 'Manufacturer Part' in footprint
+    Local override; warning
+    @(125.1006 mm, 111.0001 mm): Footprint C2
+[footprint_symbol_mismatch]: SMD 1206 CAPACITOR doesn't match footprint given by symbol ()
+    Local override; warning
+    @(125.1006 mm, 117.0001 mm): Footprint C3
+[footprint_symbol_field_mismatch]: Missing symbol field 'Manufacturer Part' in footprint
+    Local override; warning
+    @(125.1006 mm, 117.0001 mm): Footprint C3
+[footprint_symbol_mismatch]: SMD 1206 CAPACITOR doesn't match footprint given by symbol ()
+    Local override; warning
+    @(129.1006 mm, 123.0001 mm): Footprint C4
+[footprint_symbol_field_mismatch]: Missing symbol field 'Manufacturer Part' in footprint
+    Local override; warning
+    @(129.1006 mm, 123.0001 mm): Footprint C4
+[net_conflict]: Pad net (U2_98) doesn't match net given by schematic (Net-(U2-AREF))
+    Local override; warning
+    @(130.8006 mm, 123.0001 mm): Pad 2 [U2_98] of C4 on TopLayer
+[footprint_symbol_mismatch]: 4PIN_2.54_MM_JST_XHP_JST_CONNECTOR_FOR_DC_SOCKET doesn't match footprint given by symbol ()
+    Local override; warning
+    @(140.9999 mm, 127.0000 mm): Footprint CN1
+[net_conflict]: No corresponding pin found in schematic
+    Local override; warning
+    @(143.3593 mm, 124.5014 mm): PTH pad 1 [+5V] of CN1
+[net_conflict]: No corresponding pin found in schematic
+    Local override; warning
+    @(145.8993 mm, 124.5014 mm): PTH pad 2 [D18(TXD)] of CN1
+[net_conflict]: No corresponding pin found in schematic
+    Local override; warning
+    @(148.4393 mm, 124.5034 mm): PTH pad 3 [D19(RXD)] of CN1
+[net_conflict]: No corresponding pin found in schematic
+    Local override; warning
+    @(150.9793 mm, 124.5034 mm): PTH pad 4 [GND] of CN1
+[net_conflict]: No pad found for pin P$1 (+5V) in schematic
+    Local override; warning
+    @(140.9999 mm, 127.0000 mm): Footprint CN1
+[net_conflict]: No pad found for pin P$2 (D18(TXD)) in schematic
+    Local override; warning
+    @(140.9999 mm, 127.0000 mm): Footprint CN1
+[net_conflict]: No pad found for pin P$3 (D19(RXD)) in schematic
+    Local override; warning
+    @(140.9999 mm, 127.0000 mm): Footprint CN1
+[net_conflict]: No pad found for pin P$4 (GND) in schematic
+    Local override; warning
+    @(140.9999 mm, 127.0000 mm): Footprint CN1
+[footprint_symbol_mismatch]: R0603 doesn't match footprint given by symbol ()
+    Local override; warning
+    @(142.1005 mm, 117.0001 mm): Footprint R1
+[footprint_symbol_field_mismatch]: Missing symbol field 'Manufacturer Part' in footprint
+    Local override; warning
+    @(142.1005 mm, 117.0001 mm): Footprint R1
+[net_conflict]: Pad net (U3_2) doesn't match net given by schematic (Net-(U3-RX))
+    Local override; warning
+    @(142.1005 mm, 117.7535 mm): Pad 2 [U3_2] of R1 on TopLayer
+[footprint_symbol_mismatch]: R0603 doesn't match footprint given by symbol ()
+    Local override; warning
+    @(146.1005 mm, 117.0001 mm): Footprint R2
+[footprint_symbol_field_mismatch]: Missing symbol field 'Manufacturer Part' in footprint
+    Local override; warning
+    @(146.1005 mm, 117.0001 mm): Footprint R2
+[net_conflict]: Pad net (U3_2) doesn't match net given by schematic (Net-(U3-RX))
+    Local override; warning
+    @(146.1005 mm, 117.7535 mm): Pad 2 [U3_2] of R2 on TopLayer
+[footprint_symbol_mismatch]: TQFP-100_L14.0-W14.0-P0.50-LS16.0-BL doesn't match footprint given by symbol ()
+    Local override; warning
+    @(145.9999 mm, 105.0001 mm): Footprint U2
+[footprint_symbol_field_mismatch]: Missing symbol field 'Manufacturer Part' in footprint
+    Local override; warning
+    @(145.9999 mm, 105.0001 mm): Footprint U2
+[net_conflict]: Pad net (U2_1) doesn't match net given by schematic (unconnected-(U2-PG5_(OC0B)-Pad1))
+    Local override; warning
+    @(139.9999 mm, 112.7001 mm): Pad 1 [U2_1] of U2 on TopLayer
+[net_conflict]: Pad net (U2_2) doesn't match net given by schematic (unconnected-(U2-PE0_(RXD0PCINT8)-Pad2))
+    Local override; warning
+    @(140.5000 mm, 112.7001 mm): Pad 2 [U2_2] of U2 on TopLayer
+[net_conflict]: Pad net (U2_3) doesn't match net given by schematic (unconnected-(U2-PE1_(TXD0)-Pad3))
+    Local override; warning
+    @(140.9999 mm, 112.7001 mm): Pad 3 [U2_3] of U2 on TopLayer
+[net_conflict]: Pad net (U2_4) doesn't match net given by schematic (unconnected-(U2-PE2_(XCK0AIN0)-Pad4))
+    Local override; warning
+    @(141.5000 mm, 112.7001 mm): Pad 4 [U2_4] of U2 on TopLayer
+[net_conflict]: Pad net (U2_5) doesn't match net given by schematic (unconnected-(U2-PE3_(OC3AAIN1)-Pad5))
+    Local override; warning
+    @(141.9999 mm, 112.7001 mm): Pad 5 [U2_5] of U2 on TopLayer
+[net_conflict]: Pad net (U2_6) doesn't match net given by schematic (unconnected-(U2-PE4_(OC3BINT4)-Pad6))
+    Local override; warning
+    @(142.5000 mm, 112.7001 mm): Pad 6 [U2_6] of U2 on TopLayer
+[net_conflict]: Pad net (U2_7) doesn't match net given by schematic (unconnected-(U2-PE5_(OC3CINT5)-Pad7))
+    Local override; warning
+    @(142.9999 mm, 112.7001 mm): Pad 7 [U2_7] of U2 on TopLayer
+[net_conflict]: Pad net (U2_8) doesn't match net given by schematic (unconnected-(U2-PE6_(T3INT6)-Pad8))
+    Local override; warning
+    @(143.5000 mm, 112.7001 mm): Pad 8 [U2_8] of U2 on TopLayer
+[net_conflict]: Pad net (U2_9) doesn't match net given by schematic (unconnected-(U2-PE7_(CLKOICP3INT7)-Pad9))
+    Local override; warning
+    @(143.9999 mm, 112.7001 mm): Pad 9 [U2_9] of U2 on TopLayer
+[net_conflict]: Pad net (U2_14) doesn't match net given by schematic (unconnected-(U2-PH2_(XCK2)-Pad14))
+    Local override; warning
+    @(146.5000 mm, 112.7001 mm): Pad 14 [U2_14] of U2 on TopLayer
+[net_conflict]: Pad net (U2_15) doesn't match net given by schematic (unconnected-(U2-PH3_(OC4A)-Pad15))
+    Local override; warning
+    @(146.9999 mm, 112.7001 mm): Pad 15 [U2_15] of U2 on TopLayer
+[net_conflict]: Pad net (U2_16) doesn't match net given by schematic (unconnected-(U2-PH4_(OC4B)-Pad16))
+    Local override; warning
+    @(147.5000 mm, 112.7001 mm): Pad 16 [U2_16] of U2 on TopLayer
+[net_conflict]: Pad net (U2_17) doesn't match net given by schematic (unconnected-(U2-PH5_(OC4C)-Pad17))
+    Local override; warning
+    @(147.9999 mm, 112.7001 mm): Pad 17 [U2_17] of U2 on TopLayer
+[net_conflict]: Pad net (U2_18) doesn't match net given by schematic (unconnected-(U2-PH6_(OC2B)-Pad18))
+    Local override; warning
+    @(148.5000 mm, 112.7001 mm): Pad 18 [U2_18] of U2 on TopLayer
+[net_conflict]: Pad net (U2_19) doesn't match net given by schematic (unconnected-(U2-PB0_(SS#PCINT0)-Pad19))
+    Local override; warning
+    @(148.9999 mm, 112.7001 mm): Pad 19 [U2_19] of U2 on TopLayer
+[net_conflict]: Pad net (U2_20) doesn't match net given by schematic (unconnected-(U2-PB1_(SCKPCINT1)-Pad20))
+    Local override; warning
+    @(149.5000 mm, 112.7001 mm): Pad 20 [U2_20] of U2 on TopLayer
+[net_conflict]: Pad net (U2_21) doesn't match net given by schematic (unconnected-(U2-PB2_(MOSIPCINT2)-Pad21))
+    Local override; warning
+    @(149.9999 mm, 112.7001 mm): Pad 21 [U2_21] of U2 on TopLayer
+[net_conflict]: Pad net (U2_22) doesn't match net given by schematic (unconnected-(U2-PB3_(MISOPCINT3)-Pad22))
+    Local override; warning
+    @(150.5000 mm, 112.7001 mm): Pad 22 [U2_22] of U2 on TopLayer
+[net_conflict]: Pad net (U2_23) doesn't match net given by schematic (unconnected-(U2-PB4_(OC2APCINT4)-Pad23))
+    Local override; warning
+    @(150.9999 mm, 112.7001 mm): Pad 23 [U2_23] of U2 on TopLayer
+[net_conflict]: Pad net (U2_24) doesn't match net given by schematic (unconnected-(U2-PB5_(OC1APCINT5)-Pad24))
+    Local override; warning
+    @(151.5000 mm, 112.7001 mm): Pad 24 [U2_24] of U2 on TopLayer
+[net_conflict]: Pad net (U2_25) doesn't match net given by schematic (unconnected-(U2-PB6_(OC1BPCINT6)-Pad25))
+    Local override; warning
+    @(151.9999 mm, 112.7001 mm): Pad 25 [U2_25] of U2 on TopLayer
+[net_conflict]: Pad net (U2_26) doesn't match net given by schematic (unconnected-(U2-PB7_(OC0AOC1CPCINT7)-Pad26))
+    Local override; warning
+    @(153.6999 mm, 111.0001 mm): Pad 26 [U2_26] of U2 on TopLayer
+[net_conflict]: Pad net (U2_27) doesn't match net given by schematic (unconnected-(U2-PH7_(T4)-Pad27))
+    Local override; warning
+    @(153.6999 mm, 110.5002 mm): Pad 27 [U2_27] of U2 on TopLayer
+[net_conflict]: Pad net (U2_28) doesn't match net given by schematic (unconnected-(U2-PG3_(TOSC2)-Pad28))
+    Local override; warning
+    @(153.6999 mm, 110.0001 mm): Pad 28 [U2_28] of U2 on TopLayer
+[net_conflict]: Pad net (U2_29) doesn't match net given by schematic (unconnected-(U2-PG4_(TOSC1)-Pad29))
+    Local override; warning
+    @(153.6999 mm, 109.5002 mm): Pad 29 [U2_29] of U2 on TopLayer
+[net_conflict]: Pad net (U2_30) doesn't match net given by schematic (unconnected-(U2-RESET#-Pad30))
+    Local override; warning
+    @(153.6999 mm, 109.0001 mm): Pad 30 [U2_30] of U2 on TopLayer
+[net_conflict]: Pad net (U2_33) doesn't match net given by schematic (unconnected-(U2-XTAL2-Pad33))
+    Local override; warning
+    @(153.6999 mm, 107.5002 mm): Pad 33 [U2_33] of U2 on TopLayer
+[net_conflict]: Pad net (U2_34) doesn't match net given by schematic (unconnected-(U2-XTAL1-Pad34))
+    Local override; warning
+    @(153.6999 mm, 107.0001 mm): Pad 34 [U2_34] of U2 on TopLayer
+[net_conflict]: Pad net (U2_35) doesn't match net given by schematic (unconnected-(U2-PL0_(ICP4)-Pad35))
+    Local override; warning
+    @(153.6999 mm, 106.5002 mm): Pad 35 [U2_35] of U2 on TopLayer
+[net_conflict]: Pad net (U2_36) doesn't match net given by schematic (unconnected-(U2-PL1_(ICP5)-Pad36))
+    Local override; warning
+    @(153.6999 mm, 106.0001 mm): Pad 36 [U2_36] of U2 on TopLayer
+[net_conflict]: Pad net (U2_37) doesn't match net given by schematic (unconnected-(U2-PL2_(T5)-Pad37))
+    Local override; warning
+    @(153.6999 mm, 105.5002 mm): Pad 37 [U2_37] of U2 on TopLayer
+[net_conflict]: Pad net (U2_38) doesn't match net given by schematic (unconnected-(U2-PL3_(OC5A)-Pad38))
+    Local override; warning
+    @(153.6999 mm, 105.0001 mm): Pad 38 [U2_38] of U2 on TopLayer
+[net_conflict]: Pad net (U2_39) doesn't match net given by schematic (unconnected-(U2-PL4_(OC5B)-Pad39))
+    Local override; warning
+    @(153.6999 mm, 104.5002 mm): Pad 39 [U2_39] of U2 on TopLayer
+[net_conflict]: Pad net (U2_40) doesn't match net given by schematic (unconnected-(U2-PL5_(OC5C)-Pad40))
+    Local override; warning
+    @(153.6999 mm, 104.0001 mm): Pad 40 [U2_40] of U2 on TopLayer
+[net_conflict]: Pad net (U2_41) doesn't match net given by schematic (unconnected-(U2-PL6-Pad41))
+    Local override; warning
+    @(153.6999 mm, 103.5002 mm): Pad 41 [U2_41] of U2 on TopLayer
+[net_conflict]: Pad net (U2_42) doesn't match net given by schematic (unconnected-(U2-PL7-Pad42))
+    Local override; warning
+    @(153.6999 mm, 103.0001 mm): Pad 42 [U2_42] of U2 on TopLayer
+[net_conflict]: Pad net (U2_43) doesn't match net given by schematic (unconnected-(U2-PD0_(SCLINT0)-Pad43))
+    Local override; warning
+    @(153.6999 mm, 102.5002 mm): Pad 43 [U2_43] of U2 on TopLayer
+[net_conflict]: Pad net (U2_44) doesn't match net given by schematic (unconnected-(U2-PD1_(SDAINT1)-Pad44))
+    Local override; warning
+    @(153.6999 mm, 102.0001 mm): Pad 44 [U2_44] of U2 on TopLayer
+[net_conflict]: Pad net (U2_47) doesn't match net given by schematic (unconnected-(U2-PD4_(ICP1)-Pad47))
+    Local override; warning
+    @(153.6999 mm, 100.5002 mm): Pad 47 [U2_47] of U2 on TopLayer
+[net_conflict]: Pad net (U2_48) doesn't match net given by schematic (unconnected-(U2-PD5_(XCK1)-Pad48))
+    Local override; warning
+    @(153.6999 mm, 100.0001 mm): Pad 48 [U2_48] of U2 on TopLayer
+[net_conflict]: Pad net (U2_49) doesn't match net given by schematic (unconnected-(U2-PD6_(T1)-Pad49))
+    Local override; warning
+    @(153.6999 mm, 99.5002 mm): Pad 49 [U2_49] of U2 on TopLayer
+[net_conflict]: Pad net (U2_50) doesn't match net given by schematic (unconnected-(U2-PD7_(T0)-Pad50))
+    Local override; warning
+    @(153.6999 mm, 99.0001 mm): Pad 50 [U2_50] of U2 on TopLayer
+[net_conflict]: Pad net (U2_51) doesn't match net given by schematic (unconnected-(U2-PG0_(WR#)-Pad51))
+    Local override; warning
+    @(151.9999 mm, 97.3001 mm): Pad 51 [U2_51] of U2 on TopLayer
+[net_conflict]: Pad net (U2_52) doesn't match net given by schematic (unconnected-(U2-PG1_(RD#)-Pad52))
+    Local override; warning
+    @(151.5000 mm, 97.3001 mm): Pad 52 [U2_52] of U2 on TopLayer
+[net_conflict]: Pad net (U2_53) doesn't match net given by schematic (unconnected-(U2-PC0_(A8)-Pad53))
+    Local override; warning
+    @(150.9999 mm, 97.3001 mm): Pad 53 [U2_53] of U2 on TopLayer
+[net_conflict]: Pad net (U2_54) doesn't match net given by schematic (unconnected-(U2-PC1_(A9)-Pad54))
+    Local override; warning
+    @(150.5000 mm, 97.3001 mm): Pad 54 [U2_54] of U2 on TopLayer
+[net_conflict]: Pad net (U2_55) doesn't match net given by schematic (unconnected-(U2-PC2_(A10)-Pad55))
+    Local override; warning
+    @(149.9999 mm, 97.3001 mm): Pad 55 [U2_55] of U2 on TopLayer
+[net_conflict]: Pad net (U2_56) doesn't match net given by schematic (unconnected-(U2-PC3_(A11)-Pad56))
+    Local override; warning
+    @(149.5000 mm, 97.3001 mm): Pad 56 [U2_56] of U2 on TopLayer
+[net_conflict]: Pad net (U2_57) doesn't match net given by schematic (unconnected-(U2-PC4_(A12)-Pad57))
+    Local override; warning
+    @(148.9999 mm, 97.3001 mm): Pad 57 [U2_57] of U2 on TopLayer
+[net_conflict]: Pad net (U2_58) doesn't match net given by schematic (unconnected-(U2-PC5_(A13)-Pad58))
+    Local override; warning
+    @(148.5000 mm, 97.3001 mm): Pad 58 [U2_58] of U2 on TopLayer
+[net_conflict]: Pad net (U2_59) doesn't match net given by schematic (unconnected-(U2-PC6_(A14)-Pad59))
+    Local override; warning
+    @(147.9999 mm, 97.3001 mm): Pad 59 [U2_59] of U2 on TopLayer
+[net_conflict]: Pad net (U2_60) doesn't match net given by schematic (unconnected-(U2-PC7_(A15)-Pad60))
+    Local override; warning
+    @(147.5000 mm, 97.3001 mm): Pad 60 [U2_60] of U2 on TopLayer
+[net_conflict]: Pad net (U2_63) doesn't match net given by schematic (unconnected-(U2-PJ0_(RXD3PCINT9)-Pad63))
+    Local override; warning
+    @(145.9999 mm, 97.3001 mm): Pad 63 [U2_63] of U2 on TopLayer
+[net_conflict]: Pad net (U2_64) doesn't match net given by schematic (unconnected-(U2-PJ1_(TXD3PCINT10)-Pad64))
+    Local override; warning
+    @(145.5000 mm, 97.3001 mm): Pad 64 [U2_64] of U2 on TopLayer
+[net_conflict]: Pad net (U2_65) doesn't match net given by schematic (unconnected-(U2-PJ2_(XCK3PCINT11)-Pad65))
+    Local override; warning
+    @(144.9999 mm, 97.3001 mm): Pad 65 [U2_65] of U2 on TopLayer
+[net_conflict]: Pad net (U2_66) doesn't match net given by schematic (unconnected-(U2-PJ3_(PCINT12)-Pad66))
+    Local override; warning
+    @(144.5000 mm, 97.3001 mm): Pad 66 [U2_66] of U2 on TopLayer
+[net_conflict]: Pad net (U2_67) doesn't match net given by schematic (unconnected-(U2-PJ4_(PCINT13)-Pad67))
+    Local override; warning
+    @(143.9999 mm, 97.3001 mm): Pad 67 [U2_67] of U2 on TopLayer
+[net_conflict]: Pad net (U2_68) doesn't match net given by schematic (unconnected-(U2-PJ5_(PCINT14)-Pad68))
+    Local override; warning
+    @(143.5000 mm, 97.3001 mm): Pad 68 [U2_68] of U2 on TopLayer
+[net_conflict]: Pad net (U2_69) doesn't match net given by schematic (unconnected-(U2-PJ6_(PCINT15)-Pad69))
+    Local override; warning
+    @(142.9999 mm, 97.3001 mm): Pad 69 [U2_69] of U2 on TopLayer
+[net_conflict]: Pad net (U2_70) doesn't match net given by schematic (unconnected-(U2-PG2_(ALE)-Pad70))
+    Local override; warning
+    @(142.5000 mm, 97.3001 mm): Pad 70 [U2_70] of U2 on TopLayer
+[net_conflict]: Pad net (U2_71) doesn't match net given by schematic (unconnected-(U2-PA7_(AD7)-Pad71))
+    Local override; warning
+    @(141.9999 mm, 97.3001 mm): Pad 71 [U2_71] of U2 on TopLayer
+[net_conflict]: Pad net (U2_72) doesn't match net given by schematic (unconnected-(U2-PA6_(AD6)-Pad72))
+    Local override; warning
+    @(141.5000 mm, 97.3001 mm): Pad 72 [U2_72] of U2 on TopLayer
+[net_conflict]: Pad net (U2_73) doesn't match net given by schematic (unconnected-(U2-PA5_(AD5)-Pad73))
+    Local override; warning
+    @(140.9999 mm, 97.3001 mm): Pad 73 [U2_73] of U2 on TopLayer
+[net_conflict]: Pad net (U2_74) doesn't match net given by schematic (unconnected-(U2-PA4_(AD4)-Pad74))
+    Local override; warning
+    @(140.5000 mm, 97.3001 mm): Pad 74 [U2_74] of U2 on TopLayer
+[net_conflict]: Pad net (U2_75) doesn't match net given by schematic (unconnected-(U2-PA3_(AD3)-Pad75))
+    Local override; warning
+    @(139.9999 mm, 97.3001 mm): Pad 75 [U2_75] of U2 on TopLayer
+[net_conflict]: Pad net (U2_76) doesn't match net given by schematic (unconnected-(U2-PA2_(AD2)-Pad76))
+    Local override; warning
+    @(138.2999 mm, 99.0001 mm): Pad 76 [U2_76] of U2 on TopLayer
+[net_conflict]: Pad net (U2_77) doesn't match net given by schematic (unconnected-(U2-PA1_(AD1)-Pad77))
+    Local override; warning
+    @(138.2999 mm, 99.5002 mm): Pad 77 [U2_77] of U2 on TopLayer
+[net_conflict]: Pad net (U2_78) doesn't match net given by schematic (unconnected-(U2-PA0_(AD0)-Pad78))
+    Local override; warning
+    @(138.2999 mm, 100.0001 mm): Pad 78 [U2_78] of U2 on TopLayer
+[net_conflict]: Pad net (U2_79) doesn't match net given by schematic (unconnected-(U2-PJ7-Pad79))
+    Local override; warning
+    @(138.2999 mm, 100.5002 mm): Pad 79 [U2_79] of U2 on TopLayer
+[net_conflict]: Pad net (U2_82) doesn't match net given by schematic (unconnected-(U2-PK7_(ADC15PCINT23)-Pad82))
+    Local override; warning
+    @(138.2999 mm, 102.0001 mm): Pad 82 [U2_82] of U2 on TopLayer
+[net_conflict]: Pad net (U2_83) doesn't match net given by schematic (unconnected-(U2-PK6_(ADC14PCINT22)-Pad83))
+    Local override; warning
+    @(138.2999 mm, 102.5002 mm): Pad 83 [U2_83] of U2 on TopLayer
+[net_conflict]: Pad net (U2_84) doesn't match net given by schematic (unconnected-(U2-PK5_(ADC13PCINT21)-Pad84))
+    Local override; warning
+    @(138.2999 mm, 103.0001 mm): Pad 84 [U2_84] of U2 on TopLayer
+[net_conflict]: Pad net (U2_85) doesn't match net given by schematic (unconnected-(U2-PK4_(ADC12PCINT20)-Pad85))
+    Local override; warning
+    @(138.2999 mm, 103.5002 mm): Pad 85 [U2_85] of U2 on TopLayer
+[net_conflict]: Pad net (U2_86) doesn't match net given by schematic (unconnected-(U2-PK3_(ADC11PCINT19)-Pad86))
+    Local override; warning
+    @(138.2999 mm, 104.0001 mm): Pad 86 [U2_86] of U2 on TopLayer
+[net_conflict]: Pad net (U2_87) doesn't match net given by schematic (unconnected-(U2-PK2_(ADC10PCINT18)-Pad87))
+    Local override; warning
+    @(138.2999 mm, 104.5002 mm): Pad 87 [U2_87] of U2 on TopLayer
+[net_conflict]: Pad net (U2_88) doesn't match net given by schematic (unconnected-(U2-PK1_(ADC9PCINT17)-Pad88))
+    Local override; warning
+    @(138.2999 mm, 105.0001 mm): Pad 88 [U2_88] of U2 on TopLayer
+[net_conflict]: Pad net (U2_89) doesn't match net given by schematic (unconnected-(U2-PK0_(ADC8PCINT16)-Pad89))
+    Local override; warning
+    @(138.2999 mm, 105.5002 mm): Pad 89 [U2_89] of U2 on TopLayer
+[net_conflict]: Pad net (U2_90) doesn't match net given by schematic (unconnected-(U2-PF7_(ADC7TDI)-Pad90))
+    Local override; warning
+    @(138.2999 mm, 106.0001 mm): Pad 90 [U2_90] of U2 on TopLayer
+[net_conflict]: Pad net (U2_91) doesn't match net given by schematic (unconnected-(U2-PF6_(ADC6TDO)-Pad91))
+    Local override; warning
+    @(138.2999 mm, 106.5002 mm): Pad 91 [U2_91] of U2 on TopLayer
+[net_conflict]: Pad net (U2_92) doesn't match net given by schematic (unconnected-(U2-PF5_(ADC5TMS)-Pad92))
+    Local override; warning
+    @(138.2999 mm, 107.0001 mm): Pad 92 [U2_92] of U2 on TopLayer
+[net_conflict]: Pad net (U2_93) doesn't match net given by schematic (unconnected-(U2-PF4_(ADC4TCK)-Pad93))
+    Local override; warning
+    @(138.2999 mm, 107.5002 mm): Pad 93 [U2_93] of U2 on TopLayer
+[net_conflict]: Pad net (U2_94) doesn't match net given by schematic (unconnected-(U2-PF3_(ADC3)-Pad94))
+    Local override; warning
+    @(138.2999 mm, 108.0001 mm): Pad 94 [U2_94] of U2 on TopLayer
+[net_conflict]: Pad net (U2_95) doesn't match net given by schematic (unconnected-(U2-PF2_(ADC2)-Pad95))
+    Local override; warning
+    @(138.2999 mm, 108.5002 mm): Pad 95 [U2_95] of U2 on TopLayer
+[net_conflict]: Pad net (U2_96) doesn't match net given by schematic (unconnected-(U2-PF1_(ADC1)-Pad96))
+    Local override; warning
+    @(138.2999 mm, 109.0001 mm): Pad 96 [U2_96] of U2 on TopLayer
+[net_conflict]: Pad net (U2_97) doesn't match net given by schematic (unconnected-(U2-PF0_(ADC0)-Pad97))
+    Local override; warning
+    @(138.2999 mm, 109.5002 mm): Pad 97 [U2_97] of U2 on TopLayer
+[net_conflict]: Pad net (U2_98) doesn't match net given by schematic (Net-(U2-AREF))
+    Local override; warning
+    @(138.2999 mm, 110.0001 mm): Pad 98 [U2_98] of U2 on TopLayer
+[footprint_symbol_mismatch]: WIRELESS-BLUETOOTH-HC-05 doesn't match footprint given by symbol ()
+    Local override; warning
+    @(166.9999 mm, 111.0001 mm): Footprint U3
+[net_conflict]: Pad net (U3_1) doesn't match net given by schematic (unconnected-(U3-STATE-Pad1))
+    Local override; warning
+    @(160.6499 mm, 128.1451 mm): PTH pad 1 [U3_1] of U3
+[net_conflict]: Pad net (U3_2) doesn't match net given by schematic (Net-(U3-RX))
+    Local override; warning
+    @(163.1899 mm, 128.1451 mm): PTH pad 2 [U3_2] of U3
+[net_conflict]: Pad net (U3_6) doesn't match net given by schematic (unconnected-(U3-EN-Pad6))
+    Local override; warning
+    @(173.3499 mm, 128.1451 mm): PTH pad 6 [U3_6] of U3
+[footprint_symbol_mismatch]: USB-C-16P-S doesn't match footprint given by symbol ()
+    Local override; warning
+    @(117.1006 mm, 99.0001 mm): Footprint U4
+[footprint_symbol_field_mismatch]: Missing symbol field 'Manufacturer Part' in footprint
+    Local override; warning
+    @(117.1006 mm, 99.0001 mm): Footprint U4
+[net_conflict]: Pad net (U4_1) doesn't match net given by schematic (unconnected-(U4-Pad1))
+    Local override; warning
+    @(118.9081 mm, 94.6801 mm): PTH pad 1 [U4_1] of U4
+[net_conflict]: Pad net (U4_2) doesn't match net given by schematic (unconnected-(U4-Pad2))
+    Local override; warning
+    @(114.7280 mm, 94.6801 mm): PTH pad 2 [U4_2] of U4
+[net_conflict]: Pad net (U4_3) doesn't match net given by schematic (unconnected-(U4-Pad3))
+    Local override; warning
+    @(114.7280 mm, 103.3201 mm): PTH pad 3 [U4_3] of U4
+[net_conflict]: Pad net (U4_4) doesn't match net given by schematic (unconnected-(U4-Pad4))
+    Local override; warning
+    @(118.9081 mm, 103.3201 mm): PTH pad 4 [U4_4] of U4
+[net_conflict]: Pad net (U4_A1-B12) doesn't match net given by schematic (unconnected-(U4-GND-PadA1-B12))
+    Local override; warning
+    @(119.4732 mm, 95.8000 mm): Pad A1-B12 [U4_A1-B12] of U4 on TopLayer
+[net_conflict]: Pad net (U4_A4-B9) doesn't match net given by schematic (unconnected-(U4-VBUS-PadA4-B9))
+    Local override; warning
+    @(119.4732 mm, 96.6001 mm): Pad A4-B9 [U4_A4-B9] of U4 on TopLayer
+[net_conflict]: Pad net (U4_A5) doesn't match net given by schematic (unconnected-(U4-CC1-PadA5))
+    Local override; warning
+    @(119.4732 mm, 97.7502 mm): Pad A5 [U4_A5] of U4 on TopLayer
+[net_conflict]: Pad net (U4_A6) doesn't match net given by schematic (unconnected-(U4-DP1-PadA6))
+    Local override; warning
+    @(119.4732 mm, 98.7502 mm): Pad A6 [U4_A6] of U4 on TopLayer
+[net_conflict]: Pad net (U4_A7) doesn't match net given by schematic (unconnected-(U4-DN1-PadA7))
+    Local override; warning
+    @(119.4732 mm, 99.2500 mm): Pad A7 [U4_A7] of U4 on TopLayer
+[net_conflict]: Pad net (U4_A8) doesn't match net given by schematic (unconnected-(U4-SBU1-PadA8))
+    Local override; warning
+    @(119.4732 mm, 100.2500 mm): Pad A8 [U4_A8] of U4 on TopLayer
+[net_conflict]: Pad net (U4_B1-A12) doesn't match net given by schematic (unconnected-(U4-GND-PadB1-A12))
+    Local override; warning
+    @(119.4732 mm, 102.2000 mm): Pad B1-A12 [U4_B1-A12] of U4 on TopLayer
+[net_conflict]: Pad net (U4_B4-A9) doesn't match net given by schematic (unconnected-(U4-VBUS-PadB4-A9))
+    Local override; warning
+    @(119.4732 mm, 101.4001 mm): Pad B4-A9 [U4_B4-A9] of U4 on TopLayer
+[net_conflict]: Pad net (U4_B5) doesn't match net given by schematic (unconnected-(U4-CC2-PadB5))
+    Local override; warning
+    @(119.4732 mm, 100.7502 mm): Pad B5 [U4_B5] of U4 on TopLayer
+[net_conflict]: Pad net (U4_B6) doesn't match net given by schematic (unconnected-(U4-DP2-PadB6))
+    Local override; warning
+    @(119.4732 mm, 99.7502 mm): Pad B6 [U4_B6] of U4 on TopLayer
+[net_conflict]: Pad net (U4_B7) doesn't match net given by schematic (unconnected-(U4-DN2-PadB7))
+    Local override; warning
+    @(119.4732 mm, 98.2500 mm): Pad B7 [U4_B7] of U4 on TopLayer
+[net_conflict]: Pad net (U4_B8) doesn't match net given by schematic (unconnected-(U4-SBU2-PadB8))
+    Local override; warning
+    @(119.4732 mm, 97.2500 mm): Pad B8 [U4_B8] of U4 on TopLayer
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **
