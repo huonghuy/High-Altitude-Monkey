@@ -4975,6 +4975,24 @@
 				(font (size 1.27 1.27))
 			)
 		)
+		(property "Manufacturer" "KEMET"
+			(at 142.24 165.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
+		(property "MPN" "C0603C104K5RACTU"
+			(at 142.24 165.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
 		(pin "1" (uuid "6bbcb732-0371-46d9-8fd1-a74415f48791"))
 		(pin "2" (uuid "55ded3af-d1df-451c-95d9-63b5dfcb99f8"))
 		(instances
@@ -5034,6 +5052,24 @@
 			(do_not_autoplace no)
 			(effects
 				(font (size 1.27 1.27))
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 279.4 43.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
+		(property "MPN" "TPS62162DSGR"
+			(at 279.4 43.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
 			)
 		)
 		(pin "2" (uuid "2f6ffeb6-8871-4906-9051-b36788c23a39"))
@@ -5104,6 +5140,24 @@
 				(font (size 1.27 1.27))
 			)
 		)
+		(property "Manufacturer" "onsemi"
+			(at 205.74 125.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
+		(property "MPN" "MMBT3904LT1G"
+			(at 205.74 125.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
 		(pin "1" (uuid "98d13e40-9f2e-4d4a-af9c-02ea5c76b296"))
 		(pin "3" (uuid "5bc228ec-9262-4dde-9c33-36cc6b366162"))
 		(pin "2" (uuid "43ea3962-4d3d-40d5-ab32-048c0cc099b5"))
@@ -5164,6 +5218,24 @@
 			(do_not_autoplace no)
 			(effects
 				(font (size 1.27 1.27))
+			)
+		)
+		(property "Manufacturer" "KEMET"
+			(at 292.1 190.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
+		(property "MPN" "C0603C104K5RACTU"
+			(at 292.1 190.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
 			)
 		)
 		(pin "1" (uuid "6416a3a2-2681-41e5-87f3-e2bea483ee93"))
@@ -5227,6 +5299,24 @@
 				(font (size 1.27 1.27))
 			)
 		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 111.76 165.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL21B106KPQNNNE"
+			(at 111.76 165.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
 		(pin "1" (uuid "ad39dc56-ff27-42bf-b67d-6fc2df7ce169"))
 		(pin "2" (uuid "0733b1e2-ab61-4bc6-9e82-50f71066e798"))
 		(instances
@@ -5241,7 +5331,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -5348,6 +5438,24 @@
 				(font (size 1.27 1.27))
 			)
 		)
+		(property "Manufacturer" "Murata"
+			(at 391.16 43.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
+		(property "MPN" "GRM31CR71A226KE15L"
+			(at 391.16 43.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
 		(pin "1" (uuid "467b397a-ebfc-48ba-a91a-032dcd0edfdb"))
 		(pin "2" (uuid "c0273c86-6a28-4d78-921d-86def404eb92"))
 		(instances
@@ -5407,6 +5515,24 @@
 			(do_not_autoplace no)
 			(effects
 				(font (size 1.27 1.27))
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 116.84 43.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
+		(property "MPN" "RC0603FR-075K1L"
+			(at 116.84 43.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
 			)
 		)
 		(pin "1" (uuid "876979fe-a205-4477-bf0a-3118dcf4a247"))
@@ -5470,6 +5596,24 @@
 				(font (size 1.27 1.27))
 			)
 		)
+		(property "Manufacturer" "Yageo"
+			(at 132.08 110.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
+		(property "MPN" "RC0603FR-0710KL"
+			(at 132.08 110.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
 		(pin "1" (uuid "1477dbab-9596-492c-bf5c-b80b9764e38f"))
 		(pin "2" (uuid "fb49dcba-4dd3-4b32-9a9c-57ba7ca6c1f8"))
 		(instances
@@ -5529,6 +5673,24 @@
 			(do_not_autoplace no)
 			(effects
 				(font (size 1.27 1.27))
+			)
+		)
+		(property "Manufacturer" "KEMET"
+			(at 259.08 190.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
+		(property "MPN" "C0603C104K5RACTU"
+			(at 259.08 190.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
 			)
 		)
 		(pin "1" (uuid "eb77d979-0fbd-4ed4-bc84-efe6975cdd2d"))
@@ -5592,6 +5754,24 @@
 				(font (size 1.27 1.27))
 			)
 		)
+		(property "Manufacturer" "STMicroelectronics"
+			(at 205.74 43.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
+		(property "MPN" "USBLC6-2SC6"
+			(at 205.74 43.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
 		(pin "1" (uuid "5f5fce24-aacb-4686-b8ca-2e54bd2d9b45"))
 		(pin "3" (uuid "ad649631-df24-47bf-ba63-c384ed7731ad"))
 		(pin "2" (uuid "d238e603-52e1-423d-a27f-2cfc6338f3fb"))
@@ -5610,7 +5790,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -5683,7 +5863,7 @@
 				(font (size 1.27 1.27))
 			)
 		)
-		(property "Value" "2.2uH XFL4020-222ME"
+		(property "Value" "2.2uH"
 			(at 323.85 44.45 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5715,6 +5895,24 @@
 			(do_not_autoplace no)
 			(effects
 				(font (size 1.27 1.27))
+			)
+		)
+		(property "Manufacturer" "Coilcraft"
+			(at 320.04 43.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
+		(property "MPN" "XFL4020-222MEC"
+			(at 320.04 43.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
 			)
 		)
 		(pin "1" (uuid "f840c2fc-ade6-4d76-b530-4f8f32d07af6"))
@@ -5778,6 +5976,24 @@
 				(font (size 1.27 1.27))
 			)
 		)
+		(property "Manufacturer" "KEMET"
+			(at 101.6 110.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
+		(property "MPN" "C0603C104K5RACTU"
+			(at 101.6 110.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
 		(pin "1" (uuid "d24b9a07-a36d-4f0a-a2ab-fd8d99a1e6ba"))
 		(pin "2" (uuid "451a439f-eee4-4603-9a19-60dccd1f2389"))
 		(instances
@@ -5837,6 +6053,24 @@
 			(do_not_autoplace no)
 			(effects
 				(font (size 1.27 1.27))
+			)
+		)
+		(property "Manufacturer" "GCT"
+			(at 48.26 43.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
+		(property "MPN" "USB4105-GF-A"
+			(at 48.26 43.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
 			)
 		)
 		(pin "A1" (uuid "dd403e31-6626-4d4b-bcf9-b2a8b298a94e"))
@@ -5977,6 +6211,24 @@
 				(font (size 1.27 1.27))
 			)
 		)
+		(property "Manufacturer" "KEMET"
+			(at 259.08 165.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
+		(property "MPN" "C0603C104K5RACTU"
+			(at 259.08 165.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
 		(pin "1" (uuid "e7824f2c-86de-4608-9cf3-d5f6a961d12c"))
 		(pin "2" (uuid "7decda52-6905-48ad-b879-d7c616381289"))
 		(instances
@@ -6036,6 +6288,24 @@
 			(do_not_autoplace no)
 			(effects
 				(font (size 1.27 1.27))
+			)
+		)
+		(property "Manufacturer" "Espressif"
+			(at 57.15 189.23 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
+		(property "MPN" "ESP32-WROOM-32E-N4"
+			(at 57.15 189.23 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
 			)
 		)
 		(pin "2" (uuid "12edd850-f896-4be9-9a9e-a7b9b6f10492"))
@@ -6136,6 +6406,24 @@
 				(font (size 1.27 1.27))
 			)
 		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 355.6 43.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL21B106KPQNNNE"
+			(at 355.6 43.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
 		(pin "1" (uuid "e5b17bb3-56ad-418b-b0d9-faa6b5606a87"))
 		(pin "2" (uuid "18f9ab01-433e-4970-9c1f-d524d88b1608"))
 		(instances
@@ -6163,7 +6451,7 @@
 				(font (size 1.27 1.27))
 			)
 		)
-		(property "Value" "DE9_Male_Provisional"
+		(property "Value" "DE-9 Male RA"
 			(at 365.76 171.45 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6171,7 +6459,7 @@
 				(font (size 1.27 1.27))
 			)
 		)
-		(property "Footprint" "HAM:DSUB-9_Male_Horizontal_BoardEdge"
+		(property "Footprint" "HAM:DSUB-9_Male_Horizontal_Assmann_A-DS-KG"
 			(at 365.76 180.34 0)
 			(hide yes)
 			(show_name no)
@@ -6195,6 +6483,24 @@
 			(do_not_autoplace no)
 			(effects
 				(font (size 1.27 1.27))
+			)
+		)
+		(property "Manufacturer" "Assmann WSW"
+			(at 365.76 180.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
+		(property "MPN" "A-DS 09 A/KG-T2S"
+			(at 365.76 180.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
 			)
 		)
 		(pin "1" (uuid "5a4995e1-e6a1-4f4d-a323-217b1c895588"))
@@ -6265,6 +6571,24 @@
 				(font (size 1.27 1.27))
 			)
 		)
+		(property "Manufacturer" "Lite-On"
+			(at 142.24 218.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
+		(property "MPN" "LTST-C191KGKT"
+			(at 142.24 218.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
 		(pin "1" (uuid "abae0262-0385-4409-b581-348927cdd9a6"))
 		(pin "2" (uuid "c039a485-95c1-49dc-a6f9-2b935e9300f6"))
 		(instances
@@ -6324,6 +6648,24 @@
 			(do_not_autoplace no)
 			(effects
 				(font (size 1.27 1.27))
+			)
+		)
+		(property "Manufacturer" "KEMET"
+			(at 292.1 165.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
+		(property "MPN" "C0603C104K5RACTU"
+			(at 292.1 165.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
 			)
 		)
 		(pin "1" (uuid "1663ba1e-251b-4295-98bd-bc98f9d99710"))
@@ -6449,6 +6791,24 @@
 				(font (size 1.27 1.27))
 			)
 		)
+		(property "Manufacturer" "KEMET"
+			(at 259.08 215.9 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
+		(property "MPN" "C0603C104K5RACTU"
+			(at 259.08 215.9 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
 		(pin "1" (uuid "787c17a3-1671-4e88-85f2-047fa3fad10d"))
 		(pin "2" (uuid "62ebf88c-ee01-4ac5-9f18-fb09a195f63a"))
 		(instances
@@ -6510,6 +6870,24 @@
 				(font (size 1.27 1.27))
 			)
 		)
+		(property "Manufacturer" "onsemi"
+			(at 205.74 100.33 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
+		(property "MPN" "MMBT3904LT1G"
+			(at 205.74 100.33 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
 		(pin "1" (uuid "d4df45ce-9a6c-450f-a04c-ace3c381936d"))
 		(pin "3" (uuid "4b0009a0-2890-445c-af96-7f8e80ce9d94"))
 		(pin "2" (uuid "30e07a73-04b2-4bcf-9d6c-41f3b6398491"))
@@ -6525,7 +6903,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -6632,6 +7010,24 @@
 				(font (size 1.27 1.27))
 			)
 		)
+		(property "Manufacturer" "Lite-On"
+			(at 111.76 218.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
+		(property "MPN" "LTST-C191KGKT"
+			(at 111.76 218.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
 		(pin "1" (uuid "ed9f9c45-a285-4e96-9910-3ccaa1299e95"))
 		(pin "2" (uuid "db7d68ba-504d-4858-a6f3-00781dd8e653"))
 		(instances
@@ -6693,6 +7089,24 @@
 				(font (size 1.27 1.27))
 			)
 		)
+		(property "Manufacturer" "Yageo"
+			(at 375.92 110.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
+		(property "MPN" "RC0603FR-0710KL"
+			(at 375.92 110.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
 		(pin "1" (uuid "4b471e15-952f-4c3f-85df-fc8e661adf3d"))
 		(pin "2" (uuid "8e0cba78-9436-4a35-af79-fcea32a5b5e5"))
 		(instances
@@ -6752,6 +7166,24 @@
 			(do_not_autoplace no)
 			(effects
 				(font (size 1.27 1.27))
+			)
+		)
+		(property "Manufacturer" "Analog Devices (Maxim)"
+			(at 208.28 180.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
+		(property "MPN" "MAX3232EESE+"
+			(at 208.28 180.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
 			)
 		)
 		(pin "16" (uuid "c37d09f3-4f45-4658-bafc-00b701c4d003"))
@@ -6829,6 +7261,24 @@
 				(font (size 1.27 1.27))
 			)
 		)
+		(property "Manufacturer" "KEMET"
+			(at 391.16 69.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
+		(property "MPN" "C0603C104K5RACTU"
+			(at 391.16 69.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
 		(pin "1" (uuid "4c7d532a-4bc6-4e8c-82d5-796106e77617"))
 		(pin "2" (uuid "8a9b5f9b-6fcd-4683-9d00-68d0ce3fdee6"))
 		(instances
@@ -6888,6 +7338,24 @@
 			(do_not_autoplace no)
 			(effects
 				(font (size 1.27 1.27))
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 111.76 193.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
+		(property "MPN" "RC0603FR-071KL"
+			(at 111.76 193.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
 			)
 		)
 		(pin "1" (uuid "6a6c86c9-3cdb-4eff-8b90-e899f8d1b176"))
@@ -6951,6 +7419,24 @@
 				(font (size 1.27 1.27))
 			)
 		)
+		(property "Manufacturer" "Yageo"
+			(at 251.46 125.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
+		(property "MPN" "RC0603FR-0710KL"
+			(at 251.46 125.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
 		(pin "1" (uuid "96084a1a-e75a-499c-ad9f-fdce7606ad25"))
 		(pin "2" (uuid "df3ffbb7-28d7-4b05-9f05-820f3e6e8321"))
 		(instances
@@ -7012,6 +7498,24 @@
 				(font (size 1.27 1.27))
 			)
 		)
+		(property "Manufacturer" "Yageo"
+			(at 91.44 43.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
+		(property "MPN" "RC0603FR-075K1L"
+			(at 91.44 43.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
 		(pin "1" (uuid "2e348c49-0aad-46dc-9f95-67e0d01fb8b6"))
 		(pin "2" (uuid "e97c3e22-3b74-40d4-a0dd-74d2d7d0eae8"))
 		(instances
@@ -7039,7 +7543,7 @@
 				(font (size 1.27 1.27))
 			)
 		)
-		(property "Value" "PTC 0.75A TBD"
+		(property "Value" "PTC 0.75A hold"
 			(at 151.13 44.45 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7071,6 +7575,24 @@
 			(do_not_autoplace no)
 			(effects
 				(font (size 1.27 1.27))
+			)
+		)
+		(property "Manufacturer" "Bourns"
+			(at 147.32 43.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
+		(property "MPN" "MF-NSMF075X-2"
+			(at 147.32 43.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
 			)
 		)
 		(pin "1" (uuid "28a92135-3230-4d38-9005-93b2ace75ffd"))
@@ -7134,6 +7656,24 @@
 				(font (size 1.27 1.27))
 			)
 		)
+		(property "Manufacturer" "Yageo"
+			(at 160.02 110.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
+		(property "MPN" "RC0603FR-0710KL"
+			(at 160.02 110.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
 		(pin "1" (uuid "a69da2c9-78b4-4e5e-b0df-68894f7d8f0e"))
 		(pin "2" (uuid "3e2a1ee3-0931-4363-b96b-f3afe46d99aa"))
 		(instances
@@ -7193,6 +7733,24 @@
 			(do_not_autoplace no)
 			(effects
 				(font (size 1.27 1.27))
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 279.4 100.33 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL10B105KA8NNNC"
+			(at 279.4 100.33 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
 			)
 		)
 		(pin "1" (uuid "b554f92c-f5d2-409c-b235-57edb1438f5b"))
@@ -7256,6 +7814,24 @@
 				(font (size 1.27 1.27))
 			)
 		)
+		(property "Manufacturer" "Yageo"
+			(at 142.24 193.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
+		(property "MPN" "RC0603FR-071KL"
+			(at 142.24 193.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
 		(pin "1" (uuid "6af4b811-7ad0-4ce7-9bc3-2f3d5fb44d19"))
 		(pin "2" (uuid "2e7a0889-39c4-4cff-8009-cfda48d87b7e"))
 		(instances
@@ -7315,6 +7891,24 @@
 			(do_not_autoplace no)
 			(effects
 				(font (size 1.27 1.27))
+			)
+		)
+		(property "Manufacturer" "E-Switch"
+			(at 325.12 100.33 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
+		(property "MPN" "TL3342F160QG"
+			(at 325.12 100.33 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
 			)
 		)
 		(pin "1" (uuid "6a0322f0-db7a-4b7d-b7cb-9233260d8dcf"))
@@ -7440,6 +8034,24 @@
 				(font (size 1.27 1.27))
 			)
 		)
+		(property "Manufacturer" "E-Switch"
+			(at 325.12 125.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
+		(property "MPN" "TL3342F160QG"
+			(at 325.12 125.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
 		(pin "1" (uuid "388e7872-e087-4343-9259-c99698dec684"))
 		(pin "2" (uuid "da15146a-d86f-4fa3-8361-ec0b6c8ad8ae"))
 		(instances
@@ -7499,6 +8111,24 @@
 			(do_not_autoplace no)
 			(effects
 				(font (size 1.27 1.27))
+			)
+		)
+		(property "Manufacturer" "WCH"
+			(at 53.34 110.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
+		(property "MPN" "CH340C"
+			(at 53.34 110.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
 			)
 		)
 		(pin "16" (uuid "751f818b-7caf-4a24-ac07-49b371511579"))
@@ -7574,6 +8204,24 @@
 			(do_not_autoplace no)
 			(effects
 				(font (size 1.27 1.27))
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 251.46 100.33 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
+		(property "MPN" "RC0603FR-0710KL"
+			(at 251.46 100.33 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
 			)
 		)
 		(pin "1" (uuid "4fcf15aa-96aa-414e-b697-e7123b227926"))
